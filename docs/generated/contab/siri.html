@@ -8237,11 +8237,11 @@
                 </tr>
                 <tr>
                   <td colspan="6" rowspan="1" class="tableblock halign-left valign-top">
-                    <p class="tableblock">The element contains <em>one</em> of the following elements (b) or element sequences (a)</p>
+                    <p class="tableblock">The element contains <em>one</em> of the following elements (b-c) or element sequences (a)</p>
                   </td>
                 </tr>
                 <tr>
-                  <td colspan="1" rowspan="13" class="tableblock halign-left valign-top">
+                  <td colspan="1" rowspan="14" class="tableblock halign-left valign-top">
                     <a shape="rect" href="#group.siri:SiriServiceDeliveryGroup" title="siri:SiriServiceDeliveryGroup">siri:SiriServiceDeliveryGroup</a>
                   </td>
                   <td colspan="" rowspan="" class="tableblock halign-left valign-top">
@@ -8614,6 +8614,37 @@
                   </td>
                   <td colspan="1" rowspan="1" class="tableblock halign-left valign-top">
                     <p class="tableblock darkbrown">Delivery for Situation Exchange Service.</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="" rowspan="" class="tableblock halign-left valign-top">
+                    <p class="tableblock">
+                      <em>c</em>
+                    </p>
+                  </td>
+                  <td colspan="1" rowspan="1" class="tableblock halign-left valign-top">
+                    <p class="tableblock">
+                      <code>
+                        <strong>→‍<a shape="rect" href="#element.siri:ControlActionDelivery" title="siri:ControlActionDelivery">siri:ControlActionDelivery</a>
+                        </strong>
+                      </code>
+                    </p>
+                  </td>
+                  <td colspan="1" rowspan="1" class="tableblock halign-left valign-top">
+                    <p class="tableblock">
+                      <code>
+                        <strong title="mandatory, at least one, part of a choice">-1:*</strong>
+                      </code>
+                    </p>
+                  </td>
+                  <td colspan="1" rowspan="1" class="tableblock halign-left valign-top">
+                    <p class="tableblock">
+                      <em>+<a shape="rect" href="#type.siri:ControlActionDeliveryStructure" title="siri:ControlActionDeliveryStructure">siri:ControlActionDeliveryStructure</a>
+                      </em>
+                    </p>
+                  </td>
+                  <td colspan="1" rowspan="1" class="tableblock halign-left valign-top">
+                    <p class="tableblock darkbrown">Delivery for Control Action Service.</p>
                   </td>
                 </tr>
               </tbody>
@@ -9564,7 +9595,7 @@
                   </td>
                 </tr>
                 <tr>
-                  <td colspan="1" rowspan="10" class="tableblock halign-left valign-top">
+                  <td colspan="1" rowspan="11" class="tableblock halign-left valign-top">
                     <a shape="rect" href="#group.siri:SiriServiceCapabilitiesRequestGroup" title="siri:SiriServiceCapabilitiesRequestGroup">siri:SiriServiceCapabilitiesRequestGroup</a>
                   </td>
                   <td colspan="2" rowspan="1" class="tableblock halign-left valign-top">
@@ -9786,6 +9817,28 @@
                     <p class="tableblock darkbrown">Request for information about Situation Exchange Service Capabilities. Answered with a VehicleMontoringCapabilitiesResponse.</p>
                   </td>
                 </tr>
+                <tr>
+                  <td colspan="2" rowspan="1" class="tableblock halign-left valign-top">
+                    <p class="tableblock">
+                      <code>→‍<a shape="rect" href="#element.siri:ControlActionCapabilitiesRequest" title="siri:ControlActionCapabilitiesRequest">siri:ControlActionCapabilitiesRequest</a>
+                      </code>
+                    </p>
+                  </td>
+                  <td colspan="1" rowspan="1" class="tableblock halign-left valign-top">
+                    <p class="tableblock">
+                      <span title="optional, single">0:1</span>
+                    </p>
+                  </td>
+                  <td colspan="1" rowspan="1" class="tableblock halign-left valign-top">
+                    <p class="tableblock">
+                      <em>+<a shape="rect" href="#type.siri:ServiceCapabilitiesRequestStructure" title="siri:ServiceCapabilitiesRequestStructure">siri:ServiceCapabilitiesRequestStructure</a>
+                      </em>
+                    </p>
+                  </td>
+                  <td colspan="1" rowspan="1" class="tableblock halign-left valign-top">
+                    <p class="tableblock darkbrown">Request for information about Control Action Service Capabilities. Answered with ControlActionCapabilitiesResponse.</p>
+                  </td>
+                </tr>
               </tbody>
             </table>
           </div>
@@ -9818,7 +9871,7 @@
                   </td>
                 </tr>
                 <tr>
-                  <td colspan="1" rowspan="10" class="tableblock halign-left valign-top">
+                  <td colspan="1" rowspan="11" class="tableblock halign-left valign-top">
                     <a shape="rect" href="#group.siri:SiriServiceCapabilitiesResponseGroup" title="siri:SiriServiceCapabilitiesResponseGroup">siri:SiriServiceCapabilitiesResponseGroup</a>
                   </td>
                   <td colspan="2" rowspan="1" class="tableblock halign-left valign-top">
@@ -10040,6 +10093,28 @@
                     <p class="tableblock darkbrown">Capabilities for Situation Exchange Service. Answers a VehicleMontoringCapabilitiesRequest.</p>
                   </td>
                 </tr>
+                <tr>
+                  <td colspan="2" rowspan="1" class="tableblock halign-left valign-top">
+                    <p class="tableblock">
+                      <code>→‍<a shape="rect" href="#element.siri:ControlActionCapabilitiesResponse" title="siri:ControlActionCapabilitiesResponse">siri:ControlActionCapabilitiesResponse</a>
+                      </code>
+                    </p>
+                  </td>
+                  <td colspan="1" rowspan="1" class="tableblock halign-left valign-top">
+                    <p class="tableblock">
+                      <span title="optional, single">0:1</span>
+                    </p>
+                  </td>
+                  <td colspan="1" rowspan="1" class="tableblock halign-left valign-top">
+                    <p class="tableblock">
+                      <em>+<a shape="rect" href="#type.siri:ControlActionCapabilitiesResponseStructure" title="siri:ControlActionCapabilitiesResponseStructure">siri:ControlActionCapabilitiesResponseStructure</a>
+                      </em>
+                    </p>
+                  </td>
+                  <td colspan="1" rowspan="1" class="tableblock halign-left valign-top">
+                    <p class="tableblock darkbrown">Capabilities for Control Action Service. Answers a ControlActionCapabilitiesRequest.</p>
+                  </td>
+                </tr>
               </tbody>
             </table>
           </div>
@@ -10073,11 +10148,11 @@
                 </tr>
                 <tr>
                   <td colspan="6" rowspan="1" class="tableblock halign-left valign-top">
-                    <p class="tableblock">The element contains <em>one</em> of the following elements (b) or element sequences (a)</p>
+                    <p class="tableblock">The element contains <em>one</em> of the following elements (b-c) or element sequences (a)</p>
                   </td>
                 </tr>
                 <tr>
-                  <td colspan="1" rowspan="13" class="tableblock halign-left valign-top">
+                  <td colspan="1" rowspan="14" class="tableblock halign-left valign-top">
                     <a shape="rect" href="#group.siri:SiriServiceDeliveryGroup" title="siri:SiriServiceDeliveryGroup">siri:SiriServiceDeliveryGroup</a>
                   </td>
                   <td colspan="" rowspan="" class="tableblock halign-left valign-top">
@@ -10452,6 +10527,37 @@
                     <p class="tableblock darkbrown">Delivery for Situation Exchange Service.</p>
                   </td>
                 </tr>
+                <tr>
+                  <td colspan="" rowspan="" class="tableblock halign-left valign-top">
+                    <p class="tableblock">
+                      <em>c</em>
+                    </p>
+                  </td>
+                  <td colspan="1" rowspan="1" class="tableblock halign-left valign-top">
+                    <p class="tableblock">
+                      <code>
+                        <strong>→‍<a shape="rect" href="#element.siri:ControlActionDelivery" title="siri:ControlActionDelivery">siri:ControlActionDelivery</a>
+                        </strong>
+                      </code>
+                    </p>
+                  </td>
+                  <td colspan="1" rowspan="1" class="tableblock halign-left valign-top">
+                    <p class="tableblock">
+                      <code>
+                        <strong title="mandatory, at least one, part of a choice">-1:*</strong>
+                      </code>
+                    </p>
+                  </td>
+                  <td colspan="1" rowspan="1" class="tableblock halign-left valign-top">
+                    <p class="tableblock">
+                      <em>+<a shape="rect" href="#type.siri:ControlActionDeliveryStructure" title="siri:ControlActionDeliveryStructure">siri:ControlActionDeliveryStructure</a>
+                      </em>
+                    </p>
+                  </td>
+                  <td colspan="1" rowspan="1" class="tableblock halign-left valign-top">
+                    <p class="tableblock darkbrown">Delivery for Control Action Service.</p>
+                  </td>
+                </tr>
               </tbody>
             </table>
           </div>
@@ -10485,11 +10591,11 @@
                 </tr>
                 <tr>
                   <td colspan="6" rowspan="1" class="tableblock halign-left valign-top">
-                    <p class="tableblock">The element contains <em>one</em> of the following elements (a-k)</p>
+                    <p class="tableblock">The element contains <em>one</em> of the following elements (a-l)</p>
                   </td>
                 </tr>
                 <tr>
-                  <td colspan="1" rowspan="11" class="tableblock halign-left valign-top">
+                  <td colspan="1" rowspan="12" class="tableblock halign-left valign-top">
                     <a shape="rect" href="#group.siri:SiriServiceRequestGroup" title="siri:SiriServiceRequestGroup">siri:SiriServiceRequestGroup</a>
                   </td>
                   <td colspan="" rowspan="" class="tableblock halign-left valign-top">
@@ -10832,6 +10938,37 @@
                     <p class="tableblock darkbrown">Request for information about Facilities status.</p>
                   </td>
                 </tr>
+                <tr>
+                  <td colspan="" rowspan="" class="tableblock halign-left valign-top">
+                    <p class="tableblock">
+                      <em>l</em>
+                    </p>
+                  </td>
+                  <td colspan="1" rowspan="1" class="tableblock halign-left valign-top">
+                    <p class="tableblock">
+                      <code>
+                        <strong>→‍<a shape="rect" href="#element.siri:ControlActionRequest" title="siri:ControlActionRequest">siri:ControlActionRequest</a>
+                        </strong>
+                      </code>
+                    </p>
+                  </td>
+                  <td colspan="1" rowspan="1" class="tableblock halign-left valign-top">
+                    <p class="tableblock">
+                      <code>
+                        <strong title="mandatory, at least one, part of a choice">-1:*</strong>
+                      </code>
+                    </p>
+                  </td>
+                  <td colspan="1" rowspan="1" class="tableblock halign-left valign-top">
+                    <p class="tableblock">
+                      <em>+<a shape="rect" href="#type.siri:ControlActionRequestStructure" title="siri:ControlActionRequestStructure">siri:ControlActionRequestStructure</a>
+                      </em>
+                    </p>
+                  </td>
+                  <td colspan="1" rowspan="1" class="tableblock halign-left valign-top">
+                    <p class="tableblock darkbrown">Request for information about Control Actions.</p>
+                  </td>
+                </tr>
               </tbody>
             </table>
           </div>
@@ -10865,11 +11002,11 @@
                 </tr>
                 <tr>
                   <td colspan="6" rowspan="1" class="tableblock halign-left valign-top">
-                    <p class="tableblock">The element contains <em>one</em> of the following elements (a-j)</p>
+                    <p class="tableblock">The element contains <em>one</em> of the following elements (a-k)</p>
                   </td>
                 </tr>
                 <tr>
-                  <td colspan="1" rowspan="10" class="tableblock halign-left valign-top">
+                  <td colspan="1" rowspan="11" class="tableblock halign-left valign-top">
                     <a shape="rect" href="#group.siri:SiriSubscriptionRequestGroup" title="siri:SiriSubscriptionRequestGroup">siri:SiriSubscriptionRequestGroup</a>
                   </td>
                   <td colspan="" rowspan="" class="tableblock halign-left valign-top">
@@ -11181,6 +11318,37 @@
                     <p class="tableblock darkbrown">Request for a subscription to the Situation Exchange Service.</p>
                   </td>
                 </tr>
+                <tr>
+                  <td colspan="" rowspan="" class="tableblock halign-left valign-top">
+                    <p class="tableblock">
+                      <em>k</em>
+                    </p>
+                  </td>
+                  <td colspan="1" rowspan="1" class="tableblock halign-left valign-top">
+                    <p class="tableblock">
+                      <code>
+                        <strong>→‍<a shape="rect" href="#element.siri:ControlActionSubscriptionRequest" title="siri:ControlActionSubscriptionRequest">siri:ControlActionSubscriptionRequest</a>
+                        </strong>
+                      </code>
+                    </p>
+                  </td>
+                  <td colspan="1" rowspan="1" class="tableblock halign-left valign-top">
+                    <p class="tableblock">
+                      <code>
+                        <strong title="mandatory, at least one, part of a choice">-1:*</strong>
+                      </code>
+                    </p>
+                  </td>
+                  <td colspan="1" rowspan="1" class="tableblock halign-left valign-top">
+                    <p class="tableblock">
+                      <em>+<a shape="rect" href="#type.siri:ControlActionSubscriptionStructure" title="siri:ControlActionSubscriptionStructure">siri:ControlActionSubscriptionStructure</a>
+                      </em>
+                    </p>
+                  </td>
+                  <td colspan="1" rowspan="1" class="tableblock halign-left valign-top">
+                    <p class="tableblock darkbrown">Request for a subscription to Control Action Service.</p>
+                  </td>
+                </tr>
               </tbody>
             </table>
           </div>
@@ -11425,7 +11593,7 @@
                   </td>
                 </tr>
                 <tr>
-                  <td colspan="1" rowspan="10" class="tableblock halign-left valign-top">
+                  <td colspan="1" rowspan="11" class="tableblock halign-left valign-top">
                     <a shape="rect" href="#group.siri:SiriServiceCapabilitiesRequestGroup" title="siri:SiriServiceCapabilitiesRequestGroup">siri:SiriServiceCapabilitiesRequestGroup</a>
                   </td>
                   <td colspan="2" rowspan="1" class="tableblock halign-left valign-top">
@@ -11645,6 +11813,28 @@
                   </td>
                   <td colspan="1" rowspan="1" class="tableblock halign-left valign-top">
                     <p class="tableblock darkbrown">Request for information about Situation Exchange Service Capabilities. Answered with a VehicleMontoringCapabilitiesResponse.</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2" rowspan="1" class="tableblock halign-left valign-top">
+                    <p class="tableblock">
+                      <code>→‍<a shape="rect" href="#element.siri:ControlActionCapabilitiesRequest" title="siri:ControlActionCapabilitiesRequest">siri:ControlActionCapabilitiesRequest</a>
+                      </code>
+                    </p>
+                  </td>
+                  <td colspan="1" rowspan="1" class="tableblock halign-left valign-top">
+                    <p class="tableblock">
+                      <span title="optional, single">0:1</span>
+                    </p>
+                  </td>
+                  <td colspan="1" rowspan="1" class="tableblock halign-left valign-top">
+                    <p class="tableblock">
+                      <em>+<a shape="rect" href="#type.siri:ServiceCapabilitiesRequestStructure" title="siri:ServiceCapabilitiesRequestStructure">siri:ServiceCapabilitiesRequestStructure</a>
+                      </em>
+                    </p>
+                  </td>
+                  <td colspan="1" rowspan="1" class="tableblock halign-left valign-top">
+                    <p class="tableblock darkbrown">Request for information about Control Action Service Capabilities. Answered with ControlActionCapabilitiesResponse.</p>
                   </td>
                 </tr>
               </tbody>
@@ -11882,7 +12072,7 @@
                   </td>
                 </tr>
                 <tr>
-                  <td colspan="1" rowspan="10" class="tableblock halign-left valign-top">
+                  <td colspan="1" rowspan="11" class="tableblock halign-left valign-top">
                     <a shape="rect" href="#group.siri:SiriServiceCapabilitiesResponseGroup" title="siri:SiriServiceCapabilitiesResponseGroup">siri:SiriServiceCapabilitiesResponseGroup</a>
                   </td>
                   <td colspan="2" rowspan="1" class="tableblock halign-left valign-top">
@@ -12104,6 +12294,28 @@
                     <p class="tableblock darkbrown">Capabilities for Situation Exchange Service. Answers a VehicleMontoringCapabilitiesRequest.</p>
                   </td>
                 </tr>
+                <tr>
+                  <td colspan="2" rowspan="1" class="tableblock halign-left valign-top">
+                    <p class="tableblock">
+                      <code>→‍<a shape="rect" href="#element.siri:ControlActionCapabilitiesResponse" title="siri:ControlActionCapabilitiesResponse">siri:ControlActionCapabilitiesResponse</a>
+                      </code>
+                    </p>
+                  </td>
+                  <td colspan="1" rowspan="1" class="tableblock halign-left valign-top">
+                    <p class="tableblock">
+                      <span title="optional, single">0:1</span>
+                    </p>
+                  </td>
+                  <td colspan="1" rowspan="1" class="tableblock halign-left valign-top">
+                    <p class="tableblock">
+                      <em>+<a shape="rect" href="#type.siri:ControlActionCapabilitiesResponseStructure" title="siri:ControlActionCapabilitiesResponseStructure">siri:ControlActionCapabilitiesResponseStructure</a>
+                      </em>
+                    </p>
+                  </td>
+                  <td colspan="1" rowspan="1" class="tableblock halign-left valign-top">
+                    <p class="tableblock darkbrown">Capabilities for Control Action Service. Answers a ControlActionCapabilitiesRequest.</p>
+                  </td>
+                </tr>
               </tbody>
             </table>
           </div>
@@ -12253,11 +12465,11 @@
                 </tr>
                 <tr>
                   <td colspan="6" rowspan="1" class="tableblock halign-left valign-top">
-                    <p class="tableblock">The element contains <em>one</em> of the following elements (b) or element sequences (a)</p>
+                    <p class="tableblock">The element contains <em>one</em> of the following elements (b-c) or element sequences (a)</p>
                   </td>
                 </tr>
                 <tr>
-                  <td colspan="1" rowspan="13" class="tableblock halign-left valign-top">
+                  <td colspan="1" rowspan="14" class="tableblock halign-left valign-top">
                     <a shape="rect" href="#group.siri:SiriServiceDeliveryGroup" title="siri:SiriServiceDeliveryGroup">siri:SiriServiceDeliveryGroup</a>
                   </td>
                   <td colspan="" rowspan="" class="tableblock halign-left valign-top">
@@ -12630,6 +12842,37 @@
                   </td>
                   <td colspan="1" rowspan="1" class="tableblock halign-left valign-top">
                     <p class="tableblock darkbrown">Delivery for Situation Exchange Service.</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="" rowspan="" class="tableblock halign-left valign-top">
+                    <p class="tableblock">
+                      <em>c</em>
+                    </p>
+                  </td>
+                  <td colspan="1" rowspan="1" class="tableblock halign-left valign-top">
+                    <p class="tableblock">
+                      <code>
+                        <strong>→‍<a shape="rect" href="#element.siri:ControlActionDelivery" title="siri:ControlActionDelivery">siri:ControlActionDelivery</a>
+                        </strong>
+                      </code>
+                    </p>
+                  </td>
+                  <td colspan="1" rowspan="1" class="tableblock halign-left valign-top">
+                    <p class="tableblock">
+                      <code>
+                        <strong title="mandatory, at least one, part of a choice">-1:*</strong>
+                      </code>
+                    </p>
+                  </td>
+                  <td colspan="1" rowspan="1" class="tableblock halign-left valign-top">
+                    <p class="tableblock">
+                      <em>+<a shape="rect" href="#type.siri:ControlActionDeliveryStructure" title="siri:ControlActionDeliveryStructure">siri:ControlActionDeliveryStructure</a>
+                      </em>
+                    </p>
+                  </td>
+                  <td colspan="1" rowspan="1" class="tableblock halign-left valign-top">
+                    <p class="tableblock darkbrown">Delivery for Control Action Service.</p>
                   </td>
                 </tr>
               </tbody>
@@ -12955,11 +13198,11 @@
                 </tr>
                 <tr>
                   <td colspan="6" rowspan="1" class="tableblock halign-left valign-top">
-                    <p class="tableblock">The element contains <em>one</em> of the following elements (b) or element sequences (a)</p>
+                    <p class="tableblock">The element contains <em>one</em> of the following elements (b-c) or element sequences (a)</p>
                   </td>
                 </tr>
                 <tr>
-                  <td colspan="1" rowspan="13" class="tableblock halign-left valign-top">
+                  <td colspan="1" rowspan="14" class="tableblock halign-left valign-top">
                     <a shape="rect" href="#group.siri:SiriServiceDeliveryGroup" title="siri:SiriServiceDeliveryGroup">siri:SiriServiceDeliveryGroup</a>
                   </td>
                   <td colspan="" rowspan="" class="tableblock halign-left valign-top">
@@ -13334,6 +13577,37 @@
                     <p class="tableblock darkbrown">Delivery for Situation Exchange Service.</p>
                   </td>
                 </tr>
+                <tr>
+                  <td colspan="" rowspan="" class="tableblock halign-left valign-top">
+                    <p class="tableblock">
+                      <em>c</em>
+                    </p>
+                  </td>
+                  <td colspan="1" rowspan="1" class="tableblock halign-left valign-top">
+                    <p class="tableblock">
+                      <code>
+                        <strong>→‍<a shape="rect" href="#element.siri:ControlActionDelivery" title="siri:ControlActionDelivery">siri:ControlActionDelivery</a>
+                        </strong>
+                      </code>
+                    </p>
+                  </td>
+                  <td colspan="1" rowspan="1" class="tableblock halign-left valign-top">
+                    <p class="tableblock">
+                      <code>
+                        <strong title="mandatory, at least one, part of a choice">-1:*</strong>
+                      </code>
+                    </p>
+                  </td>
+                  <td colspan="1" rowspan="1" class="tableblock halign-left valign-top">
+                    <p class="tableblock">
+                      <em>+<a shape="rect" href="#type.siri:ControlActionDeliveryStructure" title="siri:ControlActionDeliveryStructure">siri:ControlActionDeliveryStructure</a>
+                      </em>
+                    </p>
+                  </td>
+                  <td colspan="1" rowspan="1" class="tableblock halign-left valign-top">
+                    <p class="tableblock darkbrown">Delivery for Control Action Service.</p>
+                  </td>
+                </tr>
               </tbody>
             </table>
           </div>
@@ -13592,11 +13866,11 @@
                 </tr>
                 <tr>
                   <td colspan="6" rowspan="1" class="tableblock halign-left valign-top">
-                    <p class="tableblock">The element contains <em>one</em> of the following elements (a-k)</p>
+                    <p class="tableblock">The element contains <em>one</em> of the following elements (a-l)</p>
                   </td>
                 </tr>
                 <tr>
-                  <td colspan="1" rowspan="11" class="tableblock halign-left valign-top">
+                  <td colspan="1" rowspan="12" class="tableblock halign-left valign-top">
                     <a shape="rect" href="#group.siri:SiriServiceRequestGroup" title="siri:SiriServiceRequestGroup">siri:SiriServiceRequestGroup</a>
                   </td>
                   <td colspan="" rowspan="" class="tableblock halign-left valign-top">
@@ -13939,6 +14213,37 @@
                     <p class="tableblock darkbrown">Request for information about Facilities status.</p>
                   </td>
                 </tr>
+                <tr>
+                  <td colspan="" rowspan="" class="tableblock halign-left valign-top">
+                    <p class="tableblock">
+                      <em>l</em>
+                    </p>
+                  </td>
+                  <td colspan="1" rowspan="1" class="tableblock halign-left valign-top">
+                    <p class="tableblock">
+                      <code>
+                        <strong>→‍<a shape="rect" href="#element.siri:ControlActionRequest" title="siri:ControlActionRequest">siri:ControlActionRequest</a>
+                        </strong>
+                      </code>
+                    </p>
+                  </td>
+                  <td colspan="1" rowspan="1" class="tableblock halign-left valign-top">
+                    <p class="tableblock">
+                      <code>
+                        <strong title="mandatory, at least one, part of a choice">-1:*</strong>
+                      </code>
+                    </p>
+                  </td>
+                  <td colspan="1" rowspan="1" class="tableblock halign-left valign-top">
+                    <p class="tableblock">
+                      <em>+<a shape="rect" href="#type.siri:ControlActionRequestStructure" title="siri:ControlActionRequestStructure">siri:ControlActionRequestStructure</a>
+                      </em>
+                    </p>
+                  </td>
+                  <td colspan="1" rowspan="1" class="tableblock halign-left valign-top">
+                    <p class="tableblock darkbrown">Request for information about Control Actions.</p>
+                  </td>
+                </tr>
               </tbody>
             </table>
           </div>
@@ -13977,11 +14282,11 @@
                 </tr>
                 <tr>
                   <td colspan="6" rowspan="1" class="tableblock halign-left valign-top">
-                    <p class="tableblock">In case of choice 'a', the element contains <em>one</em> of the following elements (ab) or element sequences (aa)</p>
+                    <p class="tableblock">In case of choice 'a', the element contains <em>one</em> of the following elements (ab-ac) or element sequences (aa)</p>
                   </td>
                 </tr>
                 <tr>
-                  <td colspan="1" rowspan="13" class="tableblock halign-left valign-top">
+                  <td colspan="1" rowspan="14" class="tableblock halign-left valign-top">
                     <a shape="rect" href="#group.siri:SiriServiceDeliveryGroup" title="siri:SiriServiceDeliveryGroup">siri:SiriServiceDeliveryGroup</a>
                   </td>
                   <td colspan="" rowspan="" class="tableblock halign-left valign-top">
@@ -14356,6 +14661,37 @@
                     <p class="tableblock darkbrown">Delivery for Situation Exchange Service.</p>
                   </td>
                 </tr>
+                <tr>
+                  <td colspan="" rowspan="" class="tableblock halign-left valign-top">
+                    <p class="tableblock">
+                      <em>ac</em>
+                    </p>
+                  </td>
+                  <td colspan="1" rowspan="1" class="tableblock halign-left valign-top">
+                    <p class="tableblock">
+                      <code>
+                        <strong>→‍<a shape="rect" href="#element.siri:ControlActionDelivery" title="siri:ControlActionDelivery">siri:ControlActionDelivery</a>
+                        </strong>
+                      </code>
+                    </p>
+                  </td>
+                  <td colspan="1" rowspan="1" class="tableblock halign-left valign-top">
+                    <p class="tableblock">
+                      <code>
+                        <strong title="mandatory, at least one, part of a choice">-1:*</strong>
+                      </code>
+                    </p>
+                  </td>
+                  <td colspan="1" rowspan="1" class="tableblock halign-left valign-top">
+                    <p class="tableblock">
+                      <em>+<a shape="rect" href="#type.siri:ControlActionDeliveryStructure" title="siri:ControlActionDeliveryStructure">siri:ControlActionDeliveryStructure</a>
+                      </em>
+                    </p>
+                  </td>
+                  <td colspan="1" rowspan="1" class="tableblock halign-left valign-top">
+                    <p class="tableblock darkbrown">Delivery for Control Action Service.</p>
+                  </td>
+                </tr>
               </tbody>
             </table>
           </div>
@@ -14389,11 +14725,11 @@
                 </tr>
                 <tr>
                   <td colspan="6" rowspan="1" class="tableblock halign-left valign-top">
-                    <p class="tableblock">The element contains <em>one</em> of the following elements (a-j)</p>
+                    <p class="tableblock">The element contains <em>one</em> of the following elements (a-k)</p>
                   </td>
                 </tr>
                 <tr>
-                  <td colspan="1" rowspan="10" class="tableblock halign-left valign-top">
+                  <td colspan="1" rowspan="11" class="tableblock halign-left valign-top">
                     <a shape="rect" href="#group.siri:SiriSubscriptionRequestGroup" title="siri:SiriSubscriptionRequestGroup">siri:SiriSubscriptionRequestGroup</a>
                   </td>
                   <td colspan="" rowspan="" class="tableblock halign-left valign-top">
@@ -14703,6 +15039,37 @@
                   </td>
                   <td colspan="1" rowspan="1" class="tableblock halign-left valign-top">
                     <p class="tableblock darkbrown">Request for a subscription to the Situation Exchange Service.</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="" rowspan="" class="tableblock halign-left valign-top">
+                    <p class="tableblock">
+                      <em>k</em>
+                    </p>
+                  </td>
+                  <td colspan="1" rowspan="1" class="tableblock halign-left valign-top">
+                    <p class="tableblock">
+                      <code>
+                        <strong>→‍<a shape="rect" href="#element.siri:ControlActionSubscriptionRequest" title="siri:ControlActionSubscriptionRequest">siri:ControlActionSubscriptionRequest</a>
+                        </strong>
+                      </code>
+                    </p>
+                  </td>
+                  <td colspan="1" rowspan="1" class="tableblock halign-left valign-top">
+                    <p class="tableblock">
+                      <code>
+                        <strong title="mandatory, at least one, part of a choice">-1:*</strong>
+                      </code>
+                    </p>
+                  </td>
+                  <td colspan="1" rowspan="1" class="tableblock halign-left valign-top">
+                    <p class="tableblock">
+                      <em>+<a shape="rect" href="#type.siri:ControlActionSubscriptionStructure" title="siri:ControlActionSubscriptionStructure">siri:ControlActionSubscriptionStructure</a>
+                      </em>
+                    </p>
+                  </td>
+                  <td colspan="1" rowspan="1" class="tableblock halign-left valign-top">
+                    <p class="tableblock darkbrown">Request for a subscription to Control Action Service.</p>
                   </td>
                 </tr>
               </tbody>
@@ -15008,11 +15375,11 @@
                 </tr>
                 <tr>
                   <td colspan="6" rowspan="1" class="tableblock halign-left valign-top">
-                    <p class="tableblock">The element contains <em>one</em> of the following elements (a-j)</p>
+                    <p class="tableblock">The element contains <em>one</em> of the following elements (a-k)</p>
                   </td>
                 </tr>
                 <tr>
-                  <td colspan="1" rowspan="10" class="tableblock halign-left valign-top">
+                  <td colspan="1" rowspan="11" class="tableblock halign-left valign-top">
                     <a shape="rect" href="#group.siri:SiriSubscriptionRequestGroup" title="siri:SiriSubscriptionRequestGroup">siri:SiriSubscriptionRequestGroup</a>
                   </td>
                   <td colspan="" rowspan="" class="tableblock halign-left valign-top">
@@ -15322,6 +15689,37 @@
                   </td>
                   <td colspan="1" rowspan="1" class="tableblock halign-left valign-top">
                     <p class="tableblock darkbrown">Request for a subscription to the Situation Exchange Service.</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="" rowspan="" class="tableblock halign-left valign-top">
+                    <p class="tableblock">
+                      <em>k</em>
+                    </p>
+                  </td>
+                  <td colspan="1" rowspan="1" class="tableblock halign-left valign-top">
+                    <p class="tableblock">
+                      <code>
+                        <strong>→‍<a shape="rect" href="#element.siri:ControlActionSubscriptionRequest" title="siri:ControlActionSubscriptionRequest">siri:ControlActionSubscriptionRequest</a>
+                        </strong>
+                      </code>
+                    </p>
+                  </td>
+                  <td colspan="1" rowspan="1" class="tableblock halign-left valign-top">
+                    <p class="tableblock">
+                      <code>
+                        <strong title="mandatory, at least one, part of a choice">-1:*</strong>
+                      </code>
+                    </p>
+                  </td>
+                  <td colspan="1" rowspan="1" class="tableblock halign-left valign-top">
+                    <p class="tableblock">
+                      <em>+<a shape="rect" href="#type.siri:ControlActionSubscriptionStructure" title="siri:ControlActionSubscriptionStructure">siri:ControlActionSubscriptionStructure</a>
+                      </em>
+                    </p>
+                  </td>
+                  <td colspan="1" rowspan="1" class="tableblock halign-left valign-top">
+                    <p class="tableblock darkbrown">Request for a subscription to Control Action Service.</p>
                   </td>
                 </tr>
               </tbody>
@@ -25914,11 +26312,11 @@
                 </tr>
                 <tr>
                   <td colspan="6" rowspan="1" class="tableblock halign-left valign-top">
-                    <p class="tableblock">The element contains <em>one</em> of the following elements (b) or element sequences (a)</p>
+                    <p class="tableblock">The element contains <em>one</em> of the following elements (b-c) or element sequences (a)</p>
                   </td>
                 </tr>
                 <tr>
-                  <td colspan="1" rowspan="13" class="tableblock halign-left valign-top">
+                  <td colspan="1" rowspan="14" class="tableblock halign-left valign-top">
                     <a shape="rect" href="#group.siri:SiriServiceDeliveryGroup" title="siri:SiriServiceDeliveryGroup">siri:SiriServiceDeliveryGroup</a>
                   </td>
                   <td colspan="" rowspan="" class="tableblock halign-left valign-top">
@@ -26291,6 +26689,37 @@
                   </td>
                   <td colspan="1" rowspan="1" class="tableblock halign-left valign-top">
                     <p class="tableblock darkbrown">Delivery for Situation Exchange Service.</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="" rowspan="" class="tableblock halign-left valign-top">
+                    <p class="tableblock">
+                      <em>c</em>
+                    </p>
+                  </td>
+                  <td colspan="1" rowspan="1" class="tableblock halign-left valign-top">
+                    <p class="tableblock">
+                      <code>
+                        <strong>→‍<a shape="rect" href="#element.siri:ControlActionDelivery" title="siri:ControlActionDelivery">siri:ControlActionDelivery</a>
+                        </strong>
+                      </code>
+                    </p>
+                  </td>
+                  <td colspan="1" rowspan="1" class="tableblock halign-left valign-top">
+                    <p class="tableblock">
+                      <code>
+                        <strong title="mandatory, at least one, part of a choice">-1:*</strong>
+                      </code>
+                    </p>
+                  </td>
+                  <td colspan="1" rowspan="1" class="tableblock halign-left valign-top">
+                    <p class="tableblock">
+                      <em>+<a shape="rect" href="#type.siri:ControlActionDeliveryStructure" title="siri:ControlActionDeliveryStructure">siri:ControlActionDeliveryStructure</a>
+                      </em>
+                    </p>
+                  </td>
+                  <td colspan="1" rowspan="1" class="tableblock halign-left valign-top">
+                    <p class="tableblock darkbrown">Delivery for Control Action Service.</p>
                   </td>
                 </tr>
               </tbody>
@@ -26616,11 +27045,11 @@
                 </tr>
                 <tr>
                   <td colspan="6" rowspan="1" class="tableblock halign-left valign-top">
-                    <p class="tableblock">The element contains <em>one</em> of the following elements (b) or element sequences (a)</p>
+                    <p class="tableblock">The element contains <em>one</em> of the following elements (b-c) or element sequences (a)</p>
                   </td>
                 </tr>
                 <tr>
-                  <td colspan="1" rowspan="13" class="tableblock halign-left valign-top">
+                  <td colspan="1" rowspan="14" class="tableblock halign-left valign-top">
                     <a shape="rect" href="#group.siri:SiriServiceDeliveryGroup" title="siri:SiriServiceDeliveryGroup">siri:SiriServiceDeliveryGroup</a>
                   </td>
                   <td colspan="" rowspan="" class="tableblock halign-left valign-top">
@@ -26993,6 +27422,37 @@
                   </td>
                   <td colspan="1" rowspan="1" class="tableblock halign-left valign-top">
                     <p class="tableblock darkbrown">Delivery for Situation Exchange Service.</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="" rowspan="" class="tableblock halign-left valign-top">
+                    <p class="tableblock">
+                      <em>c</em>
+                    </p>
+                  </td>
+                  <td colspan="1" rowspan="1" class="tableblock halign-left valign-top">
+                    <p class="tableblock">
+                      <code>
+                        <strong>→‍<a shape="rect" href="#element.siri:ControlActionDelivery" title="siri:ControlActionDelivery">siri:ControlActionDelivery</a>
+                        </strong>
+                      </code>
+                    </p>
+                  </td>
+                  <td colspan="1" rowspan="1" class="tableblock halign-left valign-top">
+                    <p class="tableblock">
+                      <code>
+                        <strong title="mandatory, at least one, part of a choice">-1:*</strong>
+                      </code>
+                    </p>
+                  </td>
+                  <td colspan="1" rowspan="1" class="tableblock halign-left valign-top">
+                    <p class="tableblock">
+                      <em>+<a shape="rect" href="#type.siri:ControlActionDeliveryStructure" title="siri:ControlActionDeliveryStructure">siri:ControlActionDeliveryStructure</a>
+                      </em>
+                    </p>
+                  </td>
+                  <td colspan="1" rowspan="1" class="tableblock halign-left valign-top">
+                    <p class="tableblock darkbrown">Delivery for Control Action Service.</p>
                   </td>
                 </tr>
               </tbody>
