@@ -79,11 +79,42 @@
 					<PublishedLineName xml:lang="fr">Ligne 3 Metro</PublishedLineName>
 					<OperatorRef>FREX</OperatorRef>
 					<ProductCategoryRef>Cat274</ProductCategoryRef>
-					<DeadRun>true</DeadRun>
+					<IsDeadRun>true</IsDeadRun>
 					<Monitored>true</Monitored>
 					<PredictionInaccurate>false</PredictionInaccurate>
 					<DataSource>ACME</DataSource>
 					<Occupancy>notAcceptingPassengers</Occupancy>
+					<EstimatedCalls>
+						<!-- CALL 1-->
+						<EstimatedCall>
+							<StopPointRef>00001</StopPointRef>
+							<ExtraCall>false</ExtraCall>
+							<PredictionInaccurate>false</PredictionInaccurate>
+							<Occupancy>notAcceptingPassengers</Occupancy>
+							<BoardingStretch>false</BoardingStretch>
+							<RequestStop>false</RequestStop>
+							<AimedArrivalTime>2026-07-22T09:25:30-05:00</AimedArrivalTime>
+							<AimedDepartureTime>2001-12-17T09:25:00-05:00</AimedDepartureTime>
+						</EstimatedCall>
+						<!-- CALL 2-->
+						<EstimatedCall>
+							<StopPointRef>00002</StopPointRef>
+							<ExtraCall>false</ExtraCall>
+							<PredictionInaccurate>false</PredictionInaccurate>
+							<Occupancy>notAcceptingPassengers</Occupancy>
+							<AimedArrivalTime>2026-07-22T09:27:30-05:00</AimedArrivalTime>
+							<AimedDepartureTime>2026-07-22T09:28:00-05:00</AimedDepartureTime>
+						</EstimatedCall>
+						<!-- CALL 3 -->
+						<EstimatedCall>
+							<StopPointRef>00003</StopPointRef>
+							<PredictionInaccurate>true</PredictionInaccurate>
+							<Occupancy>notAcceptingPassengers</Occupancy>
+							<AimedArrivalTime>2026-07-22T09:30:00-05:00</AimedArrivalTime>
+							<AimedDepartureTime>2001-12-17T09:30:30-05:00</AimedDepartureTime>
+						</EstimatedCall>
+					</EstimatedCalls>
+					<IsCompleteStopSequence>false</IsCompleteStopSequence>
 				</EstimatedVehicleJourney>
 			</EstimatedJourneyVersionFrame>
 		</EstimatedTimetableDelivery>

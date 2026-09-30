@@ -28,7 +28,7 @@
 					</FramedVehicleJourneyRef>
 					<PublishedLineName xml:lang="fr">Ligne 3 Metro</PublishedLineName>
 					<DirectionName>Direction Name</DirectionName>
-					<DeadRun>true</DeadRun>
+					<IsDeadRun>true</IsDeadRun>
 					<!-- a Vehicle Journey not accepting any passenger -->
 					<Monitored>true</Monitored>
 					<VehicleLocation>
