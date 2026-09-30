@@ -31,6 +31,7 @@
 					<PublishedLineName xml:lang="fr">Ligne 3 Metro</PublishedLineName>
 					<OperatorRef>FREX</OperatorRef>
 					<ProductCategoryRef>Cat274</ProductCategoryRef>
+					<IsDeadRun>false</IsDeadRun>
 					<Monitored>true</Monitored>
 					<PredictionInaccurate>false</PredictionInaccurate>
 					<DataSource>ACME</DataSource>
