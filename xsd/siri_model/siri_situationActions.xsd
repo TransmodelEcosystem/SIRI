@@ -433,7 +433,7 @@ Rail transport, Roads and road transport
 							<xsd:documentation>Specifies the interval in minutes at which the pre-recorded message should be repeated. +v2.3</xsd:documentation>
 						</xsd:annotation>
 					</xsd:element>
-				</xsd:sequence>	
+				</xsd:sequence>
 			</xsd:extension>
 		</xsd:complexContent>
 	</xsd:complexType>
