@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- (C) Copyright 2005-2012 CEN SIRI -->
-<Siri xmlns="http://www.siri.org.uk/siri" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:d2="http://datex2.eu/schema/2_0RC1/2_0" version="2.0" xsi:schemaLocation="http://www.siri.org.uk/siri ../../xsd/siri.xsd">
+<Siri xmlns="http://www.siri.org.uk/siri" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:d2="http://datex2.eu/schema/2_0RC1/2_0" version="2.3.0" xsi:schemaLocation="http://www.siri.org.uk/siri ../../xsd/siri.xsd">
 	<ServiceDelivery>
 		<!--=======HEADER================================================== -->
 		<ResponseTimestamp>2026-05-17T16:00:26+01:00</ResponseTimestamp>
@@ -110,15 +110,15 @@
 							</ActionData>
 							<OnPlace>true</OnPlace>
 						</PublishToDisplayAction>
-						<PublishToAudioAction>
+						<PublishToDisplayAction>
 							<ActionData>
-								<Type>RecordedMessage</Type>
-								<Url contentType="audio/mp4" xml:lang="fr">http://mediabank.aom.fr/audio/unattended_bag_fr.mp4</Url>
-								<Url contentType="audio/mp4" xml:lang="en">http://mediabank.aom.fr/audio/unattended_bag_en.mp4</Url>
+								<Type>AudioMessage</Type>
+								<Url contentType="audio/mpeg" xml:lang="fr">http://mediabank.aom.fr/audio/unattended_bag_fr.mp3</Url>
+								<Url contentType="audio/mpeg" xml:lang="en">http://mediabank.aom.fr/audio/unattended_bag_en.mp3</Url>
+								<Repeat>true</Repeat>
+								<RepeatInterval>PT3M</RepeatInterval>
 							</ActionData>
-							<Repeat>true</Repeat>
-							<RepeatInterval>3</RepeatInterval>
-						</PublishToAudioAction>
+						</PublishToDisplayAction>
 					</PublishingActions>
 				</PtSituationElement>
 			</Situations>

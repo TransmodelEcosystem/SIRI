@@ -235,6 +235,16 @@ Rail transport, Roads and road transport
 					<xsd:documentation>Direct link to the content to be published or broadcasted as is (e.g., pre-recorded message, image, video, etc.).</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
+			<xsd:element name="Repeat" type="xsd:boolean" default="true" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>Indicates if the action data element should be repeated or not. Default is 'true'. +v2.3</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="RepeatInterval" type="xsd:duration" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>Specifies the time interval at which the action data element should be repeated. +v2.3</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
 			<xsd:element name="PublishAtScope" minOccurs="0">
 				<xsd:annotation>
 					<xsd:documentation>Defines the information area where the action has to be published.</xsd:documentation>
@@ -259,7 +269,6 @@ Rail transport, Roads and road transport
 			<xsd:element ref="PublishToTvAction" minOccurs="0" maxOccurs="unbounded"/>
 			<xsd:element ref="PublishToAlertsAction" minOccurs="0" maxOccurs="unbounded"/>
 			<xsd:element ref="PublishToDisplayAction" minOccurs="0" maxOccurs="unbounded"/>
-			<xsd:element ref="PublishToAudioAction" minOccurs="0" maxOccurs="unbounded"/>
 			<xsd:element ref="ManualAction" minOccurs="0" maxOccurs="unbounded"/>
 			<xsd:element ref="NotifyByEmailAction" minOccurs="0" maxOccurs="unbounded"/>
 			<xsd:element ref="NotifyBySmsAction" minOccurs="0" maxOccurs="unbounded"/>
@@ -401,32 +410,6 @@ Rail transport, Roads and road transport
 					<xsd:element name="Teletext" type="xsd:boolean" default="true" minOccurs="0">
 						<xsd:annotation>
 							<xsd:documentation>Publish to Teletext. Default is 'true'.</xsd:documentation>
-						</xsd:annotation>
-					</xsd:element>
-				</xsd:sequence>
-			</xsd:extension>
-		</xsd:complexContent>
-	</xsd:complexType>
-	<xsd:element name="PublishToAudioAction" type="PublishToAudioActionStructure">
-		<xsd:annotation>
-			<xsd:documentation>Action: Publish SITUATION via Audio messages.</xsd:documentation>
-		</xsd:annotation>
-	</xsd:element>
-	<xsd:complexType name="PublishToAudioActionStructure">
-		<xsd:annotation>
-			<xsd:documentation>Type for Action Publish SITUATION via Audio messages.</xsd:documentation>
-		</xsd:annotation>
-		<xsd:complexContent>
-			<xsd:extension base="ParameterisedActionStructure">
-				<xsd:sequence>
-					<xsd:element name="Repeat" type="xsd:boolean" default="true" minOccurs="0">
-						<xsd:annotation>
-							<xsd:documentation>Indicates if the pre-recorded audio message should be repeated or not. Default is 'true'. +v2.3</xsd:documentation>
-						</xsd:annotation>
-					</xsd:element>
-					<xsd:element name="RepeatInterval" type="xsd:integer" default="1" minOccurs="0">
-						<xsd:annotation>
-							<xsd:documentation>Specifies the interval in minutes at which the pre-recorded message should be repeated. +v2.3</xsd:documentation>
 						</xsd:annotation>
 					</xsd:element>
 				</xsd:sequence>
