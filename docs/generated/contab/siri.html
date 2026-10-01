@@ -5002,7 +5002,7 @@
                 <a shape="rect" href="#schema_siri_types_std">48.1. Simple type definitions</a>
               </li>
               <li>
-                <a shape="rect" href="#type.siri:ContentURI">48.2 The complexType <code>siri:ContentURI</code>
+                <a shape="rect" href="#type.siri:ContentUriStructure">48.2 The complexType <code>siri:ContentUriStructure</code>
                 </a>
               </li>
               <li>
@@ -196353,7 +196353,7 @@
                     </p>
                   </td>
                   <td colspan="1" rowspan="1" class="tableblock halign-left valign-top">
-                    <p class="tableblock darkbrown">Display prompt for presenting action to user. (Unbounded since SIRI 2.0). Possibility to add attributs on the type of prompt, and its language (+v2.3)</p>
+                    <p class="tableblock darkbrown">Display prompt for presenting action to user. (Unbounded since SIRI 2.0). Possibility to add attributes on the type of prompt and its language. (+v2.3)</p>
                   </td>
                 </tr>
                 <tr>
@@ -196372,12 +196372,12 @@
                   </td>
                   <td colspan="1" rowspan="1" class="tableblock halign-left valign-top">
                     <p class="tableblock">
-                      <em>&gt;<a shape="rect" href="#type.siri:ContentURI" title="siri:ContentURI">siri:ContentURI</a>
+                      <em>&gt;<a shape="rect" href="#type.siri:ContentUriStructure" title="siri:ContentUriStructure">siri:ContentUriStructure</a>
                       </em>
                     </p>
                   </td>
                   <td colspan="1" rowspan="1" class="tableblock halign-left valign-top">
-                    <p class="tableblock darkbrown">Direct link to the content to be published or broadcaseted as is (e.g., pre-recorded message, image, etc.).</p>
+                    <p class="tableblock darkbrown">Direct link to the content to be published or broadcasted as is (e.g., pre-recorded message, image, video, etc.).</p>
                   </td>
                 </tr>
                 <tr>
@@ -252835,7 +252835,7 @@
                     </p>
                   </td>
                   <td colspan="2" rowspan="1" class="tableblock halign-left valign-top">
-                    <p class="tableblock anno-text">Allowed values for contenType attribute (+v2.3)</p>
+                    <p class="tableblock anno-text">Allowed values for contentType attribute (+v2.3)</p>
                   </td>
                 </tr>
                 <tr>
@@ -252880,10 +252880,10 @@
                         </tr>
                         <tr>
                           <td class="tableblock halign-left valign-top">
-                            <p class="tableblock">audio/midi</p>
+                            <p class="tableblock">audio/mpeg</p>
                           </td>
                           <td class="tableblock halign-left valign-top">
-                            <p class="tableblock anno-text">MIDI audio file</p>
+                            <p class="tableblock anno-text">MPEG audio file (e.g., mp3)</p>
                           </td>
                         </tr>
                         <tr>
@@ -252900,22 +252900,6 @@
                           </td>
                           <td class="tableblock halign-left valign-top">
                             <p class="tableblock anno-text">OGG audio file</p>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td class="tableblock halign-left valign-top">
-                            <p class="tableblock">audio/x-wav</p>
-                          </td>
-                          <td class="tableblock halign-left valign-top">
-                            <p class="tableblock anno-text">Waveform audio file</p>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td class="tableblock halign-left valign-top">
-                            <p class="tableblock">image/bmp</p>
-                          </td>
-                          <td class="tableblock halign-left valign-top">
-                            <p class="tableblock anno-text">Bitmap image file</p>
                           </td>
                         </tr>
                         <tr>
@@ -252940,6 +252924,30 @@
                           </td>
                           <td class="tableblock halign-left valign-top">
                             <p class="tableblock anno-text">PNG image file</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="tableblock halign-left valign-top">
+                            <p class="tableblock">video/mp4</p>
+                          </td>
+                          <td class="tableblock halign-left valign-top">
+                            <p class="tableblock anno-text">MP4 video file</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="tableblock halign-left valign-top">
+                            <p class="tableblock">video/mpeg</p>
+                          </td>
+                          <td class="tableblock halign-left valign-top">
+                            <p class="tableblock anno-text">MPEG video file</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="tableblock halign-left valign-top">
+                            <p class="tableblock">video/ogg</p>
+                          </td>
+                          <td class="tableblock halign-left valign-top">
+                            <p class="tableblock anno-text">OGG video file</p>
                           </td>
                         </tr>
                       </tbody>
@@ -253147,8 +253155,8 @@
             </table>
           </div>
         </div>
-        <div class="sect2" id="type.siri:ContentURI">
-          <h3>48.15. The complex type <code>siri:ContentURI</code>
+        <div class="sect2" id="type.siri:ContentUriStructure">
+          <h3>48.15. The complex type <code>siri:ContentUriStructure</code>
           </h3>
           <div class="sectionbody">
             <table class="tableblock frame-all grid-all spread">
@@ -253164,7 +253172,7 @@
                 <tr>
                   <td colspan="4" rowspan="1" class="tableblock halign-left valign-top">
                     <p class="tableblock">
-                      <code>siri:ContentURI</code>
+                      <code>siri:ContentUriStructure</code>
                     </p>
                   </td>
                   <td colspan="1" rowspan="1" class="tableblock halign-left valign-top">
@@ -253236,7 +253244,7 @@
                     </p>
                   </td>
                   <td colspan="1" rowspan="1" class="tableblock halign-left valign-top">
-                    <p class="tableblock darkbrown">If the content of the resource is in a single language, specifies which one. lang (as an attribute name) denotes an attribute whose value is a language code for the natural language of the content of any element; its value is inherited. This name is reserved by virtue of its definition in the XML specification. Notes Attempting to install the relevant ISO 2- and 3-letter codes as the enumerated possible values is probably never going to be a realistic possibility. See BCP 47 at http://www.rfc-editor.org/rfc/bcp/bcp47.txt and the IANA language subtag registry at http://www.iana.org/assignments/language-subtag-registry for further information. The union allows for the 'un-declaration' of xml:lang with the empty string.</p>
+                    <p class="tableblock darkbrown">If the content of the resource is in a single language, specifies which one. There should be only one instanciation of a any given combination between contentType and lang (i.e., only one content for a plain text in English, one content for plain text in French, one for plain text in German, etc.) lang (as an attribute name) denotes an attribute whose value is a language code for the natural language of the content of any element; its value is inherited. This name is reserved by virtue of its definition in the XML specification. Notes Attempting to install the relevant ISO 2- and 3-letter codes as the enumerated possible values is probably never going to be a realistic possibility. See BCP 47 at http://www.rfc-editor.org/rfc/bcp/bcp47.txt and the IANA language subtag registry at http://www.iana.org/assignments/language-subtag-registry for further information. The union allows for the 'un-declaration' of xml:lang with the empty string.</p>
                   </td>
                 </tr>
                 <tr>
@@ -253263,7 +253271,7 @@
                     </p>
                   </td>
                   <td colspan="1" rowspan="1" class="tableblock halign-left valign-top">
-                    <p class="tableblock darkbrown">Gives additional information on the resource that the link points to (e.g., recorded message, text-to-speech, image).</p>
+                    <p class="tableblock darkbrown">Gives additional information on the resource that the link points to (e.g., recorded message, image, video, etc.).</p>
                   </td>
                 </tr>
               </tbody>
