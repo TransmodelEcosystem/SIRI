@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- (C) Copyright 2005-2012 CEN SIRI -->
-<Siri xmlns="http://www.siri.org.uk/siri" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:d2="http://datex2.eu/schema/2_0RC1/2_0" version="2.0" xsi:schemaLocation="http://www.siri.org.uk/siri ../../xsd/siri.xsd">
+<!-- (C) Copyright 2005-2026 CEN SIRI -->
+<Siri xmlns="http://www.siri.org.uk/siri" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:d2="http://datex2.eu/schema/2_0RC1/2_0" version="2.3.0" xsi:schemaLocation="http://www.siri.org.uk/siri ../../xsd/siri.xsd">
 	<ServiceDelivery>
 		<!--=======HEADER================================================== -->
 		<ResponseTimestamp>2026-05-17T16:00:26+01:00</ResponseTimestamp>
@@ -112,8 +112,8 @@
 							<ActionData>
 								<Type>ShortText</Type>
 								<Prompt contentType="text/plain" xml:lang="fr">Babage oublié à Rome. Service interrompu jusqu'à 17h30.</Prompt>
-								<Prompt contentType="text/markdown" xml:lang="fr">Babage oublié à Rome. **Service interrompu jusqu'à 17h30**.</Prompt>
 								<Prompt contentType="text/plain" xml:lang="en">Unattended bag at Rome station. Disruption of service until 17:30.</Prompt>
+								<Prompt contentType="text/markdown" xml:lang="fr">Babage oublié à Rome. **Service interrompu jusqu'à 17h30**.</Prompt>
 								<Prompt contentType="text/markdown" xml:lang="en">Unattended bag at Rome station. **Disruption of service until 17:30**.</Prompt>
 							</ActionData>
 							<OnPlace>true</OnPlace>

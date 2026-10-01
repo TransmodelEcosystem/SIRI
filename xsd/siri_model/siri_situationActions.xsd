@@ -1,15 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsd:schema xmlns="http://www.siri.org.uk/siri" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.siri.org.uk/siri" elementFormDefault="qualified" attributeFormDefault="unqualified" version="2.1" id="siri_situationActions">
 	<!--
-15.07.2026 Tu-Tho Thai:
-- Addition of URL in ActionData
-- Change of Prompt to include the type of content being shared directly, using an enumeration to limit of options
-- Addition of annotation to clarify the use
-
-10.01.2018 D. Rubli, Siri_XML-2.0p synchronisation of recommendation with xsd:
-- PublishToDisplayAction added to ActionsGroup
--->
-	<!--
 19.12.2017 D. Rubli, Siri_XML-2.0p_a0.2:
 - ActionsStructure: extended with PublishingAction
 - PassengerInformationAction.ActionValidityPeriod: changed from HalfOpenTimestampOutputRangeStructure to structure with three different time range definitions, with StartTime and Duration
@@ -33,6 +24,11 @@
    - because ParameterisedActionStructure is base of PassengerInformationAction, PublicationWindow replaces there the ActionValidityPeriod of version Siri_XML-2.0p_a0.4, which had wrongly not the name PublicationWindow
    - because ParameterisedActionStructure is base of all PublishTo...-structures, PublicationWindow is now automatically also available there
 - ScopeType renamed to Perspective with new enumeration "general" / "stopPoint" / "vehicleJourney"
+02.10.2026 SIRI-SX task force:
+- Addition of links between Consequences and Actions
+- Change of cardinality for elements in ActionDataStructure
+- Addition of attributes to Prompt in ActionDataStructure
+- Addition of URL in ActionDataStructure
 -->
 	<xsd:include schemaLocation="siri_situation.xsd"/>
 	<xsd:include schemaLocation="siri_feature_support.xsd"/>
@@ -230,12 +226,13 @@ Rail transport, Roads and road transport
 			</xsd:element>
 			<xsd:element name="Prompt" type="PromptType" minOccurs="0" maxOccurs="unbounded">
 				<xsd:annotation>
-					<xsd:documentation>Display prompt for presenting action to user. (Unbounded since SIRI 2.0). Possibility to add attributs on the type of prompt, and its language (+v2.3)</xsd:documentation>
+					<xsd:documentation>Display prompt for presenting action to user. (Unbounded since SIRI 2.0). 
+					Possibility to add attributes on the type of prompt and its language. (+v2.3)</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
-			<xsd:element name="Url" type="ContentURI" minOccurs="0" maxOccurs="unbounded">
+			<xsd:element name="Url" type="ContentUriStructure" minOccurs="0" maxOccurs="unbounded">
 				<xsd:annotation>
-					<xsd:documentation>Direct link to the content to be published or broadcaseted as is (e.g., pre-recorded message, image, etc.).</xsd:documentation>
+					<xsd:documentation>Direct link to the content to be published or broadcasted as is (e.g., pre-recorded message, image, video, etc.).</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element name="PublishAtScope" minOccurs="0">

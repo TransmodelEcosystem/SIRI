@@ -180,9 +180,9 @@ The value range is normally 0-100, but could in some circumstances go beyond 100
 			</xsd:extension>
 		</xsd:simpleContent>
 	</xsd:complexType>
-	<xsd:complexType name="ContentURI">
+	<xsd:complexType name="ContentUriStructure">
 		<xsd:annotation>
-			<xsd:documentation>Allow the addition of attributes in an URL to add further details about the content of the file that the link points to.</xsd:documentation>
+			<xsd:documentation>Details further the type of content that the link points to. +v2.3</xsd:documentation>
 		</xsd:annotation>
 		<xsd:simpleContent>
 			<xsd:extension base="xsd:anyURI">
@@ -193,12 +193,14 @@ The value range is normally 0-100, but could in some circumstances go beyond 100
 				</xsd:attribute>
 				<xsd:attribute ref="xml:lang" use="optional">
 					<xsd:annotation>
-						<xsd:documentation>If the content of the resource is in a single language, specifies which one.</xsd:documentation>
+						<xsd:documentation>If the content of the resource is in a single language, specifies which one.
+						There should be only one instanciation of a any given combination between contentType and lang 
+						(i.e., only one content for a plain text in English, one content for plain text in French, one for plain text in German, etc.) </xsd:documentation>
 					</xsd:annotation>
 				</xsd:attribute>
 				<xsd:attribute name="label" type="xsd:string" use="optional">
 					<xsd:annotation>
-						<xsd:documentation>Gives additional information on the resource that the link points to (e.g., recorded message, text-to-speech, image).</xsd:documentation>
+						<xsd:documentation>Gives additional information on the resource that the link points to (e.g., recorded message, image, video, etc.).</xsd:documentation>
 					</xsd:annotation>
 				</xsd:attribute>
 			</xsd:extension>
@@ -206,7 +208,7 @@ The value range is normally 0-100, but could in some circumstances go beyond 100
 	</xsd:complexType>
 	<xsd:simpleType name="ContentTypeEnumeration">
 		<xsd:annotation>
-			<xsd:documentation>Allowed values for contenType attribute (+v2.3)</xsd:documentation>
+			<xsd:documentation>Allowed values for contentType attribute (+v2.3)</xsd:documentation>
 		</xsd:annotation>
 		<xsd:restriction base="xsd:string">
 			<xsd:enumeration value="text/plain">
@@ -229,9 +231,9 @@ The value range is normally 0-100, but could in some circumstances go beyond 100
 					<xsd:documentation>AAC audio file</xsd:documentation>
 				</xsd:annotation>
 			</xsd:enumeration>
-			<xsd:enumeration value="audio/midi">
+			<xsd:enumeration value="audio/mpeg">
 				<xsd:annotation>
-					<xsd:documentation>MIDI audio file</xsd:documentation>
+					<xsd:documentation>MPEG audio file (e.g., mp3)</xsd:documentation>
 				</xsd:annotation>
 			</xsd:enumeration>
 			<xsd:enumeration value="audio/mp4">
@@ -242,16 +244,6 @@ The value range is normally 0-100, but could in some circumstances go beyond 100
 			<xsd:enumeration value="audio/ogg">
 				<xsd:annotation>
 					<xsd:documentation>OGG audio file</xsd:documentation>
-				</xsd:annotation>
-			</xsd:enumeration>
-			<xsd:enumeration value="audio/x-wav">
-				<xsd:annotation>
-					<xsd:documentation>Waveform audio file</xsd:documentation>
-				</xsd:annotation>
-			</xsd:enumeration>
-			<xsd:enumeration value="image/bmp">
-				<xsd:annotation>
-					<xsd:documentation>Bitmap image file</xsd:documentation>
 				</xsd:annotation>
 			</xsd:enumeration>
 			<xsd:enumeration value="image/gif">
@@ -267,6 +259,21 @@ The value range is normally 0-100, but could in some circumstances go beyond 100
 			<xsd:enumeration value="image/png">
 				<xsd:annotation>
 					<xsd:documentation>PNG image file</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="video/mp4">
+				<xsd:annotation>
+					<xsd:documentation>MP4 video file</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="video/mpeg">
+				<xsd:annotation>
+					<xsd:documentation>MPEG video file</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="video/ogg">
+				<xsd:annotation>
+					<xsd:documentation>OGG video file</xsd:documentation>
 				</xsd:annotation>
 			</xsd:enumeration>
 		</xsd:restriction>
