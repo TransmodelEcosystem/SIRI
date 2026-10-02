@@ -166,9 +166,7 @@ Rail transport, Roads and road transport
 					</xsd:element>
 					<xsd:element name="ConsequenceRef" type="ConsequenceRefStructure" minOccurs="0" maxOccurs="unbounded">
 						<xsd:annotation>
-							<xsd:documentation>Refers to the unique identifier of one or several Consequences that trigerred this Action.
-							The ConsequenceRef should remain unique during the lifecycle of the ActionData.
-							IMPORTANT NOTE: In SIRI v3.0, chances are high that the element will differ and/or be restructured though the functionality will not change.</xsd:documentation>
+							<xsd:documentation>Refers to the unique identifier of one or several Consequences that trigerred this Action. The ConsequenceRef should remain unique during the lifecycle of the ActionData. IMPORTANT NOTE: In SIRI v3.0, chances are high that the element will differ and/or be restructured though the functionality will not change.</xsd:documentation>
 						</xsd:annotation>
 					</xsd:element>
 				</xsd:sequence>
