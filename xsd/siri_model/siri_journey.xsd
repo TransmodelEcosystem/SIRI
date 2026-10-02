@@ -145,11 +145,6 @@ Rail transport, Roads and road transport
 					<xsd:documentation>For train services with named journeys. Train name, e.g. “West Coast Express”. If omitted: No train name. Inherited property.  (Unbounded since SIRI 2.0)</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
-			<xsd:element name="IsDeadRun" type="xsd:boolean" minOccurs="0">
-				<xsd:annotation>
-					<xsd:documentation>Allows to flag if the VehicleJourney is a dead run. It helps notify to passenger information systems, especially if they do not leverage dead runs and/or have a different process for them. +v2.3</xsd:documentation>
-				</xsd:annotation>
-			</xsd:element>
 			<xsd:element ref="JourneyNote" minOccurs="0" maxOccurs="unbounded"/>
 			<xsd:element name="PublicContact" type="SimpleContactStructure" minOccurs="0">
 				<xsd:annotation>
@@ -159,6 +154,11 @@ Rail transport, Roads and road transport
 			<xsd:element name="OperationsContact" type="SimpleContactStructure" minOccurs="0">
 				<xsd:annotation>
 					<xsd:documentation>Contact details for use by operational staff. (since SIRI 2.0)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="IsDeadRun" type="xsd:boolean" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>Allows to flag if the VehicleJourney is a dead run. It helps notify to passenger information systems, especially if they do not leverage dead runs and/or have a different process for them. +v2.3</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 		</xsd:sequence>
