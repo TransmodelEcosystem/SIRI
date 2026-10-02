@@ -156,7 +156,7 @@ Rail transport, Roads and road transport
 					</xsd:element>
 					<xsd:element name="PublicationRef" type="xsd:NMTOKEN" minOccurs="0">
 						<xsd:annotation>
-							<xsd:documentation>Unique identifier of the Published Action, intended to faciliate its tracking by data consumers.</xsd:documentation>
+							<xsd:documentation>Unique identifier of the Published Action, intended to faciliate its tracking by data consumers. IMPORTANT NOTE: In SIRI v3.0, chances are high that the element will differ and/or be restructured though the functionality will not change.</xsd:documentation>
 						</xsd:annotation>
 					</xsd:element>
 					<xsd:element name="PublicationWindow" type="ClosedTimestampRangeStructure" minOccurs="0" maxOccurs="unbounded">
