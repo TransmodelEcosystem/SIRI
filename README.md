@@ -120,6 +120,8 @@ AI **can** be used for:
 - Analysis of any change proposed to the XSD before it is edited / commented / approved,
 - Improvements to the general language in the documentation (i.e, anything in `<xsd:annotation>` and `<xsd:documentation>`) or to check for typos in any work.
 
+Whenever you have used AI, please include an explicit mention of it (e.g., "AI-assisted work").
+
 AI **cannot** be used for:
 - Committing a change in a Pull Request, i.e. the AI agent cannot be an author or co-author of any commit,
 - Authoring a change, i.e. the AI agent cannot be an author or co-author of any Pull Request,
@@ -136,7 +138,7 @@ In case you have a GitHub Pro account, please disable the feature `Automated Cop
 ### Releases
 | Release Number | Release Date  | Description                                    | Link          |
 | -------------- | ------------- | ---------------------------------------------- | ------------- |
-| v2.0r          | October 2022  | Before the release of the documentation for the 2022 revision | [Code](https://github.com/TransmodelEcosystem/SIRI/releases/tag/v2.0r) |
+| v2.0r & v2.0q  | October 2022  | Before the release of the documentation for the 2022 revision | [Code](https://github.com/TransmodelEcosystem/SIRI/releases/tag/v2.0r) |
 | v2.1           | October 2022  | Release matching the CEN documentation for Part 1 to 5 as of 2022 revision | [Code](https://github.com/TransmodelEcosystem/SIRI/releases/tag/v2.1) |
 | v2.2           | October 2025  | Addition of SIRI-CA, which is Part 6 in CEN documentation and was published in 2024 | [Code](https://github.com/TransmodelEcosystem/SIRI/releases/tag/v2.2) |
 
