@@ -168,9 +168,7 @@ The value range is normally 0-100, but could in some circumstances go beyond 100
 	</xsd:simpleType>
 	<xsd:complexType name="PromptType">
 		<xsd:annotation>
-			<xsd:documentation>Allow the addition of attributes in a Prompt to add further details about its content.
-			There should be only one instanciation of a any given combination between contentType and lang 
-			(i.e., only one content for a plain text in English, one content for plain text in French, one for plain text in German, etc.)</xsd:documentation>
+			<xsd:documentation>Allow the addition of attributes in a Prompt to add further details about its content. There must be only one instanciation of a any given combination between contentType and lang (i.e., only one content for a plain text in English, one content for plain text in French, one for plain text in German, etc.)</xsd:documentation>
 		</xsd:annotation>
 		<xsd:simpleContent>
 			<xsd:extension base="NaturalLanguageStringStructure">
