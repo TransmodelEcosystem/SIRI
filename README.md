@@ -49,9 +49,10 @@ The `xsd` folder is sub-divided as follow:
 
 |**Branch**|**Description**|**Maintenance status**|**Link**|
 |----------|---------------|--------|--------|
+|v2.3|The latest version of the XML Schema with improvements on v2.2 |Functional improvement|[Direct link](https://github.com/TransmodelEcosystem/SIRI/tree/v2.3)|
 |v2.2|The latest version of the XML Schema that matches the CEN documentation|Bug fixes only|[Direct link](https://github.com/TransmodelEcosystem/SIRI)|
 |v2.1|The previous version of the XML Schema that matches the CEN documentation (without the Control Actions)|Not maintained|[Direct link](https://github.com/TransmodelEcosystem/SIRI/tree/v2.1)|
-|v2.3-wip|All the upcoming work to improve v2.2|In development|[Direct link](https://github.com/TransmodelEcosystem/SIRI/tree/v2.3-wip)|
+|v2.4-wip|All the upcoming work improving v2.3 |Not yet published|[Direct link](https://github.com/TransmodelEcosystem/SIRI/tree/v2.4-wip)|
 |v3.0-wip|All the upcoming work preparing the migration from CEN/TS to CEN/EN for the entire SIRI series|Not yet published|[Direct link](https://github.com/TransmodelEcosystem/SIRI/tree/v3.0-wip)|
 
 All other branches are considered as feature branches, meaning that they are used for development only and are to be deleted once a Pull Request is merged. See below for more details on contributions.
@@ -141,6 +142,8 @@ In case you have a GitHub Pro account, please disable the feature `Automated Cop
 | v2.0r & v2.0q  | October 2022  | Before the release of the documentation for the 2022 revision | [Code](https://github.com/TransmodelEcosystem/SIRI/releases/tag/v2.0r) |
 | v2.1           | October 2022  | Release matching the CEN documentation for Part 1 to 5 as of 2022 revision | [Code](https://github.com/TransmodelEcosystem/SIRI/releases/tag/v2.1) |
 | v2.2           | October 2025  | Addition of SIRI-CA, which is Part 6 in CEN documentation and was published in 2024 | [Code](https://github.com/TransmodelEcosystem/SIRI/releases/tag/v2.2) |
+| v2.2.1         | October 2026  | Bug fixes of v2.2 | [Code](https://github.com/TransmodelEcosystem/SIRI/releases/tag/v2.2.1) |
+| v2.3           | October 2026  | Functional additions mainly SIRI-SX, SIRI-ET, SIRI-VM | [Code](https://github.com/TransmodelEcosystem/SIRI/releases/tag/v2.3) |
 
 **Important notes:** 
 - Releases (and their tags) are a snapshot of the corresponding working branch in time.

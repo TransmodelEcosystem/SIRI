@@ -1,5 +1,48 @@
 # Changelog
 
+## v2.3
+
+This is a minor release, containing some functional changes with most of them in SIRI-SX. It also contains some changes related to the repository itself.
+
+Functional changes except for SIRI-SX are:
+- Change of the element type when related to origin and destination ([PR #176](https://github.com/TransmodelEcosystem/SIRI/pull/176))
+- Addition of service link in both SIRI-CA, with passenger information propagated through SIRI-ET and SIRI-SX ([PR #194](https://github.com/TransmodelEcosystem/SIRI/pull/194))
+- Removal of deprecation note for DatedVehicleJourney in SIRI-ET ([PR #195](https://github.com/TransmodelEcosystem/SIRI/pull/195))
+- Addition of restriction for JourneyRelation in SIRI-ET, SIRI-PT and SIRI-VM ([PR #202](https://github.com/TransmodelEcosystem/SIRI/pull/202))
+- Harmonisation of VehicleMode and how to use them as filter in SIRI-PT, SIRI-ET, SIRI-VM, SIRI-ST and SIRI-SM ([PR #207](https://github.com/TransmodelEcosystem/SIRI/pull/207), [PR #227](https://github.com/TransmodelEcosystem/SIRI/pull/227))
+- Addition of missing default value in SubscriptionRenewal ([PR #223](https://github.com/TransmodelEcosystem/SIRI/pull/223))
+- Addition of IsDeadRun in Journey to be used in SIRI-VM and SIRI-ET ([PR #238](https://github.com/TransmodelEcosystem/SIRI/pull/238))
+
+Functional changes for SIRI-SX are:
+- Addition of optional list of keywords in ParametrisedActionStructure ([PR #137](https://github.com/TransmodelEcosystem/SIRI/pull/137))
+- Addition of Period in PassengerInformationActionStructure ([PR #190](https://github.com/TransmodelEcosystem/SIRI/pull/190))
+- Numerous changes to elements in ActionDataStructure, including addition of attributes and change of cardinality ([PR #192](https://github.com/TransmodelEcosystem/SIRI/pull/192), [PR #221](https://github.com/TransmodelEcosystem/SIRI/pull/221), [PR #210](https://github.com/TransmodelEcosystem/SIRI/pull/210))
+- Adding values to ServiceConditionEnumeration ([PR #193](https://github.com/TransmodelEcosystem/SIRI/pull/193))
+- Adding modes to AffectedVehicleJourney ([PR #196](https://github.com/TransmodelEcosystem/SIRI/pull/196))
+- Renaming and extension of Perspective ([PR #197](https://github.com/TransmodelEcosystem/SIRI/pull/197))
+- Adding elements to AffectedStopPlaceStructrure ([PR #198](https://github.com/TransmodelEcosystem/SIRI/pull/198))
+
+Non-functional changes are:
+- Addition of examples for SIRI-CA ([PR #232](https://github.com/TransmodelEcosystem/SIRI/pull/232)) 
+- Correction of some typos in documentation ([PR #187](https://github.com/TransmodelEcosystem/SIRI/pull/187))
+- Fix HTML pages ([PR #216](https://github.com/TransmodelEcosystem/SIRI/pull/216))
+- Fix xpath selector ([PR #224](https://github.com/TransmodelEcosystem/SIRI/pull/224))
+
+
+## v2.2.1
+
+This is a minor release, containing minor fixes and changes related to the repository itself.
+
+Minor changes are mostly fixes of v2.2.0. They are:
+- Restriction for positive duration type in the XSD ([PR #188](https://github.com/TransmodelEcosystem/SIRI/pull/188))
+- Fix typo in DriverScope ([PR #205](https://github.com/TransmodelEcosystem/SIRI/pull/205))
+- Typo fixes in siri_request.xsd ([PR #211](https://github.com/TransmodelEcosystem/SIRI/pull/211))
+
+Non-functional changes related to the repository are;
+- Improvement to the general documentation with the addition of `changelog.md` and edits in `readme.md` ([PR #204](https://github.com/TransmodelEcosystem/SIRI/pull/204))
+- Move of the repository from its previous organisation to `TransmodelEcosystem` with links being fixed wherever needed
+- Improvement of the CI after the move to the new organisation ([PR #229](https://github.com/TransmodelEcosystem/SIRI/pull/229))
+
 ## v2.2
 
 This is a minor release.
