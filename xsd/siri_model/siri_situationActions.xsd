@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsd:schema xmlns="http://www.siri.org.uk/siri" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.siri.org.uk/siri" elementFormDefault="qualified" attributeFormDefault="unqualified" version="2.1" id="siri_situationActions">
 	<!--
-10.01.2018 D. Rubli, Siri_XML-2.0p synchronisation of recommendation with xsd:
-- PublishToDisplayAction added to ActionsGroup
--->
-	<!--
 19.12.2017 D. Rubli, Siri_XML-2.0p_a0.2:
 - ActionsStructure: extended with PublishingAction
 - PassengerInformationAction.ActionValidityPeriod: changed from HalfOpenTimestampOutputRangeStructure to structure with three different time range definitions, with StartTime and Duration
@@ -246,6 +242,16 @@ Rail transport, Roads and road transport
 			<xsd:element name="Url" type="ContentUriStructure" minOccurs="0" maxOccurs="unbounded">
 				<xsd:annotation>
 					<xsd:documentation>Direct link to the content to be published or broadcasted as is (e.g., pre-recorded message, image, video, etc.). There must be only one instanciation of a any given combination between contentType and lang (i.e., only one content for a plain text in English, one content for plain text in French, one for plain text in German, etc.)(+v2.3)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="Repeat" type="xsd:boolean" default="true" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>Indicates if the action data element should be repeated or not. Default is 'true'. +v2.3</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="RepeatInterval" type="xsd:duration" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>Specifies the time interval at which the action data element should be repeated. +v2.3</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element name="PublishAtScope" minOccurs="0">
