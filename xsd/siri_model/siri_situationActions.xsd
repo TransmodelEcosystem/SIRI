@@ -28,6 +28,11 @@
    - because ParameterisedActionStructure is base of PassengerInformationAction, PublicationWindow replaces there the ActionValidityPeriod of version Siri_XML-2.0p_a0.4, which had wrongly not the name PublicationWindow
    - because ParameterisedActionStructure is base of all PublishTo...-structures, PublicationWindow is now automatically also available there
 - ScopeType renamed to Perspective with new enumeration "general" / "stopPoint" / "vehicleJourney"
+02.10.2026 SIRI-SX task force:
+- Addition of links between Consequences and Actions
+- Change of cardinality for elements in ActionDataStructure
+- Addition of attributes to Prompt in ActionDataStructure
+- Addition of URL in ActionDataStructure
 -->
 	<xsd:include schemaLocation="siri_situation.xsd"/>
 	<xsd:include schemaLocation="siri_feature_support.xsd"/>
@@ -228,14 +233,19 @@ Rail transport, Roads and road transport
 					<xsd:documentation>Data type of action data.</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
-			<xsd:element name="Value" type="xsd:anyType" maxOccurs="unbounded" minOccurs="0">
+			<xsd:element name="Value" type="xsd:anyType" minOccurs="0" maxOccurs="unbounded">
 				<xsd:annotation>
 					<xsd:documentation>Value for action.</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
-			<xsd:element name="Prompt" type="NaturalLanguageStringStructure" minOccurs="0" maxOccurs="unbounded">
+			<xsd:element name="Prompt" type="PromptType" minOccurs="0" maxOccurs="unbounded">
 				<xsd:annotation>
-					<xsd:documentation>Display prompt for presenting action to user. (Unbounded since SIRI 2.0)</xsd:documentation>
+					<xsd:documentation>Display prompt for presenting action to user. (Unbounded since SIRI 2.0). Possibility to add attributes on the type of prompt and its language. There must be only one instanciation of any given combination between PromptType and lang (i.e., only one content for a plain text in English, one content for plain text in French, one for plain text in German, etc.)(+v2.3)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="Url" type="ContentUriStructure" minOccurs="0" maxOccurs="unbounded">
+				<xsd:annotation>
+					<xsd:documentation>Direct link to the content to be published or broadcasted as is (e.g., pre-recorded message, image, video, etc.). There must be only one instanciation of a any given combination between contentType and lang (i.e., only one content for a plain text in English, one content for plain text in French, one for plain text in German, etc.)(+v2.3)</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element name="PublishAtScope" minOccurs="0">
