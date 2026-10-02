@@ -240,17 +240,12 @@ Rail transport, Roads and road transport
 			</xsd:element>
 			<xsd:element name="Prompt" type="PromptType" minOccurs="0" maxOccurs="unbounded">
 				<xsd:annotation>
-					<xsd:documentation>Display prompt for presenting action to user. (Unbounded since SIRI 2.0). 
-					Possibility to add attributes on the type of prompt and its language. 
-					There should be only one instanciation of a any given combination between PromptType and lang 
-					(i.e., only one content for a plain text in English, one content for plain text in French, one for plain text in German, etc.)(+v2.3)</xsd:documentation>
+					<xsd:documentation>Display prompt for presenting action to user. (Unbounded since SIRI 2.0). Possibility to add attributes on the type of prompt and its language. There must be only one instanciation of any given combination between PromptType and lang (i.e., only one content for a plain text in English, one content for plain text in French, one for plain text in German, etc.)(+v2.3)</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element name="Url" type="ContentUriStructure" minOccurs="0" maxOccurs="unbounded">
 				<xsd:annotation>
-					<xsd:documentation>Direct link to the content to be published or broadcasted as is (e.g., pre-recorded message, image, video, etc.).
-					There should be only one instanciation of a any given combination between contentType and lang 
-					(i.e., only one content for a plain text in English, one content for plain text in French, one for plain text in German, etc.)(+v2.3)</xsd:documentation>
+					<xsd:documentation>Direct link to the content to be published or broadcasted as is (e.g., pre-recorded message, image, video, etc.). There must be only one instanciation of a any given combination between contentType and lang (i.e., only one content for a plain text in English, one content for plain text in French, one for plain text in German, etc.)(+v2.3)</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element name="PublishAtScope" minOccurs="0">
