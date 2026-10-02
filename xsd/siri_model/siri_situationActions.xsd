@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsd:schema xmlns="http://www.siri.org.uk/siri" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.siri.org.uk/siri" elementFormDefault="qualified" attributeFormDefault="unqualified" version="2.1" id="siri_situationActions">
 	<!--
+10.01.2018 D. Rubli, Siri_XML-2.0p synchronisation of recommendation with xsd:
+- PublishToDisplayAction added to ActionsGroup
+-->
+	<!--
 19.12.2017 D. Rubli, Siri_XML-2.0p_a0.2:
 - ActionsStructure: extended with PublishingAction
 - PassengerInformationAction.ActionValidityPeriod: changed from HalfOpenTimestampOutputRangeStructure to structure with three different time range definitions, with StartTime and Duration
