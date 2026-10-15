@@ -493,6 +493,7 @@ Rail transport, Roads and road transport
 			<xsd:element ref="ArrivalFormationAssignment" minOccurs="0" maxOccurs="unbounded"/>
 			<xsd:element ref="ArrivalOrientationRelativeToQuay" minOccurs="0" maxOccurs="unbounded"/>
 			<xsd:element ref="ArrivalOperatorRefs" minOccurs="0" maxOccurs="unbounded"/>
+			<xsd:element ref="AlightingSideInDirectionOfTravel" minOccurs="0"/>
 		</xsd:sequence>
 	</xsd:group>
 	<xsd:group name="MonitoredStopDepartureStatusGroup">
@@ -519,6 +520,7 @@ Rail transport, Roads and road transport
 				</xsd:sequence>
 			</xsd:choice>
 			<xsd:element ref="DepartureOperatorRefs" minOccurs="0" maxOccurs="unbounded"/>
+			<xsd:element ref="BoardingSideInDirectionOfTravel" minOccurs="0"/>
 		</xsd:sequence>
 	</xsd:group>
 	<!-- ======MONITORED CALL================================================= -->
@@ -1098,6 +1100,35 @@ It is advised to specify a reference point that is meaningful for passengers on 
 	<xsd:element name="DepartureOperatorRefs" type="OperatorRefStructure">
 		<xsd:annotation>
 			<xsd:documentation>OPERATORs of service for departure and onwards. May change from that for arrival. (since SIRI 2.0).</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	 <xsd:simpleType name="SideInDirectionOfTravelEnumeration">
+		<xsd:annotation>
+			<xsd:documentation>Allowed values for sides in direction of travel to board and alight.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:NMTOKEN">
+			<xsd:enumeration value="left"/>
+			<xsd:enumeration value="right"/>
+			<xsd:enumeration value="both">
+				<xsd:annotation>
+					<xsd:documentation>In special cases the vehicle can be boarded and/or alighted from both sides.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="unknown">
+				<xsd:annotation>
+					<xsd:documentation>Only to be used, when there is really no value to be defined. The side is a rather important element to support PRM.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+ 	<xsd:element name="BoardingSideInDirectionOfTravel" type="SideInDirectionOfTravelEnumeration">
+		<xsd:annotation>
+			<xsd:documentation>Indicates the side of the VEHICLE on which boarding is allowed in the direction of travel. (since SIRI 2.1)</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="AlightingSideInDirectionOfTravel" type="SideInDirectionOfTravelEnumeration">
+		<xsd:annotation>
+			<xsd:documentation>Indicates the side of the VEHICLE on which alighting is allowed in the direction of travel. (since SIRI 2.1)</xsd:documentation>
 		</xsd:annotation>
 	</xsd:element>
 	<!-- ======================================================================= -->
