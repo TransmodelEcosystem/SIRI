@@ -596,7 +596,7 @@ Rail transport, Roads and road transport
 				<xsd:sequence>
 					<xsd:element name="ActionRef" type="EntryQualifierStructure">
 						<xsd:annotation>
-							<xsd:documentation>A identifier internal to the organisation producing the action. Works like privateCode or publicCode and allows cross-references between systems.</xsd:documentation>
+							<xsd:documentation>An identifier internal to the organisation producing the action. Works like PrivateCode or PublicCode and allows cross-references between systems.</xsd:documentation>
 						</xsd:annotation>
 					</xsd:element>
 					<xsd:element name="Period" type="HalfOpenTimestampOutputRangeStructure" minOccurs="0" maxOccurs="unbounded">
