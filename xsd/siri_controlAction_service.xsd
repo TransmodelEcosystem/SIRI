@@ -777,7 +777,7 @@ If false each subscription response will contain the full information as specifi
 					</xsd:element>
 					<xsd:element name="RegistrationDateTime" type="xsd:dateTime" minOccurs="0">
 						<xsd:annotation>
-							<xsd:documentation>This is the offical time used for penalty-decisions. It could be the time a fax or phone call laying the basis for a control action reached the transport authority.</xsd:documentation>
+							<xsd:documentation>This is the official time used for penalty-decisions. It could be the time a fax or phone call laying the basis for a control action reached the transport authority.</xsd:documentation>
 						</xsd:annotation>
 					</xsd:element>
 					<xsd:element name="SourceNote" type="NaturalLanguageStringStructure" minOccurs="0">
