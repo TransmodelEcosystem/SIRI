@@ -592,7 +592,7 @@ Has the following uses:
 			</xsd:element>
 			<xsd:element name="ProductCategoryRef" type="ProductCategoryRefStructure" minOccurs="0">
 				<xsd:annotation>
-					<xsd:documentation>Product Classification of VEHICLE JOURNEY- subdivides a transport mode. e.g. express, loacl.</xsd:documentation>
+					<xsd:documentation>Product Classification of VEHICLE JOURNEY- subdivides a transport mode. e.g. express, local.</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element ref="ServiceFeatureRef" minOccurs="0" maxOccurs="unbounded">
