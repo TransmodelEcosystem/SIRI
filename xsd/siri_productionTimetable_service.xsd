@@ -57,7 +57,7 @@
 				</Date>
 				<Description>
 					<p>SIRI is a European CEN standard for the exchange of Public Transport real-time information.</p>
-					<p>This sub-schema describes the DATED JOUNEY used in the SIRI Production Timetable Service.</p>
+					<p>This sub-schema describes the DATED JOURNEY used in the SIRI Production Timetable Service.</p>
 				</Description>
 				<Format>
 					<MediaType>text/xml</MediaType>

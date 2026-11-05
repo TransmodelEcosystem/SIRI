@@ -92,7 +92,7 @@ Rail transport, Roads and road transport
 				<Type>Standard</Type>
 			</Metadata>
 		</xsd:appinfo>
-		<xsd:documentation>SIRI-Model Dated Vehicle Joruney.</xsd:documentation>
+		<xsd:documentation>SIRI-Model Dated Vehicle Journey.</xsd:documentation>
 	</xsd:annotation>
 	<!-- ======================================================================= -->
 	<xsd:include schemaLocation="siri_journey.xsd"/>

@@ -444,7 +444,7 @@ Values for these elements can be specified on an annual schedule and will be inh
 			</xsd:element>
 			<xsd:element name="JourneyPatternName" type="NaturalLanguageStringStructure" minOccurs="0">
 				<xsd:annotation>
-					<xsd:documentation>Name of Joruney Pattern</xsd:documentation>
+					<xsd:documentation>Name of Journey Pattern</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element name="VehicleMode" type="VehicleModesOfTransportEnumeration" minOccurs="0" maxOccurs="unbounded">
