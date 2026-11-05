@@ -459,7 +459,7 @@ Rail transport, Roads and road transport
 			</xsd:element>
 		</xsd:sequence>
 	</xsd:group>
-	<!-- ===== DS: RODUCT CATEGORY Response =========================================== -->
+	<!-- ===== DS: PRODUCT CATEGORY Response =========================================== -->
 	<xsd:element name="ProductCategoriesDelivery" type="ProductCategoriesDeliveryStructure" substitutionGroup="AbstractDiscoveryDelivery">
 		<xsd:annotation>
 			<xsd:documentation>Returns the Product Categories covered by a service. Answers a ProductCategoriesRequest.</xsd:documentation>
