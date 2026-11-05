@@ -145,12 +145,12 @@ Rail transport, Roads and road transport
 			</xsd:choice>
 			<xsd:element name="IncludeDriverMessages" type="xsd:boolean" default="false" minOccurs="0">
 				<xsd:annotation>
-					<xsd:documentation>Wether Driver Messages shall be included in the answer (default no)</xsd:documentation>
+					<xsd:documentation>Whether Driver Messages shall be included in the answer (default no)</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element name="IncludeVehicleDetectings" type="xsd:boolean" default="false" minOccurs="0">
 				<xsd:annotation>
-					<xsd:documentation>Wether Vehicle Detecting shall be included in the answer (default no)</xsd:documentation>
+					<xsd:documentation>Whether Vehicle Detecting shall be included in the answer (default no)</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 		</xsd:sequence>
@@ -810,7 +810,7 @@ If false each subscription response will contain the full information as specifi
 						</xsd:element>
 						<xsd:element name="NeedsAssociatedPassengerInformation" type="xsd:boolean">
 							<xsd:annotation>
-								<xsd:documentation>Wether some passenger information shall be associated to this CONTROL ACTION (meaning that if no SituationRef is associated, then some information shall be created)</xsd:documentation>
+								<xsd:documentation>Whether some passenger information shall be associated to this CONTROL ACTION (meaning that if no SituationRef is associated, then some information shall be created)</xsd:documentation>
 							</xsd:annotation>
 						</xsd:element>
 					</xsd:choice>
