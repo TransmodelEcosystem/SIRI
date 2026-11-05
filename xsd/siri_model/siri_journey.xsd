@@ -1686,7 +1686,7 @@ More accurate data can be provided by the individual occupancies or capacities b
 			</xsd:element>
 		</xsd:sequence>
 	</xsd:group>
-	<!-- ===== NeTEx CompoundTrain: corresonds to VDV454 FoFahrzeugGruppenFahrtAbschnitt when combined with CompoundTrainRef in JourneyPartInfo. (since SIRI 2.1) =========================== -->
+	<!-- ===== NeTEx CompoundTrain: corresponds to VDV454 FoFahrzeugGruppenFahrtAbschnitt when combined with CompoundTrainRef in JourneyPartInfo. (since SIRI 2.1) =========================== -->
 	<xsd:element name="CompoundTrain" type="CompoundTrainStructure">
 		<xsd:annotation>
 			<xsd:documentation>Groups of carriages may be managed as sections by composing TRAINs into a COMPOUND TRAIN, for example if a TRAIN joins (or splits from) another TRAIN. (since SIRI 2.1)
