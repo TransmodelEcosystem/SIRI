@@ -109,7 +109,7 @@ Rail transport, Roads and road transport
 					<xsd:choice>
 						<xsd:element name="FramedVehicleJourneyRef" type="FramedVehicleJourneyRefStructure">
 							<xsd:annotation>
-								<xsd:documentation>Identifer of a VEHICLE JOURNEY within data Horizon of a service.</xsd:documentation>
+								<xsd:documentation>Identifier of a VEHICLE JOURNEY within data Horizon of a service.</xsd:documentation>
 							</xsd:annotation>
 						</xsd:element>
 						<xsd:element name="DatedVehicleJourneyRef" type="DatedVehicleJourneyRefStructure">

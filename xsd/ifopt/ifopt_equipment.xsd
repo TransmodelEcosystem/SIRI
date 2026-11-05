@@ -107,7 +107,7 @@ Rail transport, Roads and road transport
 		<xsd:sequence>
 			<xsd:element name="EquipmentId" type="EquipmentIdType">
 				<xsd:annotation>
-					<xsd:documentation>Identifer of EQUIPMENT.</xsd:documentation>
+					<xsd:documentation>Identifier of EQUIPMENT.</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element name="EquipmentName" type="siri:NaturalLanguageStringStructure" minOccurs="0">

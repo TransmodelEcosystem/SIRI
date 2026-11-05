@@ -264,7 +264,7 @@ Rail transport, Roads and road transport
 		<xsd:sequence>
 			<xsd:element name="DestinationRef" type="DestinationRefStructure">
 				<xsd:annotation>
-					<xsd:documentation>Identifer of Destinatioin</xsd:documentation>
+					<xsd:documentation>Identifier of Destinatioin</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element name="DestinationName" type="NaturalLanguageStringStructure" maxOccurs="unbounded">
@@ -335,7 +335,7 @@ Rail transport, Roads and road transport
 		<xsd:sequence>
 			<xsd:element name="DirectionRef" type="DirectionRefStructure">
 				<xsd:annotation>
-					<xsd:documentation>Identifer of DIRECTION,</xsd:documentation>
+					<xsd:documentation>Identifier of DIRECTION,</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element name="DirectionName" type="NaturalLanguageStringStructure" minOccurs="0" maxOccurs="unbounded">

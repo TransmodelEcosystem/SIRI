@@ -90,7 +90,7 @@ Rail transport, Roads and road transport
 		<xsd:sequence>
 			<xsd:element name="StopPointRef" type="StopPointRefStructure">
 				<xsd:annotation>
-					<xsd:documentation>Identifer of the stop.  </xsd:documentation>
+					<xsd:documentation>Identifier of the stop.  </xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element ref="TimingPoint" minOccurs="0"/>
@@ -106,7 +106,7 @@ Rail transport, Roads and road transport
 			</xsd:element>
 			<xsd:element name="StopAreaRef" type="StopAreaRefStructure" minOccurs="0">
 				<xsd:annotation>
-					<xsd:documentation>Identifer of the sSTOP AREA to which SCHEDULED STOP POINT belongs. +SIRI.v2.0   </xsd:documentation>
+					<xsd:documentation>Identifier of the STOP AREA to which SCHEDULED STOP POINT belongs. +SIRI.v2.0</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element name="Features" minOccurs="0">
