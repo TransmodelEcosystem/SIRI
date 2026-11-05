@@ -191,7 +191,7 @@ Rail transport, Roads and road transport
 		<xsd:sequence>
 			<xsd:element name="RelatedToRef" type="RelatedSituationStructure" maxOccurs="unbounded">
 				<xsd:annotation>
-					<xsd:documentation>A reference to another SITUATION with an indication of the nature of the association, e.g. a cause, a result, an update. Note that a Entry that is an update, i.e. has the same IdentifierNumber but a later version number as a previous Entry alway has a supercedes relationship and this does not need to be expliciitly coded.</xsd:documentation>
+					<xsd:documentation>A reference to another SITUATION with an indication of the nature of the association, e.g. a cause, a result, an update. Note that a Entry that is an update, i.e. has the same IdentifierNumber but a later version number as a previous Entry always has a supercedes relationship and this does not need to be expliciitly coded.</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 		</xsd:sequence>
