@@ -634,12 +634,12 @@ Rail transport, Roads and road transport
 	<!-- = Definitions For backward compatibility with SIRI 1.0 ====================================== -->
 	<xsd:element name="FacilityChangeElement" type="FacilityChangeStructure">
 		<xsd:annotation>
-			<xsd:documentation>A change to the availaibility of EQUIPMENT. Basic structure defined in the first 1.0 SIRI XSd.</xsd:documentation>
+			<xsd:documentation>A change to the availability of EQUIPMENT. Basic structure defined in the first 1.0 SIRI XSd.</xsd:documentation>
 		</xsd:annotation>
 	</xsd:element>
 	<xsd:complexType name="EquipmentAvailabilityStructure">
 		<xsd:annotation>
-			<xsd:documentation>Type for Availaibility Change of EQUIPMENT.</xsd:documentation>
+			<xsd:documentation>Type for Availability Change of EQUIPMENT.</xsd:documentation>
 		</xsd:annotation>
 		<xsd:sequence>
 			<xsd:element name="EquipmentRef" type="ifopt:EquipmentRefStructure" minOccurs="0">
