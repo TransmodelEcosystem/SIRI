@@ -23,7 +23,7 @@
 					<p>SIRI is defined by XMLschemas and comprises a general protocol for communication, and a modular set of functional services.
 					
 						Thisdocument provides a list of current functional servcies 
-						Additional services may be added just by an includs statement.
+						Additional services may be added just by an includes statement.
 						
 						It includes the following SIRI services	 
 						
