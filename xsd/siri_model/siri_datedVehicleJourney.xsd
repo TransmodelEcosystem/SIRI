@@ -555,22 +555,22 @@ Rail transport, Roads and road transport
 		<xsd:sequence>
 			<xsd:element name="DefaultDuration" type="PositiveDurationType" minOccurs="0">
 				<xsd:annotation>
-					<xsd:documentation>Default time (Duration) needeed to traverse SERVICE JOURNEY INTERCHANGE from feeder to distributor.</xsd:documentation>
+					<xsd:documentation>Default time (Duration) needed to traverse SERVICE JOURNEY INTERCHANGE from feeder to distributor.</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element name="FrequentTravellerDuration" type="PositiveDurationType" minOccurs="0">
 				<xsd:annotation>
-					<xsd:documentation>Time needeed by a traveller whis is familiar with SERVICE JOURNEY INTERCHANGE to traverse it. If absent, use DefaultDuration.</xsd:documentation>
+					<xsd:documentation>Time needed by a traveller whis is familiar with SERVICE JOURNEY INTERCHANGE to traverse it. If absent, use DefaultDuration.</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element name="OccasionalTravellerDuration" type="PositiveDurationType" minOccurs="0">
 				<xsd:annotation>
-					<xsd:documentation>Time needeed by a traveller whis is not familiar with SERVICE JOURNEY INTERCHANGE to traverse it. If absent, use DefaultDuration and a standard weighting.</xsd:documentation>
+					<xsd:documentation>Time needed by a traveller whis is not familiar with SERVICE JOURNEY INTERCHANGE to traverse it. If absent, use DefaultDuration and a standard weighting.</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element name="ImpairedAccessDuration" type="PositiveDurationType" minOccurs="0">
 				<xsd:annotation>
-					<xsd:documentation>Time needeed by a traveller wos is mobility impaired to traverse SERVICE JOURNEY INTERCHANGE. If absent, use DefaultDuration and a standard impaired travel speed.</xsd:documentation>
+					<xsd:documentation>Time needed by a traveller wos is mobility impaired to traverse SERVICE JOURNEY INTERCHANGE. If absent, use DefaultDuration and a standard impaired travel speed.</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 		</xsd:sequence>
