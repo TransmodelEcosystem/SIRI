@@ -117,7 +117,7 @@ Rail transport, Roads and road transport
 		<xsd:sequence>
 			<xsd:element name="FacilityCode" type="FacilityCodeType" minOccurs="0">
 				<xsd:annotation>
-					<xsd:documentation>Identfier of Facility.</xsd:documentation>
+					<xsd:documentation>Identifier of Facility.</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element name="Description" type="NaturalLanguageStringStructure" minOccurs="0" maxOccurs="unbounded">

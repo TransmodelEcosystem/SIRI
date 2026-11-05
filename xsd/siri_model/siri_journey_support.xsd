@@ -47,7 +47,7 @@
 				</Date>
 				<Description>
 					<p>SIRI is a European CEN technical standard for the exchange of real-time information .</p>
-					<p>This subschema defines identifer definitions for common journey elements.</p>
+					<p>This subschema defines identifier definitions for common journey elements.</p>
 				</Description>
 				<Format>
 					<MediaType>text/xml</MediaType>
@@ -248,7 +248,7 @@ Rail transport, Roads and road transport
 	<!-- ===== INTERCHANGE identfiers=============================================================== -->
 	<xsd:simpleType name="InterchangeCodeType">
 		<xsd:annotation>
-			<xsd:documentation>Type for identifer of a SERVICE JOURNEY INTERCHANGE.</xsd:documentation>
+			<xsd:documentation>Type for identifier of a SERVICE JOURNEY INTERCHANGE.</xsd:documentation>
 		</xsd:annotation>
 		<xsd:restriction base="xsd:NMTOKEN"/>
 	</xsd:simpleType>
@@ -268,7 +268,7 @@ Rail transport, Roads and road transport
 	<!-- ======================================================================= -->
 	<xsd:complexType name="FramedVehicleJourneyRefStructure">
 		<xsd:annotation>
-			<xsd:documentation>Type for identifer of a VEHICLE JOURNEY within data Horizon of a service.</xsd:documentation>
+			<xsd:documentation>Type for identifier of a VEHICLE JOURNEY within data Horizon of a service.</xsd:documentation>
 		</xsd:annotation>
 		<xsd:sequence>
 			<xsd:element name="DataFrameRef" type="DataFrameRefStructure">

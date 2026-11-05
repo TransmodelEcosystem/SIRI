@@ -90,7 +90,7 @@ Rail transport, Roads and road transport
 			<xsd:element ref="SituationSimpleRef" minOccurs="0"/>
 			<xsd:element ref="SituationFullRef" minOccurs="0">
 				<xsd:annotation>
-					<xsd:documentation>Reference to a SITUATION. Elements of SITUATION identfier are expressed as atomic elements.</xsd:documentation>
+					<xsd:documentation>Reference to a SITUATION. Elements of SITUATION identifier are expressed as atomic elements.</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 		</xsd:sequence>
