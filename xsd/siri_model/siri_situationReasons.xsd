@@ -1282,7 +1282,7 @@ Rail transport, Roads and road transport
 					<xsd:documentation>TPEG Pti22_255, DEPRECATED since SIRI 2.1 - replaced by Pts38_255, undefined alert cause</xsd:documentation>
 				</xsd:annotation>
 			</xsd:enumeration>
-			<!-- Values added for compatiblity -->
+			<!-- Values added for compatibility -->
 			<xsd:enumeration value="fireAtTheStation">
 				<xsd:annotation>
 					<xsd:documentation>See also TPEG Pts38_8 value 'fireAtStation'.</xsd:documentation>

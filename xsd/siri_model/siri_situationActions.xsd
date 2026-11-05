@@ -157,7 +157,7 @@ Rail transport, Roads and road transport
 					</xsd:element>
 					<xsd:element name="PublicationRef" type="xsd:NMTOKEN" minOccurs="0">
 						<xsd:annotation>
-							<xsd:documentation>Unique identifier of the Published Action, intended to faciliate its tracking by data consumers. IMPORTANT NOTE: In SIRI v3.0, chances are high that the element will differ and/or be restructured though the functionality will not change.</xsd:documentation>
+							<xsd:documentation>Unique identifier of the Published Action, intended to facilitate its tracking by data consumers. IMPORTANT NOTE: In SIRI v3.0, chances are high that the element will differ and/or be restructured though the functionality will not change.</xsd:documentation>
 						</xsd:annotation>
 					</xsd:element>
 					<xsd:element name="PublicationWindow" type="ClosedTimestampRangeStructure" minOccurs="0" maxOccurs="unbounded">
@@ -167,7 +167,7 @@ Rail transport, Roads and road transport
 					</xsd:element>
 					<xsd:element name="ConsequenceRef" type="ConsequenceRefStructure" minOccurs="0" maxOccurs="unbounded">
 						<xsd:annotation>
-							<xsd:documentation>Refers to the unique identifier of one or several Consequences that trigerred this Action. The ConsequenceRef should remain unique during the lifecycle of the ActionData. IMPORTANT NOTE: In SIRI v3.0, chances are high that the element will differ and/or be restructured though the functionality will not change.</xsd:documentation>
+							<xsd:documentation>Refers to the unique identifier of one or several Consequences that triggered this Action. The ConsequenceRef should remain unique during the lifecycle of the ActionData. IMPORTANT NOTE: In SIRI v3.0, chances are high that the element will differ and/or be restructured though the functionality will not change.</xsd:documentation>
 						</xsd:annotation>
 					</xsd:element>
 				</xsd:sequence>
@@ -236,12 +236,12 @@ Rail transport, Roads and road transport
 			</xsd:element>
 			<xsd:element name="Prompt" type="PromptType" minOccurs="0" maxOccurs="unbounded">
 				<xsd:annotation>
-					<xsd:documentation>Display prompt for presenting action to user. (Unbounded since SIRI 2.0). Possibility to add attributes on the type of prompt and its language. There must be only one instanciation of any given combination between PromptType and lang (i.e., only one content for a plain text in English, one content for plain text in French, one for plain text in German, etc.)(+v2.3)</xsd:documentation>
+					<xsd:documentation>Display prompt for presenting action to user. (Unbounded since SIRI 2.0). Possibility to add attributes on the type of prompt and its language. There must be only one instantiation of any given combination between PromptType and lang (i.e., only one content for a plain text in English, one content for plain text in French, one for plain text in German, etc.)(+v2.3)</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element name="Url" type="ContentUriStructure" minOccurs="0" maxOccurs="unbounded">
 				<xsd:annotation>
-					<xsd:documentation>Direct link to the content to be published or broadcasted as is (e.g., pre-recorded message, image, video, etc.). There must be only one instanciation of a any given combination between contentType and lang (i.e., only one content for a plain text in English, one content for plain text in French, one for plain text in German, etc.)(+v2.3)</xsd:documentation>
+					<xsd:documentation>Direct link to the content to be published or broadcasted as is (e.g., pre-recorded message, image, video, etc.). There must be only one instantiation of a any given combination between contentType and lang (i.e., only one content for a plain text in English, one content for plain text in French, one for plain text in German, etc.)(+v2.3)</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element name="Repeat" type="xsd:boolean" default="true" minOccurs="0">
@@ -548,7 +548,7 @@ Rail transport, Roads and road transport
 			</xsd:extension>
 		</xsd:complexContent>
 	</xsd:complexType>
-	<!-- ===Extentions for SIRI-SX v2.0p-a0.x================================================== -->
+	<!-- ===Extensions for SIRI-SX v2.0p-a0.x================================================== -->
 	<xsd:complexType name="DescriptionContentStructure">
 		<xsd:sequence>
 			<xsd:element name="DescriptionText" type="DefaultedTextStructure" maxOccurs="unbounded">
@@ -821,7 +821,7 @@ By default, an action does not correspond to a normalisation, i.e., has ActionIs
 			</xsd:enumeration>
 			<xsd:enumeration value="atStopPoint">
 				<xsd:annotation>
-					<xsd:documentation>From the passengers' perpective at a specific stop; e.g., at a display on a platform during interchange. +v2.3</xsd:documentation>
+					<xsd:documentation>From the passengers' perspective at a specific stop; e.g., at a display on a platform during interchange. +v2.3</xsd:documentation>
 				</xsd:annotation>
 			</xsd:enumeration>
 			<xsd:enumeration value="onBoardVehicle">

@@ -33,7 +33,7 @@
 					 (a) Correct missing type on FeatureRef 
 					 (b) Add optional MonitoringRef on response so that can return the identfiier even if there are no stop visits.
 						 This allows client to be stateless - 
-					 (a) Add a StopMonitoringMultipleRequest and othe elements top support multiple stops on single request 
+					 (a) Add a StopMonitoringMultipleRequest and other elements top support multiple stops on single request 
 				</Date>
 				<Date><Modified>2008-10-06</Modified>
 					 Drop redundant groups 
@@ -48,8 +48,8 @@
 					 (since SIRI 2.0)  
 					  [VDV] Add Minimum-StopVisits�PerVia to STopMonitoringRequestPolicy
 					  [VDV] Add HasMinimum-StopVisits�Via to STopMonitoringCapabilities
-					  [VDV]  Revise MonitoredVehicleJourney to include additioanl result files
-					  [FR] Add Servcie Exception element
+					  [VDV]  Revise MonitoredVehicleJourney to include additional result files
+					  [FR] Add Service Exception element
 					  [VDV] Add delivery variant to LineNote
 					  [SIRI-LITE] Allow a monitoring name in results. 
 					   [SIRI-LITE] Whether any related Situations  should be included in the ServiceDelivery. Default is 'false'. (since SIRI 2.0)

@@ -141,7 +141,7 @@ Rail transport, Roads and road transport
 			</xsd:element>
 			<xsd:group ref="FacilityLocationGroup" minOccurs="0">
 				<xsd:annotation>
-					<xsd:documentation>Parameters to filter Facility Monitoring requests, based on the facility location. Parameter value will be logically ANDed together. Multiple values fro the same parameter will be logically ORed.</xsd:documentation>
+					<xsd:documentation>Parameters to filter Facility Monitoring requests, based on the facility location. Parameter value will be logically ANDed together. Multiple values for the same parameter will be logically ORed.</xsd:documentation>
 				</xsd:annotation>
 			</xsd:group>
 			<xsd:element name="AccessibilityNeedsFilter" type="AccessibilityNeedsFilterStructure" minOccurs="0" maxOccurs="unbounded">

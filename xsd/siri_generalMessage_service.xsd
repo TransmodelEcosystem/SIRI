@@ -248,7 +248,7 @@ Rail transport, Roads and road transport
 	</xsd:complexType>
 	<xsd:group name="InfoMessageGroup">
 		<xsd:annotation>
-			<xsd:documentation>Extra information provided on general message notifcation that can be used to filter messages.</xsd:documentation>
+			<xsd:documentation>Extra information provided on general message notification that can be used to filter messages.</xsd:documentation>
 		</xsd:annotation>
 		<xsd:sequence>
 			<xsd:element name="InfoMessageIdentifier" type="InfoMessageRefStructure">
@@ -258,7 +258,7 @@ Rail transport, Roads and road transport
 			</xsd:element>
 			<xsd:element name="InfoMessageVersion" type="xsd:positiveInteger" minOccurs="0">
 				<xsd:annotation>
-					<xsd:documentation>Optional version number of update to previosu message.</xsd:documentation>
+					<xsd:documentation>Optional version number of update to previous message.</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element name="InfoChannelRef" type="InfoChannelRefStructure" minOccurs="0">
@@ -391,7 +391,7 @@ Version number of response. Fixed
 					</xsd:element>
 					<xsd:element name="RequestPolicy" type="CapabilityRequestPolicyStructure" minOccurs="0">
 						<xsd:annotation>
-							<xsd:documentation>Request Policiy capabilities.</xsd:documentation>
+							<xsd:documentation>Request Policy capabilities.</xsd:documentation>
 						</xsd:annotation>
 					</xsd:element>
 					<xsd:element name="AccessControl" type="GeneralMessageCapabilityAccessControlStructure" minOccurs="0">
@@ -414,7 +414,7 @@ Version number of response. Fixed
 					<xsd:sequence>
 						<xsd:element name="GeneralMessagePermission" type="GeneralMessageServicePermissionStructure" minOccurs="0" maxOccurs="unbounded">
 							<xsd:annotation>
-								<xsd:documentation>Permission or a single particpant or all participants.</xsd:documentation>
+								<xsd:documentation>Permission or a single participant or all participants.</xsd:documentation>
 							</xsd:annotation>
 						</xsd:element>
 					</xsd:sequence>

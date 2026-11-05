@@ -41,7 +41,7 @@
 					   - Add EstimatedServiceJourneyInterchange (i.e. Estimated Connection of VEHICLE) to EstimatedTimetableDelivery
 					   - [FR]    Add Extensions tag to EstimatedTimetableSubscriptionRequest
 					   - [DE] Add ExpectedDeparturePredictionQuality to OnwardVehicleDepartureTimes
-					     [DE] Correct capabilites matrix to matx doc. Add defauklt preview intervakl and versionref
+					     [DE] Correct capabilities matrix to matx doc. Add defauklt preview intervakl and versionref
 				</Date>
 				<Description>
 					<p>SIRI is a European CEN standard for the exchange of Public Transport real-time information.</p>
@@ -276,7 +276,7 @@ The server will automatically proceed with 'false' if capability is not supporte
 - 'false': Specifies that the data producer should transmit ESTIMATED and RECORDED CALL data as an incremental update immediately after an event occurs (with hysteresis taken into account) as is generally the case. 
 The server will automatically proceed with 'false' if capability is not supported.
 - 'true': Can be requested if a consumer system is only interested in the actual times / recorded events because it only wants to check the performance for example.
-'true' specifies that the data producer should only deliver RECORDED CALL udpates and skip ESTIMATED CALL updates (if capability is supported after all), i.e., deliver ESTIMATED CALL updates only with the next RECORDED CALL update.  
+'true' specifies that the data producer should only deliver RECORDED CALL updates and skip ESTIMATED CALL updates (if capability is supported after all), i.e., deliver ESTIMATED CALL updates only with the next RECORDED CALL update.  
 - No specification: Default value 'false' applies (don't skip updates of estimated data).</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>

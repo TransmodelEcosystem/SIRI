@@ -117,7 +117,7 @@ Rail transport, Roads and road transport
 		<xsd:sequence>
 			<xsd:element name="FacilityCode" type="FacilityCodeType" minOccurs="0">
 				<xsd:annotation>
-					<xsd:documentation>Identfier of Facility.</xsd:documentation>
+					<xsd:documentation>Identifier of Facility.</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element name="Description" type="NaturalLanguageStringStructure" minOccurs="0" maxOccurs="unbounded">
@@ -138,7 +138,7 @@ Rail transport, Roads and road transport
 					<xsd:sequence>
 						<xsd:element name="Feature" type="AllFacilitiesFeatureStructure" maxOccurs="unbounded">
 							<xsd:annotation>
-								<xsd:documentation>Description of the feauture of the facility. Several features may be associated to a single facility.</xsd:documentation>
+								<xsd:documentation>Description of the feature of the facility. Several features may be associated to a single facility.</xsd:documentation>
 							</xsd:annotation>
 						</xsd:element>
 					</xsd:sequence>
@@ -146,7 +146,7 @@ Rail transport, Roads and road transport
 			</xsd:element>
 			<xsd:element name="OwnerRef" type="OrganisationRefStructure" minOccurs="0">
 				<xsd:annotation>
-					<xsd:documentation>Refererence to identifier of owner of facility.</xsd:documentation>
+					<xsd:documentation>Reference to identifier of owner of facility.</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element name="OwnerName" type="NaturalLanguageStringStructure" minOccurs="0">
@@ -156,7 +156,7 @@ Rail transport, Roads and road transport
 			</xsd:element>
 			<xsd:element name="ValidityCondition" type="MonitoringValidityConditionStructure" minOccurs="0">
 				<xsd:annotation>
-					<xsd:documentation>When Facility is normally avaialble. If not specified, default is 'always'. Values are Logically ANDed together.</xsd:documentation>
+					<xsd:documentation>When Facility is normally available. If not specified, default is 'always'. Values are Logically ANDed together.</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element name="FacilityLocation" type="FacilityLocationStructure" minOccurs="0">
@@ -230,7 +230,7 @@ Rail transport, Roads and road transport
 					<xsd:sequence>
 						<xsd:element name="Suitability" type="acsb:SuitabilityStructure" maxOccurs="unbounded">
 							<xsd:annotation>
-								<xsd:documentation>Type of specific need for wich the facility is appropriate.</xsd:documentation>
+								<xsd:documentation>Type of specific need for which the facility is appropriate.</xsd:documentation>
 							</xsd:annotation>
 						</xsd:element>
 					</xsd:sequence>
@@ -462,7 +462,7 @@ Rail transport, Roads and road transport
 			</xsd:element>
 			<xsd:element name="CountedItemsIdList" minOccurs="0">
 				<xsd:annotation>
-					<xsd:documentation>List of the IDs of the counted items: usefull mainly for reservation and detailed information purposes</xsd:documentation>
+					<xsd:documentation>List of the IDs of the counted items: useful mainly for reservation and detailed information purposes</xsd:documentation>
 				</xsd:annotation>
 				<xsd:complexType>
 					<xsd:sequence>
@@ -516,7 +516,7 @@ Rail transport, Roads and road transport
 			<xsd:element ref="SituationRef" minOccurs="0"/>
 			<xsd:element name="Remedy" type="RemedyStructure" minOccurs="0">
 				<xsd:annotation>
-					<xsd:documentation>Setup action to remedy the change of the facility status (if partialy or totaly anavailable)</xsd:documentation>
+					<xsd:documentation>Setup action to remedy the change of the facility status (if partially or totally anavailable)</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element name="MonitoringInfo" type="MonitoringInformationStructure" minOccurs="0">
@@ -606,7 +606,7 @@ Rail transport, Roads and road transport
 	</xsd:simpleType>
 	<xsd:complexType name="MonitoringValidityConditionStructure">
 		<xsd:annotation>
-			<xsd:documentation>Allowed values for the type for Description of the monitoring conditions (frequency of mesurement, etc): an automatic monitoring of the status of a lift with pushed alert in case of incident is very different from a daily manual/visual check.</xsd:documentation>
+			<xsd:documentation>Allowed values for the type for Description of the monitoring conditions (frequency of measurement, etc): an automatic monitoring of the status of a lift with pushed alert in case of incident is very different from a daily manual/visual check.</xsd:documentation>
 		</xsd:annotation>
 		<xsd:sequence>
 			<xsd:element name="Period" type="HalfOpenTimestampOutputRangeStructure" minOccurs="0" maxOccurs="unbounded">
@@ -616,7 +616,7 @@ Rail transport, Roads and road transport
 			</xsd:element>
 			<xsd:element name="Timeband" type="HalfOpenTimeRangeStructure" minOccurs="0" maxOccurs="unbounded">
 				<xsd:annotation>
-					<xsd:documentation>Monitoring period within a single day (monitoring may not be available at night, or may ony occur at certain time of day for manual monitoring, etc.). Several periods can be defined.</xsd:documentation>
+					<xsd:documentation>Monitoring period within a single day (monitoring may not be available at night, or may only occur at certain time of day for manual monitoring, etc.). Several periods can be defined.</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element name="DayType" type="DaysOfWeekEnumerationx" minOccurs="0" maxOccurs="unbounded">
@@ -634,12 +634,12 @@ Rail transport, Roads and road transport
 	<!-- = Definitions For backward compatibility with SIRI 1.0 ====================================== -->
 	<xsd:element name="FacilityChangeElement" type="FacilityChangeStructure">
 		<xsd:annotation>
-			<xsd:documentation>A change to the availaibility of EQUIPMENT. Basic structure defined in the first 1.0 SIRI XSd.</xsd:documentation>
+			<xsd:documentation>A change to the availability of EQUIPMENT. Basic structure defined in the first 1.0 SIRI XSd.</xsd:documentation>
 		</xsd:annotation>
 	</xsd:element>
 	<xsd:complexType name="EquipmentAvailabilityStructure">
 		<xsd:annotation>
-			<xsd:documentation>Type for Availaibility Change of EQUIPMENT.</xsd:documentation>
+			<xsd:documentation>Type for Availability Change of EQUIPMENT.</xsd:documentation>
 		</xsd:annotation>
 		<xsd:sequence>
 			<xsd:element name="EquipmentRef" type="ifopt:EquipmentRefStructure" minOccurs="0">
@@ -746,7 +746,7 @@ Rail transport, Roads and road transport
 			<xsd:element name="ControlActionRef" type="ControlActionRefStructure" minOccurs="0">
 				<xsd:annotation>
 					<xsd:documentation>Reference to a ControlAction having possible consequences on the EstimatedVehicleJourney.
-Note that if the ControlAction is the master ControlAction of a GroupOfControlActions it is assumed that the refence is valid for all the ControlActions of the group.
+Note that if the ControlAction is the master ControlAction of a GroupOfControlActions it is assumed that the reference is valid for all the ControlActions of the group.
 </xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>

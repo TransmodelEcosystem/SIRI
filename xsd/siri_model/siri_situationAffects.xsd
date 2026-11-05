@@ -305,7 +305,7 @@ Rail transport, Roads and road transport
 	</xsd:complexType>
 	<xsd:simpleType name="ConnectionDirectionEnumeration">
 		<xsd:annotation>
-			<xsd:documentation>Values for DIRECTION of CONNECTION link or SERVCIE JOURNEY INTERCHANGE.</xsd:documentation>
+			<xsd:documentation>Values for DIRECTION of CONNECTION link or SERVICE JOURNEY INTERCHANGE.</xsd:documentation>
 		</xsd:annotation>
 		<xsd:restriction base="xsd:NMTOKEN">
 			<xsd:enumeration value="to"/>
@@ -585,7 +585,7 @@ Rail transport, Roads and road transport
 				<xsd:sequence>
 					<xsd:element name="AffectedLine" type="AffectedLineStructure" maxOccurs="unbounded">
 						<xsd:annotation>
-							<xsd:documentation>Information about the indvidual LINEs in the network that are affected. If not explicitly overridden, modes and submodes will be defaulted to any values present (i) in the AffectedNetwork (ii) In the general context.</xsd:documentation>
+							<xsd:documentation>Information about the individual LINEs in the network that are affected. If not explicitly overridden, modes and submodes will be defaulted to any values present (i) in the AffectedNetwork (ii) In the general context.</xsd:documentation>
 						</xsd:annotation>
 					</xsd:element>
 				</xsd:sequence>
@@ -789,7 +789,7 @@ Rail transport, Roads and road transport
 			</xsd:element>
 			<xsd:element name="StopPoints" minOccurs="0">
 				<xsd:annotation>
-					<xsd:documentation>Stop Poins of the ROUTE. Can be either all or only affected by SITUATION.</xsd:documentation>
+					<xsd:documentation>Stop Points of the ROUTE. Can be either all or only affected by SITUATION.</xsd:documentation>
 				</xsd:annotation>
 				<xsd:complexType>
 					<xsd:sequence>
@@ -1366,7 +1366,7 @@ Rail transport, Roads and road transport
 			</xsd:element>
 			<xsd:element name="NumberOfInjured" type="xsd:nonNegativeInteger" minOccurs="0">
 				<xsd:annotation>
-					<xsd:documentation>Number of injured presons.</xsd:documentation>
+					<xsd:documentation>Number of injured persons.</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 		</xsd:sequence>

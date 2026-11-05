@@ -42,7 +42,7 @@
 					 SIRI 1.3 Drop use of As Flat Groups for DatedCalls. 
 				</Date>
 				<Date><Modified>2012-03-23</Modified>
-					 Factor out fropm ProductionTimetable package
+					 Factor out from ProductionTimetable package
 					 (since SIRI 2.0) Add ServiceJourneyInterchange (i.e. Monitored Connection)
 						[VDV] Add additional times to TargetedServiceInterchange MinimumTransferTime, MaximimTransferTime, StandardTransferTime, MaximumAUtomaticWaitTime, StandardWaitTime.					 
 					 [VDV] Add Public and Contact Details to JourneyInfo 				
@@ -92,7 +92,7 @@ Rail transport, Roads and road transport
 				<Type>Standard</Type>
 			</Metadata>
 		</xsd:appinfo>
-		<xsd:documentation>SIRI-Model Dated Vehicle Joruney.</xsd:documentation>
+		<xsd:documentation>SIRI-Model Dated Vehicle Journey.</xsd:documentation>
 	</xsd:annotation>
 	<!-- ======================================================================= -->
 	<xsd:include schemaLocation="siri_journey.xsd"/>
@@ -172,7 +172,7 @@ Rail transport, Roads and road transport
 	</xsd:complexType>
 	<xsd:group name="DatedServiceInfoGroup">
 		<xsd:annotation>
-			<xsd:documentation>General info elements that apply to all journeys of timetable version unless overriden.</xsd:documentation>
+			<xsd:documentation>General info elements that apply to all journeys of timetable version unless overridden.</xsd:documentation>
 		</xsd:annotation>
 		<xsd:sequence>
 			<xsd:element name="OriginDisplay" type="NaturalLanguageStringStructure" minOccurs="0" maxOccurs="unbounded">
@@ -555,22 +555,22 @@ Rail transport, Roads and road transport
 		<xsd:sequence>
 			<xsd:element name="DefaultDuration" type="PositiveDurationType" minOccurs="0">
 				<xsd:annotation>
-					<xsd:documentation>Default time (Duration) needeed to traverse SERVICE JOURNEY INTERCHANGE from feeder to distributor.</xsd:documentation>
+					<xsd:documentation>Default time (Duration) needed to traverse SERVICE JOURNEY INTERCHANGE from feeder to distributor.</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element name="FrequentTravellerDuration" type="PositiveDurationType" minOccurs="0">
 				<xsd:annotation>
-					<xsd:documentation>Time needeed by a traveller whis is familiar with SERVICE JOURNEY INTERCHANGE to traverse it. If absent, use DefaultDuration.</xsd:documentation>
+					<xsd:documentation>Time needed by a traveller who is familiar with SERVICE JOURNEY INTERCHANGE to traverse it. If absent, use DefaultDuration.</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element name="OccasionalTravellerDuration" type="PositiveDurationType" minOccurs="0">
 				<xsd:annotation>
-					<xsd:documentation>Time needeed by a traveller whis is not familiar with SERVICE JOURNEY INTERCHANGE to traverse it. If absent, use DefaultDuration and a standard weighting.</xsd:documentation>
+					<xsd:documentation>Time needed by a traveller who is not familiar with SERVICE JOURNEY INTERCHANGE to traverse it. If absent, use DefaultDuration and a standard weighting.</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element name="ImpairedAccessDuration" type="PositiveDurationType" minOccurs="0">
 				<xsd:annotation>
-					<xsd:documentation>Time needeed by a traveller wos is mobility impaired to traverse SERVICE JOURNEY INTERCHANGE. If absent, use DefaultDuration and a standard impaired travel speed.</xsd:documentation>
+					<xsd:documentation>Time needed by a traveller wos is mobility impaired to traverse SERVICE JOURNEY INTERCHANGE. If absent, use DefaultDuration and a standard impaired travel speed.</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 		</xsd:sequence>

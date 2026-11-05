@@ -139,7 +139,7 @@ Rail transport, Roads and road transport
 		</xsd:choice>
 	</xsd:group>
 	<!-- ======================================================================= -->
-	<!-- ====DISCOVERY SERVCIES =============================================== -->
+	<!-- ====DISCOVERY SERVICES =============================================== -->
 	<!-- ======================================================================= -->
 	<xsd:group name="SiriDiscoveryReferenceDeliveryGroup">
 		<xsd:annotation>
@@ -340,7 +340,7 @@ Rail transport, Roads and road transport
 					</xsd:element>
 					<xsd:element name="PlaceRef" type="xsd:normalizedString" minOccurs="1">
 						<xsd:annotation>
-							<xsd:documentation>Filter the results to include only lines for  stops assoicated with  the place . ((since SIRI 2.0))</xsd:documentation>
+							<xsd:documentation>Filter the results to include only lines for  stops associated with  the place . ((since SIRI 2.0))</xsd:documentation>
 						</xsd:annotation>
 					</xsd:element>
 				</xsd:choice>
@@ -459,7 +459,7 @@ Rail transport, Roads and road transport
 			</xsd:element>
 		</xsd:sequence>
 	</xsd:group>
-	<!-- ===== DS: RODUCT CATEGORY Response =========================================== -->
+	<!-- ===== DS: PRODUCT CATEGORY Response =========================================== -->
 	<xsd:element name="ProductCategoriesDelivery" type="ProductCategoriesDeliveryStructure" substitutionGroup="AbstractDiscoveryDelivery">
 		<xsd:annotation>
 			<xsd:documentation>Returns the Product Categories covered by a service. Answers a ProductCategoriesRequest.</xsd:documentation>
@@ -732,7 +732,7 @@ Rail transport, Roads and road transport
 	</xsd:element>
 	<xsd:complexType name="ServiceFeaturesDiscoveryRequestStructure">
 		<xsd:annotation>
-			<xsd:documentation>Type for equests for TYPE OF PRODUCT CATEGORY reference data for use in service requests.</xsd:documentation>
+			<xsd:documentation>Type for requests for TYPE OF PRODUCT CATEGORY reference data for use in service requests.</xsd:documentation>
 		</xsd:annotation>
 		<xsd:complexContent>
 			<xsd:extension base="AbstractDiscoveryRequestStructure">
@@ -816,14 +816,14 @@ Rail transport, Roads and road transport
 					</xsd:element>
 					<xsd:element name="PlaceRef" type="xsd:normalizedString" minOccurs="1">
 						<xsd:annotation>
-							<xsd:documentation>Filter the results to include only ConnectionLinks for stops assoicated with  the place .</xsd:documentation>
+							<xsd:documentation>Filter the results to include only ConnectionLinks for stops associated with  the place .</xsd:documentation>
 						</xsd:annotation>
 					</xsd:element>
 				</xsd:choice>
 			</xsd:choice>
 			<xsd:element name="LineRef" type="LineRefStructure" minOccurs="0">
 				<xsd:annotation>
-					<xsd:documentation>Filter the results to include only ConnectionLinks for stops assoicated with the specified line.</xsd:documentation>
+					<xsd:documentation>Filter the results to include only ConnectionLinks for stops associated with the specified line.</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element name="OperatorRef" type="OperatorRefStructure" minOccurs="0">

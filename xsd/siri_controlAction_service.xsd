@@ -145,12 +145,12 @@ Rail transport, Roads and road transport
 			</xsd:choice>
 			<xsd:element name="IncludeDriverMessages" type="xsd:boolean" default="false" minOccurs="0">
 				<xsd:annotation>
-					<xsd:documentation>Wether Driver Messages shall be included in the answer (defaulf no)</xsd:documentation>
+					<xsd:documentation>Whether Driver Messages shall be included in the answer (default no)</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element name="IncludeVehicleDetectings" type="xsd:boolean" default="false" minOccurs="0">
 				<xsd:annotation>
-					<xsd:documentation>Wether Vehicle Detecting shall be included in the answer (defaulf no)</xsd:documentation>
+					<xsd:documentation>Whether Vehicle Detecting shall be included in the answer (default no)</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 		</xsd:sequence>
@@ -375,7 +375,7 @@ If false each subscription response will contain the full information as specifi
 									</xsd:element>
 									<xsd:element name="Description" type="NaturalLanguageStringStructure" minOccurs="0" maxOccurs="unbounded">
 										<xsd:annotation>
-											<xsd:documentation>Contains a generic textual description of the Control Action Set (reason fro creatin the set, etc.)</xsd:documentation>
+											<xsd:documentation>Contains a generic textual description of the Control Action Set (reason for creation the set, etc.)</xsd:documentation>
 										</xsd:annotation>
 									</xsd:element>
 									<xsd:group ref="MasterRef"/>
@@ -735,7 +735,7 @@ If false each subscription response will contain the full information as specifi
 		<xsd:sequence>
 			<xsd:element name="ParticipantRef" type="ParticipantRefStructure" minOccurs="0">
 				<xsd:annotation>
-					<xsd:documentation>Unique identifier of a Participant. Provides namespace for CONTROL ACTION If absent provdied from context.</xsd:documentation>
+					<xsd:documentation>Unique identifier of a Participant. Provides namespace for CONTROL ACTION If absent provided from context.</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element ref="ControlActionCode">
@@ -777,7 +777,7 @@ If false each subscription response will contain the full information as specifi
 					</xsd:element>
 					<xsd:element name="RegistrationDateTime" type="xsd:dateTime" minOccurs="0">
 						<xsd:annotation>
-							<xsd:documentation>This is the offical time used for penalty-decisions. It could be the time a fax or phone call laying the basis for a control action reached the transport authority.</xsd:documentation>
+							<xsd:documentation>This is the official time used for penalty-decisions. It could be the time a fax or phone call laying the basis for a control action reached the transport authority.</xsd:documentation>
 						</xsd:annotation>
 					</xsd:element>
 					<xsd:element name="SourceNote" type="NaturalLanguageStringStructure" minOccurs="0">
@@ -810,7 +810,7 @@ If false each subscription response will contain the full information as specifi
 						</xsd:element>
 						<xsd:element name="NeedsAssociatedPassengerInformation" type="xsd:boolean">
 							<xsd:annotation>
-								<xsd:documentation>Wether some passenger information shall be associated to this CONTROL ACTION (meaning that if no SituationRef is associated, then some information shall be created)</xsd:documentation>
+								<xsd:documentation>Whether some passenger information shall be associated to this CONTROL ACTION (meaning that if no SituationRef is associated, then some information shall be created)</xsd:documentation>
 							</xsd:annotation>
 						</xsd:element>
 					</xsd:choice>
@@ -834,7 +834,7 @@ If false each subscription response will contain the full information as specifi
 					</xsd:element>
 					<xsd:element name="MessageVersion" type="xsd:positiveInteger" minOccurs="0">
 						<xsd:annotation>
-							<xsd:documentation>Optional version number of update to previosu message.</xsd:documentation>
+							<xsd:documentation>Optional version number of update to previous message.</xsd:documentation>
 						</xsd:annotation>
 					</xsd:element>
 					<xsd:element name="ValidUntilTime" type="xsd:dateTime" minOccurs="0">
@@ -871,7 +871,7 @@ If false each subscription response will contain the full information as specifi
 					</xsd:choice>
 					<xsd:element name="OriginatedByDriver" type="xsd:boolean" default="false" minOccurs="0">
 						<xsd:annotation>
-							<xsd:documentation>if TRUE means that the message was originated by the driver (defauld FALSE, meaning that the Message is sent to the driver)</xsd:documentation>
+							<xsd:documentation>if TRUE means that the message was originated by the driver (default FALSE, meaning that the Message is sent to the driver)</xsd:documentation>
 						</xsd:annotation>
 					</xsd:element>
 					<xsd:element name="CallForMeans" type="xsd:boolean" default="false" minOccurs="0">
@@ -954,7 +954,7 @@ Note that this is NOT the tracking of the vehicle position (see VehicleMonitorin
 			</xsd:element>
 			<xsd:element name="TypeOfDetecting" type="TypeOfValueStructure" minOccurs="0">
 				<xsd:annotation>
-					<xsd:documentation>Open type associated with te detection (could be some weight range, length range, etc.)</xsd:documentation>
+					<xsd:documentation>Open type associated with the detection (could be some weight range, length range, etc.)</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element name="MeasuredValue" type="xsd:decimal" minOccurs="0">
@@ -1124,7 +1124,7 @@ Can be used  when stops are replaced by other stops on certain journeys</xsd:doc
 	<!--  *********************************************************  -->
 	<xsd:complexType name="MiddleCallStructure">
 		<xsd:annotation>
-			<xsd:documentation>Call being neither the begining or the end ot the JOURNEY</xsd:documentation>
+			<xsd:documentation>Call being neither the beginning or the end of the JOURNEY</xsd:documentation>
 		</xsd:annotation>
 		<xsd:group ref="AimedXCallGroup"/>
 	</xsd:complexType>
@@ -1255,7 +1255,7 @@ Can be used  when stops are replaced by other stops on certain journeys</xsd:doc
 			<xsd:element ref="VehicleRef"/>
 			<xsd:element name="DeAssignment" type="xsd:boolean" default="false" minOccurs="0">
 				<xsd:annotation>
-					<xsd:documentation>if "true" this information is a deassignment (defaulf "false")</xsd:documentation>
+					<xsd:documentation>if "true" this information is a deassignment (default "false")</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element name="DriverRef" type="xsd:NMTOKEN" minOccurs="0">
@@ -1491,7 +1491,7 @@ Can be used  when stops are replaced by other stops on certain journeys</xsd:doc
 			</xsd:element>
 			<xsd:element name="UptoTimeOffset" type="TimeOffset" minOccurs="0">
 				<xsd:annotation>
-					<xsd:documentation>If the value of UptoTimeOffset is less than FromTimeOffset it should be interpreted as beeing on the following date.</xsd:documentation>
+					<xsd:documentation>If the value of UptoTimeOffset is less than FromTimeOffset it should be interpreted as being on the following date.</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 		</xsd:sequence>

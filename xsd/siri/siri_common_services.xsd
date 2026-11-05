@@ -48,7 +48,7 @@
 					<p>This subschema describes common communication requests that are the same for all services. </p>
 					<p>It contains the following request</p>
 					<ul>
-						<li>GS: Terminate Subscription Resquest </li>
+						<li>GS: Terminate Subscription Request </li>
 						<li>GS: Terminate Subscription Response</li>
 						<li>GS: Subscription Response </li>
 						<li>GS: Data Ready Notification</li>
@@ -184,7 +184,7 @@ Rail transport, Roads and road transport
 			</xsd:element>
 			<xsd:element name="NotifyAddress" type="EndpointAddress" minOccurs="0">
 				<xsd:annotation>
-					<xsd:documentation>Address to which notifcations requests are to be sent. If absent, same as SubscriberAddress.</xsd:documentation>
+					<xsd:documentation>Address to which notifications requests are to be sent. If absent, same as SubscriberAddress.</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element name="ConsumerAddress" type="EndpointAddress" minOccurs="0">
@@ -380,7 +380,7 @@ Rail transport, Roads and road transport
 			<xsd:element ref="TerminateSubscriptionResponse"/>
 		</xsd:sequence>
 	</xsd:group>
-	<!-- === GS: Terminate Subscription Resquest=================================================== -->
+	<!-- === GS: Terminate Subscription Request=================================================== -->
 	<xsd:element name="TerminateSubscriptionRequest" type="TerminateSubscriptionRequestStructure" substitutionGroup="AuthenticatedRequest">
 		<xsd:annotation>
 			<xsd:documentation>Request from Subscriber to Subscription Manager to terminate a subscription. Answered with a TerminateSubscriptionResponse.</xsd:documentation>
@@ -545,7 +545,7 @@ Rail transport, Roads and road transport
 	</xsd:complexType>
 	<xsd:element name="ResponseStatus" type="StatusResponseStructure">
 		<xsd:annotation>
-			<xsd:documentation>Contains infromation about the processing of a an individual service subscription - either success info or an error condition. (VDV Acknowledgement).</xsd:documentation>
+			<xsd:documentation>Contains information about the processing of a an individual service subscription - either success info or an error condition. (VDV Acknowledgement).</xsd:documentation>
 		</xsd:annotation>
 	</xsd:element>
 	<!-- === GS: Subscription Response======================================================== -->
@@ -696,7 +696,7 @@ Rail transport, Roads and road transport
 	<!-- ====GS: Data Received Response ======================================================= -->
 	<xsd:element name="DataReceivedAcknowledgement" type="DataReceivedResponseStructure" substitutionGroup="AbstractResponse">
 		<xsd:annotation>
-			<xsd:documentation>Response from Consumer to Producer to acknowledge that data hase been received. Used as optioanl extra step if reliable delivery is needed. Answers a ServiceDelivery.</xsd:documentation>
+			<xsd:documentation>Response from Consumer to Producer to acknowledge that data hase been received. Used as optional extra step if reliable delivery is needed. Answers a ServiceDelivery.</xsd:documentation>
 		</xsd:annotation>
 	</xsd:element>
 	<xsd:group name="DataReceivedPayloadGroup">

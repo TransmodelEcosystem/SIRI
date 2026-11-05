@@ -13,7 +13,7 @@
 				</Date>
 				<Description>
 					<p>SIRI is a European CEN technical standard for the exchange of real-time information.</p>
-					<p>This subschema describes  soem code value  models used by different SIRI functional services
+					<p>This subschema describes  some code value  models used by different SIRI functional services
      <ul><li>Service Feature discovery</li><li>TYPE OF PRODUCT CATEGORY Discovery</li></ul>
 					</p>
 				</Description>
@@ -72,17 +72,17 @@ Rail transport, Roads and road transport
 		<xsd:sequence>
 			<xsd:element name="ConnectionLinkRef" type="ConnectionLinkRefStructure">
 				<xsd:annotation>
-					<xsd:documentation>Identifer of the connection link. DetailLevel=minimum </xsd:documentation>
+					<xsd:documentation>Identifier of the connection link. DetailLevel=minimum </xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element name="FeederStopPointRef" type="StopPointRefStructure" minOccurs="0">
 				<xsd:annotation>
-					<xsd:documentation>Identifer of the feeder's stop. DetailLevel=normal </xsd:documentation>
+					<xsd:documentation>Identifier of the feeder's stop. DetailLevel=normal </xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element name="DistributorStopPointRef" type="StopPointRefStructure" minOccurs="0">
 				<xsd:annotation>
-					<xsd:documentation>Identifer of the distributor's stop. DetailLevel=normal </xsd:documentation>
+					<xsd:documentation>Identifier of the distributor's stop. DetailLevel=normal </xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element name="Monitored" type="xsd:boolean" default="true" minOccurs="0">
