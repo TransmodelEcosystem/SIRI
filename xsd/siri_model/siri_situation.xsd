@@ -512,7 +512,7 @@ Rail transport, Roads and road transport
 			</xsd:element>
 			<xsd:group ref="SituationSourceDetailsGroup">
 				<xsd:annotation>
-					<xsd:documentation>Further contact details about source. May be used for udpoates or verifcation.</xsd:documentation>
+					<xsd:documentation>Further contact details about source. May be used for udpoates or verification.</xsd:documentation>
 				</xsd:annotation>
 			</xsd:group>
 			<xsd:element name="SourceMethod" type="D2LogicalModel:SourceTypeEnum" minOccurs="0">
