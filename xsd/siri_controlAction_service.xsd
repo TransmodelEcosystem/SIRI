@@ -1491,7 +1491,7 @@ Can be used  when stops are replaced by other stops on certain journeys</xsd:doc
 			</xsd:element>
 			<xsd:element name="UptoTimeOffset" type="TimeOffset" minOccurs="0">
 				<xsd:annotation>
-					<xsd:documentation>If the value of UptoTimeOffset is less than FromTimeOffset it should be interpreted as beeing on the following date.</xsd:documentation>
+					<xsd:documentation>If the value of UptoTimeOffset is less than FromTimeOffset it should be interpreted as being on the following date.</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 		</xsd:sequence>
