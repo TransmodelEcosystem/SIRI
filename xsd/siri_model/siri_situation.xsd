@@ -203,7 +203,7 @@ Rail transport, Roads and road transport
 		<xsd:sequence>
 			<xsd:element name="CreationTime" type="xsd:dateTime">
 				<xsd:annotation>
-					<xsd:documentation>Time of creation of 'related to' assocation.</xsd:documentation>
+					<xsd:documentation>Time of creation of 'related to' association.</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:group ref="SituationSharedIdentityGroup">
