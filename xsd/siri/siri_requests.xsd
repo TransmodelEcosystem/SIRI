@@ -682,7 +682,7 @@ If SubscriptionRenewal is set to 'false' or the flag is omitted (and the default
 	</xsd:group>
 	<xsd:complexType name="ResponseEndpointStructure">
 		<xsd:annotation>
-			<xsd:documentation>Type for Unique reference to reponse. May be used to reference request in subsequent interactions. Used for WSDL.</xsd:documentation>
+			<xsd:documentation>Type for Unique reference to response. May be used to reference request in subsequent interactions. Used for WSDL.</xsd:documentation>
 		</xsd:annotation>
 		<xsd:complexContent>
 			<xsd:extension base="ResponseStructure">
@@ -699,7 +699,7 @@ If SubscriptionRenewal is set to 'false' or the flag is omitted (and the default
 	</xsd:complexType>
 	<xsd:group name="ProducerResponseEndpointGroup">
 		<xsd:annotation>
-			<xsd:documentation>Unique reference to reponse from producer. May be used to reference request in subsequent interactions.</xsd:documentation>
+			<xsd:documentation>Unique reference to response from producer. May be used to reference request in subsequent interactions.</xsd:documentation>
 		</xsd:annotation>
 		<xsd:sequence>
 			<xsd:element name="ProducerRef" type="ParticipantRefStructure" minOccurs="0">
@@ -726,7 +726,7 @@ If SubscriptionRenewal is set to 'false' or the flag is omitted (and the default
 	</xsd:group>
 	<xsd:complexType name="ProducerResponseEndpointStructure">
 		<xsd:annotation>
-			<xsd:documentation>Type for Unique reference to reponse from producer. May be used to reference request in subsequent interactions. Used for WSDL.</xsd:documentation>
+			<xsd:documentation>Type for Unique reference to response from producer. May be used to reference request in subsequent interactions. Used for WSDL.</xsd:documentation>
 		</xsd:annotation>
 		<xsd:complexContent>
 			<xsd:extension base="ResponseStructure">
