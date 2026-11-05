@@ -1124,7 +1124,7 @@ Can be used  when stops are replaced by other stops on certain journeys</xsd:doc
 	<!--  *********************************************************  -->
 	<xsd:complexType name="MiddleCallStructure">
 		<xsd:annotation>
-			<xsd:documentation>Call being neither the begining or the end ot the JOURNEY</xsd:documentation>
+			<xsd:documentation>Call being neither the beginning or the end ot the JOURNEY</xsd:documentation>
 		</xsd:annotation>
 		<xsd:group ref="AimedXCallGroup"/>
 	</xsd:complexType>
