@@ -145,12 +145,12 @@ Rail transport, Roads and road transport
 			</xsd:choice>
 			<xsd:element name="IncludeDriverMessages" type="xsd:boolean" default="false" minOccurs="0">
 				<xsd:annotation>
-					<xsd:documentation>Wether Driver Messages shall be included in the answer (defaulf no)</xsd:documentation>
+					<xsd:documentation>Wether Driver Messages shall be included in the answer (default no)</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element name="IncludeVehicleDetectings" type="xsd:boolean" default="false" minOccurs="0">
 				<xsd:annotation>
-					<xsd:documentation>Wether Vehicle Detecting shall be included in the answer (defaulf no)</xsd:documentation>
+					<xsd:documentation>Wether Vehicle Detecting shall be included in the answer (default no)</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 		</xsd:sequence>
@@ -871,7 +871,7 @@ If false each subscription response will contain the full information as specifi
 					</xsd:choice>
 					<xsd:element name="OriginatedByDriver" type="xsd:boolean" default="false" minOccurs="0">
 						<xsd:annotation>
-							<xsd:documentation>if TRUE means that the message was originated by the driver (defauld FALSE, meaning that the Message is sent to the driver)</xsd:documentation>
+							<xsd:documentation>if TRUE means that the message was originated by the driver (default FALSE, meaning that the Message is sent to the driver)</xsd:documentation>
 						</xsd:annotation>
 					</xsd:element>
 					<xsd:element name="CallForMeans" type="xsd:boolean" default="false" minOccurs="0">
@@ -1255,7 +1255,7 @@ Can be used  when stops are replaced by other stops on certain journeys</xsd:doc
 			<xsd:element ref="VehicleRef"/>
 			<xsd:element name="DeAssignment" type="xsd:boolean" default="false" minOccurs="0">
 				<xsd:annotation>
-					<xsd:documentation>if "true" this information is a deassignment (defaulf "false")</xsd:documentation>
+					<xsd:documentation>if "true" this information is a deassignment (default "false")</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element name="DriverRef" type="xsd:NMTOKEN" minOccurs="0">
