@@ -227,7 +227,7 @@ Rail transport, Roads and road transport
 			</xsd:element>
 			<xsd:element name="IncludeOnlyIfInPublicationWindow" type="xsd:boolean" default="false" minOccurs="0">
 				<xsd:annotation>
-					<xsd:documentation>Only incidents that are currently  within their publication window shouldbe included. Otherwise all incidents will be included. Default is false</xsd:documentation>
+					<xsd:documentation>Only incidents that are currently  within their publication window should be included. Otherwise all incidents will be included. Default is false</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 		</xsd:sequence>
