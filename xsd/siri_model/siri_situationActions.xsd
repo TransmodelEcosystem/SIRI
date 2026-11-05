@@ -821,7 +821,7 @@ By default, an action does not correspond to a normalisation, i.e., has ActionIs
 			</xsd:enumeration>
 			<xsd:enumeration value="atStopPoint">
 				<xsd:annotation>
-					<xsd:documentation>From the passengers' perpective at a specific stop; e.g., at a display on a platform during interchange. +v2.3</xsd:documentation>
+					<xsd:documentation>From the passengers' perspective at a specific stop; e.g., at a display on a platform during interchange. +v2.3</xsd:documentation>
 				</xsd:annotation>
 			</xsd:enumeration>
 			<xsd:enumeration value="onBoardVehicle">
