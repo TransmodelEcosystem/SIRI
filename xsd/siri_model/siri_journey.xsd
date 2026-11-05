@@ -792,7 +792,7 @@ To avoid this, the producer should transmit xxxPredictionUnknown instead of any 
 			</xsd:element>
 			<xsd:element name="AimedQuayName" type="NaturalLanguageStringStructure" minOccurs="0" maxOccurs="unbounded">
 				<xsd:annotation>
-					<xsd:documentation>Scheduled Platform name. Can be used to indicate platfrom change. (since SIRI 2.0)</xsd:documentation>
+					<xsd:documentation>Scheduled Platform name. Can be used to indicate platform change. (since SIRI 2.0)</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element name="ExpectedQuayRef" type="QuayRefStructure" minOccurs="0">
