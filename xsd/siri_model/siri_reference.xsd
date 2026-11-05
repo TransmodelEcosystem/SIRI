@@ -413,7 +413,7 @@ Rail transport, Roads and road transport
 	</xsd:simpleType>
 	<xsd:complexType name="JourneyPatternRefStructure">
 		<xsd:annotation>
-			<xsd:documentation>Type for refrence to a JOURNEY PATTERN.</xsd:documentation>
+			<xsd:documentation>Type for reference to a JOURNEY PATTERN.</xsd:documentation>
 		</xsd:annotation>
 		<xsd:simpleContent>
 			<xsd:extension base="JourneyPatternCodeType"/>

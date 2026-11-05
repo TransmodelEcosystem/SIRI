@@ -539,7 +539,7 @@ If false or omitted, each subscription response will contain the full informatio
 			</xsd:element>
 			<xsd:element name="TopographicPlaceRef" type="xsd:NMTOKEN" minOccurs="0">
 				<xsd:annotation>
-					<xsd:documentation>Refrence to a TOPOGRAPHIC PLACE (locality). Also Derivable from an individual StopRef.</xsd:documentation>
+					<xsd:documentation>Reference to a TOPOGRAPHIC PLACE (locality). Also Derivable from an individual StopRef.</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element name="TopographicPlaceName" type="NaturalLanguageStringStructure" minOccurs="0" maxOccurs="unbounded">

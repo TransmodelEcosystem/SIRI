@@ -767,7 +767,7 @@ Note: this means that ReasonName is NOT a complete message, but only a (few) wor
 				<xsd:annotation>
 					<xsd:documentation>Reference to a ControlAction being a reason for the situation. It is place in the ReasonGroup to emphasise that the CONTROL ACTION is the reason for the SITUATION, and not the way around: in the opposite case (a SITUATION being the reason for the CONTROL ACTION, some weather condition, or an accident, for example) the CONTROL ACTION will refer the SITUATION.
 
-Note that if the ControlAction is the master ControlAction of a GroupOfControlActions it is assumed that the refence is valid for all the ControlActions of the group.</xsd:documentation>
+Note that if the ControlAction is the master ControlAction of a GroupOfControlActions it is assumed that the reference is valid for all the ControlActions of the group.</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 		</xsd:sequence>
@@ -1515,7 +1515,7 @@ Alternatively, AdviceRef can be used to reference a (complete) standardised advi
 			</xsd:element>
 			<xsd:element name="EasementRef" type="xsd:normalizedString" minOccurs="0">
 				<xsd:annotation>
-					<xsd:documentation>Refernce to a fare exceptions code that is allowed because of the disruption. An easement may relax a fare condition, for example "You may use your metro ticket on the bus', or 'You may use your bus ticket in teh metro between these two stops'.</xsd:documentation>
+					<xsd:documentation>Reference to a fare exceptions code that is allowed because of the disruption. An easement may relax a fare condition, for example "You may use your metro ticket on the bus', or 'You may use your bus ticket in teh metro between these two stops'.</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 		</xsd:sequence>
