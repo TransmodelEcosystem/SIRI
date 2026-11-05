@@ -23,7 +23,7 @@
 					<Modified>2007-03-29</Modified>
 				</Date>
 				<Description>
-					<p>SIRI is a European CEN standard for the exchange of real-time information. This subschema defines common permission processing elements for access control. Used for capability defintion and for confioguration access matrix.</p>
+					<p>SIRI is a European CEN standard for the exchange of real-time information. This subschema defines common permission processing elements for access control. Used for capability definition and for confioguration access matrix.</p>
 				</Description>
 				<Format>
 					<MediaType>text/xml</MediaType>
