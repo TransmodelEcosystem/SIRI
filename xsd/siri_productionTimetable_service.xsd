@@ -464,7 +464,7 @@ Careful: Journeys which themselves fall outside the ValidityPeriod, but which ar
 					</xsd:element>
 					<xsd:element name="RequestPolicy" minOccurs="0">
 						<xsd:annotation>
-							<xsd:documentation>Request Policiy capabilities.</xsd:documentation>
+							<xsd:documentation>Request Policy capabilities.</xsd:documentation>
 						</xsd:annotation>
 						<xsd:complexType>
 							<xsd:complexContent>

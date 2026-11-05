@@ -391,7 +391,7 @@ Version number of response. Fixed
 					</xsd:element>
 					<xsd:element name="RequestPolicy" type="CapabilityRequestPolicyStructure" minOccurs="0">
 						<xsd:annotation>
-							<xsd:documentation>Request Policiy capabilities.</xsd:documentation>
+							<xsd:documentation>Request Policy capabilities.</xsd:documentation>
 						</xsd:annotation>
 					</xsd:element>
 					<xsd:element name="AccessControl" type="GeneralMessageCapabilityAccessControlStructure" minOccurs="0">
