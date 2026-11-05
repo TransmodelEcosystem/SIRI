@@ -616,7 +616,7 @@ Rail transport, Roads and road transport
 			</xsd:element>
 			<xsd:element name="Timeband" type="HalfOpenTimeRangeStructure" minOccurs="0" maxOccurs="unbounded">
 				<xsd:annotation>
-					<xsd:documentation>Monitoring period within a single day (monitoring may not be available at night, or may ony occur at certain time of day for manual monitoring, etc.). Several periods can be defined.</xsd:documentation>
+					<xsd:documentation>Monitoring period within a single day (monitoring may not be available at night, or may only occur at certain time of day for manual monitoring, etc.). Several periods can be defined.</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element name="DayType" type="DaysOfWeekEnumerationx" minOccurs="0" maxOccurs="unbounded">
