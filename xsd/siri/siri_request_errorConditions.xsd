@@ -34,7 +34,7 @@
 		  
 		  InvalidDataReferences	Request contains references to  identifiers that are not known.  (since SIRI 2.0)
 		  ParametersIgnored	Request contained parameters that were not supported by the producer. A response has been provided but some parameters have been ignored. (since SIRI 2.0)
-		  UnknownExtensions	Request contained extensions that were not supported bu the producer. A response has been provided but some or all extensions have been ignored.. (since SIRI 2.0) -->
+		  UnknownExtensions	Request contained extensions that were not supported by the producer. A response has been provided but some or all extensions have been ignored.. (since SIRI 2.0) -->
 				</Date>
 				<Date>
 					<Modified>2012-03-23</Modified>
