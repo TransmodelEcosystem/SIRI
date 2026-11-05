@@ -138,7 +138,7 @@ Rail transport, Roads and road transport
 					<xsd:sequence>
 						<xsd:element name="Feature" type="AllFacilitiesFeatureStructure" maxOccurs="unbounded">
 							<xsd:annotation>
-								<xsd:documentation>Description of the feauture of the facility. Several features may be associated to a single facility.</xsd:documentation>
+								<xsd:documentation>Description of the feature of the facility. Several features may be associated to a single facility.</xsd:documentation>
 							</xsd:annotation>
 						</xsd:element>
 					</xsd:sequence>
