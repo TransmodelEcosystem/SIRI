@@ -696,7 +696,7 @@ Rail transport, Roads and road transport
 	<!-- ====GS: Data Received Response ======================================================= -->
 	<xsd:element name="DataReceivedAcknowledgement" type="DataReceivedResponseStructure" substitutionGroup="AbstractResponse">
 		<xsd:annotation>
-			<xsd:documentation>Response from Consumer to Producer to acknowledge that data hase been received. Used as optioanl extra step if reliable delivery is needed. Answers a ServiceDelivery.</xsd:documentation>
+			<xsd:documentation>Response from Consumer to Producer to acknowledge that data hase been received. Used as optional extra step if reliable delivery is needed. Answers a ServiceDelivery.</xsd:documentation>
 		</xsd:annotation>
 	</xsd:element>
 	<xsd:group name="DataReceivedPayloadGroup">
