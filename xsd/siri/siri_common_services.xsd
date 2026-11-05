@@ -184,7 +184,7 @@ Rail transport, Roads and road transport
 			</xsd:element>
 			<xsd:element name="NotifyAddress" type="EndpointAddress" minOccurs="0">
 				<xsd:annotation>
-					<xsd:documentation>Address to which notifcations requests are to be sent. If absent, same as SubscriberAddress.</xsd:documentation>
+					<xsd:documentation>Address to which notifications requests are to be sent. If absent, same as SubscriberAddress.</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element name="ConsumerAddress" type="EndpointAddress" minOccurs="0">
