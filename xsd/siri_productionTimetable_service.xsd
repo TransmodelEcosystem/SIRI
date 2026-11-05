@@ -168,7 +168,7 @@ Rail transport, Roads and road transport
 					<xsd:sequence>
 						<xsd:element name="LineDirection" type="LineDirectionStructure" maxOccurs="unbounded">
 							<xsd:annotation>
-								<xsd:documentation>Iinclude only vehicles along the given LINE.</xsd:documentation>
+								<xsd:documentation>Include only vehicles along the given LINE.</xsd:documentation>
 							</xsd:annotation>
 						</xsd:element>
 					</xsd:sequence>
