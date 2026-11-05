@@ -65,7 +65,7 @@ siri_model\siri_situation-v2.0.xsd:
        DelayCodeENum renamed to DelayBandEnum 
        InformationUsageOverride / D2LogicalModel:InformationUsage dropped for D2
        D2LogicalModel:SourceInformation renamed to D2LogicalModel:Source
-       D2LogicalModel:SourceInformation values wrapped in valuse tag
+       D2LogicalModel:SourceInformation values wrapped in values tag
        D2LogicalModel:Advice dropped. 
        D2LogicalModel:Imppact ImpactDetails wrapper tag dropped. 
        D2TrafficRestrictionType renamed to trafficConstrictionType
