@@ -81,7 +81,7 @@ Rail transport, Roads and road transport
 					</Category>
 					<Project>CEN TC278 WG3 SG7</Project>
 				</Subject>
-				<Title>SIRI XML schema. Service Interface for Real-time  Information relating to Public Transport Operations. Subschema of identifers common journey elements</Title>
+				<Title>SIRI XML schema. Service Interface for Real-time  Information relating to Public Transport Operations. Subschema of identifiers common journey elements</Title>
 				<Type>Standard</Type>
 			</Metadata>
 		</xsd:appinfo>
@@ -135,7 +135,7 @@ Rail transport, Roads and road transport
 			</xsd:element>
 		</xsd:sequence>
 	</xsd:group>
-	<!-- =====VEHICLE JOURNEY identfiers=============================================================== -->
+	<!-- =====VEHICLE JOURNEY identifiers=============================================================== -->
 	<xsd:simpleType name="VehicleJourneyCodeType">
 		<xsd:annotation>
 			<xsd:documentation>Type for identifier of a VEHICLE JOURNEY.</xsd:documentation>
@@ -207,7 +207,7 @@ Rail transport, Roads and road transport
 			</xsd:element>
 		</xsd:sequence>
 	</xsd:complexType>
-	<!-- =====VEHICLE JOURNEY identfiers=============================================================== -->
+	<!-- =====VEHICLE JOURNEY identifiers=============================================================== -->
 	<xsd:complexType name="ConnectingJourneyRefStructure">
 		<xsd:annotation>
 			<xsd:documentation>Type for a reference to a connecting journey.</xsd:documentation>
@@ -245,7 +245,7 @@ Rail transport, Roads and road transport
 			</xsd:element>
 		</xsd:sequence>
 	</xsd:complexType>
-	<!-- ===== INTERCHANGE identfiers=============================================================== -->
+	<!-- ===== INTERCHANGE identifiers=============================================================== -->
 	<xsd:simpleType name="InterchangeCodeType">
 		<xsd:annotation>
 			<xsd:documentation>Type for identifier of a SERVICE JOURNEY INTERCHANGE.</xsd:documentation>
