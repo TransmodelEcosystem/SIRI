@@ -548,7 +548,7 @@ Rail transport, Roads and road transport
 			</xsd:extension>
 		</xsd:complexContent>
 	</xsd:complexType>
-	<!-- ===Extentions for SIRI-SX v2.0p-a0.x================================================== -->
+	<!-- ===Extensions for SIRI-SX v2.0p-a0.x================================================== -->
 	<xsd:complexType name="DescriptionContentStructure">
 		<xsd:sequence>
 			<xsd:element name="DescriptionText" type="DefaultedTextStructure" maxOccurs="unbounded">
