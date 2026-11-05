@@ -32,7 +32,7 @@
 					<Modified>2008-10-01</Modified>
 					<!-- Add StatusFilterGroup to SIRI-SX request with Verification, Progerss and Reality
 		  Change caridinality on LineRef and CONNECTION link filters to allow many rather than just one.
-	      Corret predictability filter values to be an enum.
+	      Correct predictability filter values to be an enum.
 	      Add a place and Road filter. -->
 				</Date>
 				<Date>
