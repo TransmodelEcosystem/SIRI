@@ -596,7 +596,7 @@ Rail transport, Roads and road transport
 				<xsd:sequence>
 					<xsd:element name="ActionRef" type="EntryQualifierStructure">
 						<xsd:annotation>
-							<xsd:documentation>Reference to the action number within the incident concept.</xsd:documentation>
+							<xsd:documentation>An identifier unique within the parent PtSituationElement. Works like PrivateCode or PublicCode to allow cross-references between systems.</xsd:documentation>
 						</xsd:annotation>
 					</xsd:element>
 					<xsd:element name="Period" type="HalfOpenTimestampOutputRangeStructure" minOccurs="0" maxOccurs="unbounded">
