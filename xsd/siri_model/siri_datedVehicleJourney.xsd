@@ -42,7 +42,7 @@
 					 SIRI 1.3 Drop use of As Flat Groups for DatedCalls. 
 				</Date>
 				<Date><Modified>2012-03-23</Modified>
-					 Factor out fropm ProductionTimetable package
+					 Factor out from ProductionTimetable package
 					 (since SIRI 2.0) Add ServiceJourneyInterchange (i.e. Monitored Connection)
 						[VDV] Add additional times to TargetedServiceInterchange MinimumTransferTime, MaximimTransferTime, StandardTransferTime, MaximumAUtomaticWaitTime, StandardWaitTime.					 
 					 [VDV] Add Public and Contact Details to JourneyInfo 				
