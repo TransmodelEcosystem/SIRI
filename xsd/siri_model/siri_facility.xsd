@@ -156,7 +156,7 @@ Rail transport, Roads and road transport
 			</xsd:element>
 			<xsd:element name="ValidityCondition" type="MonitoringValidityConditionStructure" minOccurs="0">
 				<xsd:annotation>
-					<xsd:documentation>When Facility is normally avaialble. If not specified, default is 'always'. Values are Logically ANDed together.</xsd:documentation>
+					<xsd:documentation>When Facility is normally available. If not specified, default is 'always'. Values are Logically ANDed together.</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element name="FacilityLocation" type="FacilityLocationStructure" minOccurs="0">
