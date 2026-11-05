@@ -228,7 +228,7 @@ MonitoringError must not be used if Monitored is omitted or set to 'true'.</xsd:
 	</xsd:group>
 	<xsd:group name="ServicePointsGroup">
 		<xsd:annotation>
-			<xsd:documentation>Elements describing the main places bewteen which a VEHICLE JOURNEY runs.</xsd:documentation>
+			<xsd:documentation>Elements describing the main places between which a VEHICLE JOURNEY runs.</xsd:documentation>
 		</xsd:annotation>
 		<xsd:sequence>
 			<xsd:element name="Origin" minOccurs="0">
