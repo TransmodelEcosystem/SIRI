@@ -516,7 +516,7 @@ Rail transport, Roads and road transport
 			<xsd:element ref="SituationRef" minOccurs="0"/>
 			<xsd:element name="Remedy" type="RemedyStructure" minOccurs="0">
 				<xsd:annotation>
-					<xsd:documentation>Setup action to remedy the change of the facility status (if partially or totaly anavailable)</xsd:documentation>
+					<xsd:documentation>Setup action to remedy the change of the facility status (if partially or totally anavailable)</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element name="MonitoringInfo" type="MonitoringInformationStructure" minOccurs="0">
