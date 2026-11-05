@@ -172,7 +172,7 @@ Rail transport, Roads and road transport
 	</xsd:complexType>
 	<xsd:group name="DatedServiceInfoGroup">
 		<xsd:annotation>
-			<xsd:documentation>General info elements that apply to all journeys of timetable version unless overriden.</xsd:documentation>
+			<xsd:documentation>General info elements that apply to all journeys of timetable version unless overridden.</xsd:documentation>
 		</xsd:annotation>
 		<xsd:sequence>
 			<xsd:element name="OriginDisplay" type="NaturalLanguageStringStructure" minOccurs="0" maxOccurs="unbounded">

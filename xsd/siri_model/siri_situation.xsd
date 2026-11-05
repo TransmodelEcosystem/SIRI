@@ -1087,7 +1087,7 @@ Note that if the ControlAction is the master ControlAction of a GroupOfControlAc
 	</xsd:complexType>
 	<xsd:group name="DescriptionGroup">
 		<xsd:annotation>
-			<xsd:documentation>Text description of SITUATION. Some or all of this may have been generated from the other structured content elements. Where text has been overriden this is indicated.</xsd:documentation>
+			<xsd:documentation>Text description of SITUATION. Some or all of this may have been generated from the other structured content elements. Where text has been overridden this is indicated.</xsd:documentation>
 		</xsd:annotation>
 		<xsd:sequence>
 			<xsd:element name="Language" type="xsd:language" default="en" minOccurs="0">
