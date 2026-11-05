@@ -606,7 +606,7 @@ Rail transport, Roads and road transport
 	</xsd:simpleType>
 	<xsd:complexType name="MonitoringValidityConditionStructure">
 		<xsd:annotation>
-			<xsd:documentation>Allowed values for the type for Description of the monitoring conditions (frequency of mesurement, etc): an automatic monitoring of the status of a lift with pushed alert in case of incident is very different from a daily manual/visual check.</xsd:documentation>
+			<xsd:documentation>Allowed values for the type for Description of the monitoring conditions (frequency of measurement, etc): an automatic monitoring of the status of a lift with pushed alert in case of incident is very different from a daily manual/visual check.</xsd:documentation>
 		</xsd:annotation>
 		<xsd:sequence>
 			<xsd:element name="Period" type="HalfOpenTimestampOutputRangeStructure" minOccurs="0" maxOccurs="unbounded">
