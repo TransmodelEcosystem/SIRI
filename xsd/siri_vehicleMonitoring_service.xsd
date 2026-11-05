@@ -360,7 +360,7 @@ If false or omitted, each subscription response will contain the full informatio
 					</xsd:element>
 					<xsd:element name="MonitoringName" type="NaturalLanguageStringStructure" minOccurs="0" maxOccurs="unbounded">
 						<xsd:annotation>
-							<xsd:documentation>Name associated with Monitoring Reference. Supports SIRI LITE servcies  ((since SIRI 2.0)).</xsd:documentation>
+							<xsd:documentation>Name associated with Monitoring Reference. Supports SIRI LITE services  ((since SIRI 2.0)).</xsd:documentation>
 						</xsd:annotation>
 					</xsd:element>
 					<xsd:element name="ProgressBetweenStops" type="ProgressBetweenStopsStructure" minOccurs="0">

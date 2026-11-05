@@ -139,7 +139,7 @@ Rail transport, Roads and road transport
 		</xsd:choice>
 	</xsd:group>
 	<!-- ======================================================================= -->
-	<!-- ====DISCOVERY SERVCIES =============================================== -->
+	<!-- ====DISCOVERY SERVICES =============================================== -->
 	<!-- ======================================================================= -->
 	<xsd:group name="SiriDiscoveryReferenceDeliveryGroup">
 		<xsd:annotation>
