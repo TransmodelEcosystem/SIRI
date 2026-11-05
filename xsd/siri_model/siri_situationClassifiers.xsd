@@ -27,7 +27,7 @@
       -->
 				</Date>
 				<Description>
-					<p>SIRI-SX is an XML schema for the exchange of structured incidents. This subschema describes calssifier codes </p>
+					<p>SIRI-SX is an XML schema for the exchange of structured incidents. This subschema describes classifier codes </p>
 				</Description>
 				<Format>
 					<MediaType>text/xml</MediaType>
