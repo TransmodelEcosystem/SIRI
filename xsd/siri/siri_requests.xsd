@@ -1060,7 +1060,7 @@ If SubscriptionRenewal is set to 'false' or the flag is omitted (and the default
 	</xsd:element>
 	<xsd:complexType name="AbstractDiscoveryDeliveryStructure">
 		<xsd:annotation>
-			<xsd:documentation>Abstract supertype fro discovery responses.</xsd:documentation>
+			<xsd:documentation>Abstract supertype for discovery responses.</xsd:documentation>
 		</xsd:annotation>
 		<xsd:complexContent>
 			<xsd:extension base="ResponseStructure">

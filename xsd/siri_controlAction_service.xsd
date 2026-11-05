@@ -375,7 +375,7 @@ If false each subscription response will contain the full information as specifi
 									</xsd:element>
 									<xsd:element name="Description" type="NaturalLanguageStringStructure" minOccurs="0" maxOccurs="unbounded">
 										<xsd:annotation>
-											<xsd:documentation>Contains a generic textual description of the Control Action Set (reason fro creation the set, etc.)</xsd:documentation>
+											<xsd:documentation>Contains a generic textual description of the Control Action Set (reason for creation the set, etc.)</xsd:documentation>
 										</xsd:annotation>
 									</xsd:element>
 									<xsd:group ref="MasterRef"/>

@@ -374,7 +374,7 @@ Rail transport, Roads and road transport
 				<xsd:sequence>
 					<xsd:element name="ExpectedRestartTime" type="xsd:dateTime" minOccurs="0">
 						<xsd:annotation>
-							<xsd:documentation>Expected time fro reavailability of service. (since SIRI 2.0)</xsd:documentation>
+							<xsd:documentation>Expected time for reavailability of service. (since SIRI 2.0)</xsd:documentation>
 						</xsd:annotation>
 					</xsd:element>
 				</xsd:sequence>
