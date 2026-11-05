@@ -33,7 +33,7 @@
 					 (a) Correct missing type on FeatureRef 
 					 (b) Add optional MonitoringRef on response so that can return the identfiier even if there are no stop visits.
 						 This allows client to be stateless - 
-					 (a) Add a StopMonitoringMultipleRequest and othe elements top support multiple stops on single request 
+					 (a) Add a StopMonitoringMultipleRequest and other elements top support multiple stops on single request 
 				</Date>
 				<Date><Modified>2008-10-06</Modified>
 					 Drop redundant groups 
