@@ -133,7 +133,7 @@ Rail transport, Roads and road transport
 		</xsd:sequence>
 	</xsd:group>
 	<!-- ====REQUESTS ====================================================== -->
-	<!-- ==== FS: Situation Exchnage Request ================================================== -->
+	<!-- ==== FS: Situation Exchange Request ================================================== -->
 	<xsd:element name="SituationExchangeRequest" type="SituationExchangeRequestStructure" substitutionGroup="AbstractFunctionalServiceRequest">
 		<xsd:annotation>
 			<xsd:documentation>Request for information about Facilities status.</xsd:documentation>
@@ -426,7 +426,7 @@ Rail transport, Roads and road transport
 			</xsd:element>
 		</xsd:sequence>
 	</xsd:group>
-	<!-- ==== FS: Situation Exchnage Subscription Request ================================================== -->
+	<!-- ==== FS: Situation Exchange Subscription Request ================================================== -->
 	<xsd:element name="SituationExchangeSubscriptionRequest" type="SituationExchangeSubscriptionStructure" substitutionGroup="AbstractFunctionalServiceSubscriptionRequest">
 		<xsd:annotation>
 			<xsd:documentation>Request for a subscription to the Situation Exchange Service.</xsd:documentation>
