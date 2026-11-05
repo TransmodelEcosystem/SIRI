@@ -248,7 +248,7 @@ Rail transport, Roads and road transport
 	</xsd:complexType>
 	<xsd:group name="InfoMessageGroup">
 		<xsd:annotation>
-			<xsd:documentation>Extra information provided on general message notifcation that can be used to filter messages.</xsd:documentation>
+			<xsd:documentation>Extra information provided on general message notification that can be used to filter messages.</xsd:documentation>
 		</xsd:annotation>
 		<xsd:sequence>
 			<xsd:element name="InfoMessageIdentifier" type="InfoMessageRefStructure">
