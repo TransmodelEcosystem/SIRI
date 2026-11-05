@@ -735,7 +735,7 @@ If false each subscription response will contain the full information as specifi
 		<xsd:sequence>
 			<xsd:element name="ParticipantRef" type="ParticipantRefStructure" minOccurs="0">
 				<xsd:annotation>
-					<xsd:documentation>Unique identifier of a Participant. Provides namespace for CONTROL ACTION If absent provdied from context.</xsd:documentation>
+					<xsd:documentation>Unique identifier of a Participant. Provides namespace for CONTROL ACTION If absent provided from context.</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element ref="ControlActionCode">

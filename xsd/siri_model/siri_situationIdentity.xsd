@@ -151,7 +151,7 @@ Rail transport, Roads and road transport
 			</xsd:element>
 			<xsd:element name="ParticipantRef" type="ParticipantRefStructure" minOccurs="0">
 				<xsd:annotation>
-					<xsd:documentation>Unique identifier of a Participant. Provides namespace for SITUATION. If absent provdied from context.</xsd:documentation>
+					<xsd:documentation>Unique identifier of a Participant. Provides namespace for SITUATION. If absent provided from context.</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element ref="SituationNumber">
@@ -173,7 +173,7 @@ Rail transport, Roads and road transport
 			</xsd:element>
 			<xsd:element name="UpdateParticipantRef" type="ParticipantRefStructure" minOccurs="0">
 				<xsd:annotation>
-					<xsd:documentation>Unique identifier of a Participant. Provides namespace for SITUATION. If absent provdied from context.</xsd:documentation>
+					<xsd:documentation>Unique identifier of a Participant. Provides namespace for SITUATION. If absent provided from context.</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element name="Version" type="SituationVersion" minOccurs="0">
