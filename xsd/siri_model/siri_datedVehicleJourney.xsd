@@ -560,12 +560,12 @@ Rail transport, Roads and road transport
 			</xsd:element>
 			<xsd:element name="FrequentTravellerDuration" type="PositiveDurationType" minOccurs="0">
 				<xsd:annotation>
-					<xsd:documentation>Time needed by a traveller whis is familiar with SERVICE JOURNEY INTERCHANGE to traverse it. If absent, use DefaultDuration.</xsd:documentation>
+					<xsd:documentation>Time needed by a traveller who is familiar with SERVICE JOURNEY INTERCHANGE to traverse it. If absent, use DefaultDuration.</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element name="OccasionalTravellerDuration" type="PositiveDurationType" minOccurs="0">
 				<xsd:annotation>
-					<xsd:documentation>Time needed by a traveller whis is not familiar with SERVICE JOURNEY INTERCHANGE to traverse it. If absent, use DefaultDuration and a standard weighting.</xsd:documentation>
+					<xsd:documentation>Time needed by a traveller who is not familiar with SERVICE JOURNEY INTERCHANGE to traverse it. If absent, use DefaultDuration and a standard weighting.</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element name="ImpairedAccessDuration" type="PositiveDurationType" minOccurs="0">
