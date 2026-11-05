@@ -545,7 +545,7 @@ Rail transport, Roads and road transport
 	</xsd:complexType>
 	<xsd:element name="ResponseStatus" type="StatusResponseStructure">
 		<xsd:annotation>
-			<xsd:documentation>Contains infromation about the processing of a an individual service subscription - either success info or an error condition. (VDV Acknowledgement).</xsd:documentation>
+			<xsd:documentation>Contains information about the processing of a an individual service subscription - either success info or an error condition. (VDV Acknowledgement).</xsd:documentation>
 		</xsd:annotation>
 	</xsd:element>
 	<!-- === GS: Subscription Response======================================================== -->
