@@ -647,7 +647,7 @@ To avoid this, the producer should transmit xxxPredictionUnknown instead of any 
 					<xsd:element ref="ExpectedDepartureTime" minOccurs="0"/>
 					<xsd:element name="ProvisionalExpectedDepartureTime" type="xsd:dateTime" minOccurs="0">
 						<xsd:annotation>
-							<xsd:documentation>Expected departure time of VEHICLE without waiting time due to operational actions. For people at stop this would normally be shown if different from Expected departure time. So if servcie decides not to wait may leave earler than expected departure time (since SIRI 2.0).</xsd:documentation>
+							<xsd:documentation>Expected departure time of VEHICLE without waiting time due to operational actions. For people at stop this would normally be shown if different from Expected departure time. So if servcie decides not to wait may leave earlier than expected departure time (since SIRI 2.0).</xsd:documentation>
 						</xsd:annotation>
 					</xsd:element>
 					<xsd:element name="EarliestExpectedDepartureTime" type="xsd:dateTime" minOccurs="0">
