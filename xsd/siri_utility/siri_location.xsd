@@ -160,7 +160,7 @@ Rail transport, Roads and road transport
 				</xsd:sequence>
 				<xsd:element name="Coordinates" type="CoordinatesStructure">
 					<xsd:annotation>
-						<xsd:documentation>Coordinates of points in a GML compatibe format, as indicated by srsName attribute.</xsd:documentation>
+						<xsd:documentation>Coordinates of points in a GML compatible format, as indicated by srsName attribute.</xsd:documentation>
 					</xsd:annotation>
 				</xsd:element>
 			</xsd:choice>
