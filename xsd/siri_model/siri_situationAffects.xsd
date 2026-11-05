@@ -305,7 +305,7 @@ Rail transport, Roads and road transport
 	</xsd:complexType>
 	<xsd:simpleType name="ConnectionDirectionEnumeration">
 		<xsd:annotation>
-			<xsd:documentation>Values for DIRECTION of CONNECTION link or SERVCIE JOURNEY INTERCHANGE.</xsd:documentation>
+			<xsd:documentation>Values for DIRECTION of CONNECTION link or SERVICE JOURNEY INTERCHANGE.</xsd:documentation>
 		</xsd:annotation>
 		<xsd:restriction base="xsd:NMTOKEN">
 			<xsd:enumeration value="to"/>
