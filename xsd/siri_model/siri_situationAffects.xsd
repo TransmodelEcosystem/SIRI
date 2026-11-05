@@ -1366,7 +1366,7 @@ Rail transport, Roads and road transport
 			</xsd:element>
 			<xsd:element name="NumberOfInjured" type="xsd:nonNegativeInteger" minOccurs="0">
 				<xsd:annotation>
-					<xsd:documentation>Number of injured presons.</xsd:documentation>
+					<xsd:documentation>Number of injured persons.</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 		</xsd:sequence>
