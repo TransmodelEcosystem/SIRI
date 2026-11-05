@@ -48,7 +48,7 @@
 					<p>This subschema describes common communication requests that are the same for all services. </p>
 					<p>It contains the following request</p>
 					<ul>
-						<li>GS: Terminate Subscription Resquest </li>
+						<li>GS: Terminate Subscription Request </li>
 						<li>GS: Terminate Subscription Response</li>
 						<li>GS: Subscription Response </li>
 						<li>GS: Data Ready Notification</li>
@@ -380,7 +380,7 @@ Rail transport, Roads and road transport
 			<xsd:element ref="TerminateSubscriptionResponse"/>
 		</xsd:sequence>
 	</xsd:group>
-	<!-- === GS: Terminate Subscription Resquest=================================================== -->
+	<!-- === GS: Terminate Subscription Request=================================================== -->
 	<xsd:element name="TerminateSubscriptionRequest" type="TerminateSubscriptionRequestStructure" substitutionGroup="AuthenticatedRequest">
 		<xsd:annotation>
 			<xsd:documentation>Request from Subscriber to Subscription Manager to terminate a subscription. Answered with a TerminateSubscriptionResponse.</xsd:documentation>
