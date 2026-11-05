@@ -331,7 +331,7 @@ It is strongly advised to only use this feature in cases where a journey was sen
 					</xsd:element>
 					<xsd:element name="ServiceJourneyInterchange" type="ServiceJourneyInterchangeStructure" minOccurs="0" maxOccurs="unbounded">
 						<xsd:annotation>
-							<xsd:documentation>Connection paramters for a SERVICE JOURNEY INTERCHANGE between a feeder and distributor journey. SIRI 2.0</xsd:documentation>
+							<xsd:documentation>Connection parameters for a SERVICE JOURNEY INTERCHANGE between a feeder and distributor journey. SIRI 2.0</xsd:documentation>
 						</xsd:annotation>
 					</xsd:element>
 					<xsd:element name="RemovedServiceJourneyInterchange" type="RemovedServiceJourneyInterchangeStructure" minOccurs="0" maxOccurs="unbounded">
