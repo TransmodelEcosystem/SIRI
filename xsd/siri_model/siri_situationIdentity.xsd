@@ -16,7 +16,7 @@
 				</Date>
 				<Date>
 					<Modified>2008-07-015</Modified>
-					<!-- Correct data type to be particpant ref not participant pair -->
+					<!-- Correct data type to be participant ref not participant pair -->
 				</Date>
 				<Description>
 					<p>SIRI is a European CEN standard for the exchange of real-time information .</p>
@@ -110,7 +110,7 @@ Rail transport, Roads and road transport
 	</xsd:simpleType>
 	<xsd:complexType name="SituationSimpleRefStructure">
 		<xsd:annotation>
-			<xsd:documentation>Type for reference to a SITUATION. Includes the Particpant identifier and version components of the identifier.</xsd:documentation>
+			<xsd:documentation>Type for reference to a SITUATION. Includes the Participant identifier and version components of the identifier.</xsd:documentation>
 		</xsd:annotation>
 		<xsd:simpleContent>
 			<xsd:extension base="SituationCodeType"/>

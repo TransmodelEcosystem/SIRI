@@ -414,7 +414,7 @@ Version number of response. Fixed
 					<xsd:sequence>
 						<xsd:element name="GeneralMessagePermission" type="GeneralMessageServicePermissionStructure" minOccurs="0" maxOccurs="unbounded">
 							<xsd:annotation>
-								<xsd:documentation>Permission or a single particpant or all participants.</xsd:documentation>
+								<xsd:documentation>Permission or a single participant or all participants.</xsd:documentation>
 							</xsd:annotation>
 						</xsd:element>
 					</xsd:sequence>
