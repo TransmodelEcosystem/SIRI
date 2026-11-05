@@ -145,7 +145,7 @@ Rail transport, Roads and road transport
 			</xsd:element>
 			<xsd:element name="Location" type="LocationStructure" minOccurs="0">
 				<xsd:annotation>
-					<xsd:documentation>Coordinates to use to show stop as a poitn on map. Detail level is 'normal'.+SIRI.v2.0 </xsd:documentation>
+					<xsd:documentation>Coordinates to use to show stop as a point on map. Detail level is 'normal'.+SIRI.v2.0 </xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element name="Url" type="xsd:anyURI" minOccurs="0">
