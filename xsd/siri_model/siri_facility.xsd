@@ -230,7 +230,7 @@ Rail transport, Roads and road transport
 					<xsd:sequence>
 						<xsd:element name="Suitability" type="acsb:SuitabilityStructure" maxOccurs="unbounded">
 							<xsd:annotation>
-								<xsd:documentation>Type of specific need for wich the facility is appropriate.</xsd:documentation>
+								<xsd:documentation>Type of specific need for which the facility is appropriate.</xsd:documentation>
 							</xsd:annotation>
 						</xsd:element>
 					</xsd:sequence>
