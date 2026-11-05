@@ -585,7 +585,7 @@ Rail transport, Roads and road transport
 				<xsd:sequence>
 					<xsd:element name="AffectedLine" type="AffectedLineStructure" maxOccurs="unbounded">
 						<xsd:annotation>
-							<xsd:documentation>Information about the indvidual LINEs in the network that are affected. If not explicitly overridden, modes and submodes will be defaulted to any values present (i) in the AffectedNetwork (ii) In the general context.</xsd:documentation>
+							<xsd:documentation>Information about the individual LINEs in the network that are affected. If not explicitly overridden, modes and submodes will be defaulted to any values present (i) in the AffectedNetwork (ii) In the general context.</xsd:documentation>
 						</xsd:annotation>
 					</xsd:element>
 				</xsd:sequence>

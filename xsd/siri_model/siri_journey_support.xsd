@@ -605,7 +605,7 @@ Corresponds to NeTEX TYPE OF SERVICe.</xsd:documentation>
 	</xsd:group>
 	<xsd:group name="ServiceInfoGroup">
 		<xsd:annotation>
-			<xsd:documentation>Elements classifying the Service or journey. Values for these elements can be specified on a timetabled schedule and will be inherited, unless overriden, onto the production timetable and then onto the individul dated VEHICLE JOURNEYs of the timetable. Each monitored journey takes its values from the dated VEHICLE JOURNEY that it follows. The absence of a value on an entity at a given level indicates that the value should be inherited (i) from any recent preceding update message for the same entity, or if there is no previous override, (ii) from its immediate parent entity.</xsd:documentation>
+			<xsd:documentation>Elements classifying the Service or journey. Values for these elements can be specified on a timetabled schedule and will be inherited, unless overriden, onto the production timetable and then onto the individual dated VEHICLE JOURNEYs of the timetable. Each monitored journey takes its values from the dated VEHICLE JOURNEY that it follows. The absence of a value on an entity at a given level indicates that the value should be inherited (i) from any recent preceding update message for the same entity, or if there is no previous override, (ii) from its immediate parent entity.</xsd:documentation>
 		</xsd:annotation>
 		<xsd:sequence>
 			<xsd:group ref="BasicServiceInfoGroup"/>
