@@ -62,7 +62,7 @@
 				</Date>
 				<Description>
 					<p>SIRI is a European CEN standard for the exchange of real-time information.</p>
-					<p>This package defines common basic domain model identifier elements that are used in one or more SIRI fucntional service.</p>
+					<p>This package defines common basic domain model identifier elements that are used in one or more SIRI functional service.</p>
 				</Description>
 				<Format>
 					<MediaType>text/xml</MediaType>
