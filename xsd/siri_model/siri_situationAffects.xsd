@@ -789,7 +789,7 @@ Rail transport, Roads and road transport
 			</xsd:element>
 			<xsd:element name="StopPoints" minOccurs="0">
 				<xsd:annotation>
-					<xsd:documentation>Stop Poins of the ROUTE. Can be either all or only affected by SITUATION.</xsd:documentation>
+					<xsd:documentation>Stop Points of the ROUTE. Can be either all or only affected by SITUATION.</xsd:documentation>
 				</xsd:annotation>
 				<xsd:complexType>
 					<xsd:sequence>
