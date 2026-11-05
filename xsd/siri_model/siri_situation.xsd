@@ -1515,7 +1515,7 @@ Alternatively, AdviceRef can be used to reference a (complete) standardised advi
 			</xsd:element>
 			<xsd:element name="EasementRef" type="xsd:normalizedString" minOccurs="0">
 				<xsd:annotation>
-					<xsd:documentation>Reference to a fare exceptions code that is allowed because of the disruption. An easement may relax a fare condition, for example "You may use your metro ticket on the bus', or 'You may use your bus ticket in teh metro between these two stops'.</xsd:documentation>
+					<xsd:documentation>Reference to a fare exceptions code that is allowed because of the disruption. An easement may relax a fare condition, for example "You may use your metro ticket on the bus', or 'You may use your bus ticket in the metro between these two stops'.</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 		</xsd:sequence>

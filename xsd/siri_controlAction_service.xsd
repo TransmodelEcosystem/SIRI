@@ -954,7 +954,7 @@ Note that this is NOT the tracking of the vehicle position (see VehicleMonitorin
 			</xsd:element>
 			<xsd:element name="TypeOfDetecting" type="TypeOfValueStructure" minOccurs="0">
 				<xsd:annotation>
-					<xsd:documentation>Open type associated with te detection (could be some weight range, length range, etc.)</xsd:documentation>
+					<xsd:documentation>Open type associated with the detection (could be some weight range, length range, etc.)</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element name="MeasuredValue" type="xsd:decimal" minOccurs="0">

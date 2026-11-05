@@ -1925,7 +1925,7 @@ TRAINs within a COMPOUND TRAIN may have different origins and destinations due t
 	</xsd:complexType>
 	<xsd:complexType name="ServiceLinkViewStructure">
 		<xsd:annotation>
-			<xsd:documentation>Simplified description of an update of a SERVICE LINK, in order to provide an updated schematic shape (not ROUTE POINTs) in case of rerouting. Only updated ServiceLink are expected to be provided here, the scheduled one being provided by a NeTEx feed. The SERVICE JOURNEY itself is knonw from hte context</xsd:documentation>
+			<xsd:documentation>Simplified description of an update of a SERVICE LINK, in order to provide an updated schematic shape (not ROUTE POINTs) in case of rerouting. Only updated ServiceLink are expected to be provided here, the scheduled one being provided by a NeTEx feed. The SERVICE JOURNEY itself is knonw from the context</xsd:documentation>
 		</xsd:annotation>
 		<xsd:sequence>
 			<xsd:element name="FromStopPointRef" type="StopPointRefStructure">
