@@ -48,7 +48,7 @@
 					 (since SIRI 2.0)  
 					  [VDV] Add Minimum-StopVisits�PerVia to STopMonitoringRequestPolicy
 					  [VDV] Add HasMinimum-StopVisits�Via to STopMonitoringCapabilities
-					  [VDV]  Revise MonitoredVehicleJourney to include additioanl result files
+					  [VDV]  Revise MonitoredVehicleJourney to include additional result files
 					  [FR] Add Servcie Exception element
 					  [VDV] Add delivery variant to LineNote
 					  [SIRI-LITE] Allow a monitoring name in results. 
