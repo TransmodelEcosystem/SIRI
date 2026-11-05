@@ -360,7 +360,7 @@ If the requested period is so far in the past that the data producer does no lon
 If the requested period is so far in the future that the data producer does not yet have any data, he will deliver data as soon as it is available.
 
 A timetable falls inside the ValidityPeriod if all of its journeys fall inside it.
-A journey falls inside the ValidityPeriod if the AimedDepartureTime or AimedArrivalTime at any CALL lies between the Start- and EndTime of the ValidityPeriod (regardless of whether the aimed times at a previous or subsequent CALL fall ouside of the ValidityPeriod).
+A journey falls inside the ValidityPeriod if the AimedDepartureTime or AimedArrivalTime at any CALL lies between the Start- and EndTime of the ValidityPeriod (regardless of whether the aimed times at a previous or subsequent CALL fall outside of the ValidityPeriod).
 Careful: Journeys which themselves fall outside the ValidityPeriod, but which are linked to a journey within the ValidityPeriod by a JOURNEY RELATION, are also regarded as falling inside the ValidityPeriod. Examples are journeys where the vehicle is split or joins with or is replaced by another vehicle.
    </xsd:documentation>
 		</xsd:annotation>
