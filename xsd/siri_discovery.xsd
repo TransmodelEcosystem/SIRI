@@ -732,7 +732,7 @@ Rail transport, Roads and road transport
 	</xsd:element>
 	<xsd:complexType name="ServiceFeaturesDiscoveryRequestStructure">
 		<xsd:annotation>
-			<xsd:documentation>Type for equests for TYPE OF PRODUCT CATEGORY reference data for use in service requests.</xsd:documentation>
+			<xsd:documentation>Type for requests for TYPE OF PRODUCT CATEGORY reference data for use in service requests.</xsd:documentation>
 		</xsd:annotation>
 		<xsd:complexContent>
 			<xsd:extension base="AbstractDiscoveryRequestStructure">
