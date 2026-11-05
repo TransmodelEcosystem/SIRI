@@ -3,7 +3,7 @@
 	<!--
 siri_model\siri_situation-v2.0.xsd:
 19.12.2017 D. Rubli, Siri_XML-2.0p_a0.2:
-- Concequence.Period changed to unbounded.
+- Consequence.Period changed to unbounded.
 12.01.2018 D. Rubli, Siri_XML-2.0p synchronisation of recommendation with xsd:
 - RelatedToEnumeration Enum value "correctionTo" added according to recommendation document.
 - WorkflowStatusEnumeration Enum value "pendingApproval" added according to recommendation document.
