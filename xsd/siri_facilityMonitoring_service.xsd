@@ -234,7 +234,7 @@ Rail transport, Roads and road transport
 		<xsd:sequence>
 			<xsd:element name="IncrementalUpdates" type="xsd:boolean" default="false" minOccurs="0">
 				<xsd:annotation>
-					<xsd:documentation>Whether the producer will return the complete set of current data, or only  provide updates to this data, i.e. additions, modifications and deletions.
+					<xsd:documentation>Whether the producer will return the complete set of current data, or only provide updates to this data, i.e. additions, modifications and deletions.
 If false or omitted, each subscription response will contain the full information as specified in this request.</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>

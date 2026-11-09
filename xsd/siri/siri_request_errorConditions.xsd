@@ -125,7 +125,7 @@ Rail transport, Roads and road transport
 	<!-- ======================================================================= -->
 	<xsd:element name="ErrorConditionElement" type="ErrorConditionElementStructure" abstract="false">
 		<xsd:annotation>
-			<xsd:documentation>Element fror an error condition  (for use in WSDL.)</xsd:documentation>
+			<xsd:documentation>Element fror an error condition (for use in WSDL.)</xsd:documentation>
 		</xsd:annotation>
 	</xsd:element>
 	<xsd:complexType name="ErrorConditionElementStructure">
@@ -259,7 +259,7 @@ Rail transport, Roads and road transport
 				<xsd:sequence>
 					<xsd:element name="ParticipantRef" type="ParticipantRefStructure" minOccurs="0">
 						<xsd:annotation>
-							<xsd:documentation>Reference to  Participant who is unknown. (since SIRI v2.0)</xsd:documentation>
+							<xsd:documentation>Reference to Participant who is unknown. (since SIRI v2.0)</xsd:documentation>
 						</xsd:annotation>
 					</xsd:element>
 				</xsd:sequence>
@@ -345,14 +345,14 @@ Rail transport, Roads and road transport
 			<xsd:element ref="InvalidDataReferencesError"/>
 			<xsd:element ref="BeyondDataHorizon">
 				<xsd:annotation>
-					<xsd:documentation>Error: Data period or subscription period is outside of period covered by service.   (since SIRI 2.0).</xsd:documentation>
+					<xsd:documentation>Error: Data period or subscription period is outside of period covered by service. (since SIRI 2.0).</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element ref="NoInfoForTopicError"/>
 			<xsd:element ref="ParametersIgnoredError"/>
 			<xsd:element ref="UnknownExtensionsError">
 				<xsd:annotation>
-					<xsd:documentation>Error: Request contained extensions that were not supported by the producer. A response has been provided but some or all extensions have been ignored.  (since SIRI 2.0).</xsd:documentation>
+					<xsd:documentation>Error: Request contained extensions that were not supported by the producer. A response has been provided but some or all extensions have been ignored. (since SIRI 2.0).</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element ref="AllowedResourceUsageExceededError"/>
@@ -449,7 +449,7 @@ Rail transport, Roads and road transport
 	<!-- ===Error: Invalid Data References ======================================= -->
 	<xsd:element name="InvalidDataReferencesError" type="InvalidDataReferencesErrorStructure" substitutionGroup="ErrorCode">
 		<xsd:annotation>
-			<xsd:documentation>Error: Request contains references to  identifiers that are not known.  (since SIRI 2.0).</xsd:documentation>
+			<xsd:documentation>Error: Request contains references to identifiers that are not known. (since SIRI 2.0).</xsd:documentation>
 		</xsd:annotation>
 	</xsd:element>
 	<xsd:complexType name="InvalidDataReferencesErrorStructure">

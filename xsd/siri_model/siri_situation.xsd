@@ -760,7 +760,7 @@ Note: this means that ReasonName is NOT a complete message, but only a (few) wor
 			</xsd:element>
 			<xsd:element name="ReasonName" type="NaturalLanguageStringStructure" minOccurs="0" maxOccurs="unbounded">
 				<xsd:annotation>
-					<xsd:documentation>Textual classification of nature of SITUATION, from which a standardized message can be generated. Not normally needed, except when TpegReason and PublicEventReason are absent.  (Unbounded since SIRI 2.0)</xsd:documentation>
+					<xsd:documentation>Textual classification of nature of SITUATION, from which a standardized message can be generated. Not normally needed, except when TpegReason and PublicEventReason are absent. (Unbounded since SIRI 2.0)</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element name="ControlActionRef" type="ControlActionRefStructure" minOccurs="0">
@@ -1097,22 +1097,22 @@ Note that if the ControlAction is the master ControlAction of a GroupOfControlAc
 			</xsd:element>
 			<xsd:element name="Summary" type="DefaultedTextStructure" minOccurs="0" maxOccurs="unbounded">
 				<xsd:annotation>
-					<xsd:documentation>Summary of SITUATION. If absent should be generated from structure elements, and/or by condensing Description.  (Unbounded since SIRI 2.0)</xsd:documentation>
+					<xsd:documentation>Summary of SITUATION. If absent should be generated from structure elements, and/or by condensing Description. (Unbounded since SIRI 2.0)</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element name="Description" type="DefaultedTextStructure" minOccurs="0" maxOccurs="unbounded">
 				<xsd:annotation>
-					<xsd:documentation>Description of SITUATION. Should not repeat any strap line included in Summary.  (Unbounded since SIRI 2.0)</xsd:documentation>
+					<xsd:documentation>Description of SITUATION. Should not repeat any strap line included in Summary. (Unbounded since SIRI 2.0)</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element name="Detail" type="DefaultedTextStructure" minOccurs="0" maxOccurs="unbounded">
 				<xsd:annotation>
-					<xsd:documentation>Additional descriptive details about the SITUATION  (Unbounded since SIRI 2.0).</xsd:documentation>
+					<xsd:documentation>Additional descriptive details about the SITUATION (Unbounded since SIRI 2.0).</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element name="Advice" type="DefaultedTextStructure" minOccurs="0" maxOccurs="unbounded">
 				<xsd:annotation>
-					<xsd:documentation>Further advice to passengers.  (Unbounded since SIRI 2.0)</xsd:documentation>
+					<xsd:documentation>Further advice to passengers. (Unbounded since SIRI 2.0)</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element name="Internal" type="DefaultedTextStructure" minOccurs="0">
@@ -1203,7 +1203,7 @@ Note that if the ControlAction is the master ControlAction of a GroupOfControlAc
 			</xsd:element>
 			<xsd:element name="Label" type="NaturalLanguageStringStructure" minOccurs="0" maxOccurs="unbounded">
 				<xsd:annotation>
-					<xsd:documentation>Label for Link.  (Unbounded since SIRI 2.0)</xsd:documentation>
+					<xsd:documentation>Label for Link. (Unbounded since SIRI 2.0)</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element name="Image" type="ImageStructure" minOccurs="0">
@@ -1373,7 +1373,7 @@ Alternatively, AdviceRef can be used to reference a (complete) standardised advi
 			</xsd:element>
 			<xsd:element name="Details" type="NaturalLanguageStringStructure" minOccurs="0" maxOccurs="unbounded">
 				<xsd:annotation>
-					<xsd:documentation>Further textual advice to passengers.  (Unbounded since SIRI 2.0)</xsd:documentation>
+					<xsd:documentation>Further textual advice to passengers. (Unbounded since SIRI 2.0)</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 		</xsd:sequence>
@@ -1510,7 +1510,7 @@ Alternatively, AdviceRef can be used to reference a (complete) standardised advi
 			</xsd:element>
 			<xsd:element name="Easement" type="NaturalLanguageStringStructure" minOccurs="0" maxOccurs="unbounded">
 				<xsd:annotation>
-					<xsd:documentation>Description of fare exceptions allowed because of disruption.  (Unbounded since SIRI 2.0)</xsd:documentation>
+					<xsd:documentation>Description of fare exceptions allowed because of disruption. (Unbounded since SIRI 2.0)</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element name="EasementRef" type="xsd:normalizedString" minOccurs="0">

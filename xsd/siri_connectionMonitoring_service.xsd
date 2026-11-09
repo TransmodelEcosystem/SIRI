@@ -529,7 +529,7 @@ Rail transport, Roads and road transport
 				<xsd:sequence>
 					<xsd:element name="Reason" type="NaturalLanguageStringStructure" minOccurs="0" maxOccurs="unbounded">
 						<xsd:annotation>
-							<xsd:documentation>Reason for failure of connection.  (Unbounded since SIRI 2.0)</xsd:documentation>
+							<xsd:documentation>Reason for failure of connection. (Unbounded since SIRI 2.0)</xsd:documentation>
 						</xsd:annotation>
 					</xsd:element>
 					<xsd:element ref="Extensions" minOccurs="0"/>
@@ -563,7 +563,7 @@ Rail transport, Roads and road transport
 				<xsd:sequence>
 					<xsd:element name="ChangeNote" type="NaturalLanguageStringStructure" minOccurs="0" maxOccurs="unbounded">
 						<xsd:annotation>
-							<xsd:documentation>Description of the revised stopping position of the Distributor (fetcher) in the connection zone.  (Unbounded since SIRI 2.0)</xsd:documentation>
+							<xsd:documentation>Description of the revised stopping position of the Distributor (fetcher) in the connection zone. (Unbounded since SIRI 2.0)</xsd:documentation>
 						</xsd:annotation>
 					</xsd:element>
 					<xsd:element name="NewLocation" type="LocationStructure" minOccurs="0">
@@ -678,7 +678,7 @@ Version number of response. Fixed
 								</xsd:element>
 								<xsd:element name="FilterByTime" type="xsd:boolean" default="true" minOccurs="0">
 									<xsd:annotation>
-										<xsd:documentation>Whether results can be filtered by time  Filter of Connection. Default is ' true'.</xsd:documentation>
+										<xsd:documentation>Whether results can be filtered by time Filter of Connection. Default is ' true'.</xsd:documentation>
 									</xsd:annotation>
 								</xsd:element>
 							</xsd:sequence>

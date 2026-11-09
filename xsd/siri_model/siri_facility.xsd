@@ -122,7 +122,7 @@ Rail transport, Roads and road transport
 			</xsd:element>
 			<xsd:element name="Description" type="NaturalLanguageStringStructure" minOccurs="0" maxOccurs="unbounded">
 				<xsd:annotation>
-					<xsd:documentation>Textual description of the facility.  (Unbounded since SIRI 2.0)</xsd:documentation>
+					<xsd:documentation>Textual description of the facility. (Unbounded since SIRI 2.0)</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element name="FacilityClass" type="FacilityCategoryEnumeration" minOccurs="0" maxOccurs="unbounded">
@@ -379,7 +379,7 @@ Rail transport, Roads and road transport
 			</xsd:element>
 			<xsd:element name="Description" type="NaturalLanguageStringStructure" minOccurs="0" maxOccurs="unbounded">
 				<xsd:annotation>
-					<xsd:documentation>Description of the facility Status.  (Unbounded since SIRI 2.0)</xsd:documentation>
+					<xsd:documentation>Description of the facility Status. (Unbounded since SIRI 2.0)</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element name="AccessibilityAssessment" type="acsb:AccessibilityAssessmentStructure" minOccurs="0">
@@ -558,7 +558,7 @@ Rail transport, Roads and road transport
 			</xsd:element>
 			<xsd:element name="Description" type="NaturalLanguageStringStructure" minOccurs="0" maxOccurs="unbounded">
 				<xsd:annotation>
-					<xsd:documentation>Description of the set up remedy in natural language.  (Unbounded since SIRI 2.0)</xsd:documentation>
+					<xsd:documentation>Description of the set up remedy in natural language. (Unbounded since SIRI 2.0)</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element name="RemedyPeriod" type="HalfOpenTimestampInputRangeStructure" minOccurs="0">
@@ -649,7 +649,7 @@ Rail transport, Roads and road transport
 			</xsd:element>
 			<xsd:element name="Description" type="NaturalLanguageStringStructure" minOccurs="0" maxOccurs="unbounded">
 				<xsd:annotation>
-					<xsd:documentation>Description of EQUIPMENT.  (Unbounded since SIRI 2.0)</xsd:documentation>
+					<xsd:documentation>Description of EQUIPMENT. (Unbounded since SIRI 2.0)</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element name="EquipmentTypeRef" type="ifopt:EquipmentTypeRefStructure" minOccurs="0">
@@ -664,7 +664,7 @@ Rail transport, Roads and road transport
 			</xsd:element>
 			<xsd:element name="EquipmentStatus" type="ifopt:EquipmentStatusEnumeration" default="notAvailable">
 				<xsd:annotation>
-					<xsd:documentation>Availability status of the EQUIPMENT.  Default is 'notAvailable'.</xsd:documentation>
+					<xsd:documentation>Availability status of the EQUIPMENT. Default is 'notAvailable'.</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element name="EquipmentFeatures" minOccurs="0">

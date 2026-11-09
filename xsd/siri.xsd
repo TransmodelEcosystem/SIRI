@@ -161,7 +161,7 @@ Rail transport, Roads and road transport.
 				<Type>Standard</Type>
 			</Metadata>
 		</xsd:appinfo>
-		<xsd:documentation>SIRI Service Interface for Real-time  Information relating to Public Transport Operations. - XML Schema with explicit functional services</xsd:documentation>
+		<xsd:documentation>SIRI Service Interface for Real-time Information relating to Public Transport Operations. - XML Schema with explicit functional services</xsd:documentation>
 	</xsd:annotation>
 	<!-- ======================================================================= -->
 	<xsd:include schemaLocation="siri/siri_common_services.xsd"/>
@@ -169,7 +169,7 @@ Rail transport, Roads and road transport.
 	<!-- ======================================================================= -->
 	<xsd:element name="Siri">
 		<xsd:annotation>
-			<xsd:documentation>SIRI Service Interface for Real-time  Operation.</xsd:documentation>
+			<xsd:documentation>SIRI Service Interface for Real-time Operation.</xsd:documentation>
 		</xsd:annotation>
 		<xsd:complexType>
 			<xsd:choice>
@@ -486,7 +486,7 @@ In the context of SIRI-ET, for example, a baseline of a journey is synonymous to
 					<xsd:element ref="RequestorRef"/>
 					<xsd:group ref="DelegatorEndpointGroup">
 						<xsd:annotation>
-							<xsd:documentation>If request has been proxied by an intermediate  aggregating system, tracking information relating to the original requestor. This allows the aggregation to be stateless</xsd:documentation>
+							<xsd:documentation>If request has been proxied by an intermediate aggregating system, tracking information relating to the original requestor. This allows the aggregation to be stateless</xsd:documentation>
 						</xsd:annotation>
 					</xsd:group>
 					<xsd:group ref="SiriServiceCapabilitiesRequestGroup"/>

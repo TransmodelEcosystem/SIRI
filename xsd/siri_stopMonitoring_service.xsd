@@ -246,7 +246,7 @@ Rail transport, Roads and road transport
 						</xsd:element>
 						<xsd:element name="Onwards" type="xsd:nonNegativeInteger" minOccurs="0">
 							<xsd:annotation>
-								<xsd:documentation>Maximum number of ONWARDS CALLs  to include in results. Zero for none. Only applies if StopMonitoringDetailLevel of 'calls'specified. Zero for none. If StopMonitoringDetailLevel of 'calls' specified but MaximumNumberOfCalls.Onwards absent, include all ONWARDS CALLs.</xsd:documentation>
+								<xsd:documentation>Maximum number of ONWARDS CALLs to include in results. Zero for none. Only applies if StopMonitoringDetailLevel of 'calls'specified. Zero for none. If StopMonitoringDetailLevel of 'calls' specified but MaximumNumberOfCalls.Onwards absent, include all ONWARDS CALLs.</xsd:documentation>
 							</xsd:annotation>
 						</xsd:element>
 					</xsd:sequence>
@@ -403,7 +403,7 @@ If false each subscription response will contain the full information as specifi
 					<xsd:group ref="StopMonitoringPayloadGroup"/>
 					<xsd:element name="Note" type="NaturalLanguageStringStructure" minOccurs="0" maxOccurs="unbounded">
 						<xsd:annotation>
-							<xsd:documentation>Text associated with whole delivery.  (Unbounded since SIRI 2.0)</xsd:documentation>
+							<xsd:documentation>Text associated with whole delivery. (Unbounded since SIRI 2.0)</xsd:documentation>
 						</xsd:annotation>
 					</xsd:element>
 					<xsd:element ref="Extensions" minOccurs="0"/>
@@ -443,12 +443,12 @@ If false each subscription response will contain the full information as specifi
 			</xsd:element>
 			<xsd:element ref="StopNoticeCancellation" minOccurs="0" maxOccurs="unbounded">
 				<xsd:annotation>
-					<xsd:documentation>Reference to an previously communicated Notice which should now be removed from the arrival/departure board for the stop.  (SIRI 2.0++)</xsd:documentation>
+					<xsd:documentation>Reference to an previously communicated Notice which should now be removed from the arrival/departure board for the stop. (SIRI 2.0++)</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element ref="ServiceException" minOccurs="0" maxOccurs="unbounded">
 				<xsd:annotation>
-					<xsd:documentation>Information about unavailablilty of some or all services at the  SIRI 2.0</xsd:documentation>
+					<xsd:documentation>Information about unavailablilty of some or all services at the SIRI 2.0</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 		</xsd:sequence>
@@ -501,7 +501,7 @@ If false each subscription response will contain the full information as specifi
 					</xsd:element>
 					<xsd:element name="StopFacility" type="FacilityRefStructure" minOccurs="0">
 						<xsd:annotation>
-							<xsd:documentation>Facility associated with  stop visit</xsd:documentation>
+							<xsd:documentation>Facility associated with stop visit</xsd:documentation>
 						</xsd:annotation>
 					</xsd:element>
 					<xsd:element ref="Extensions" minOccurs="0"/>
@@ -553,7 +553,7 @@ If false each subscription response will contain the full information as specifi
 					<xsd:group ref="JourneyPatternInfoGroup"/>
 					<xsd:element name="Reason" type="NaturalLanguageStringStructure" minOccurs="0" maxOccurs="unbounded">
 						<xsd:annotation>
-							<xsd:documentation>Reason for cancellation.  (Unbounded since SIRI 2.0)</xsd:documentation>
+							<xsd:documentation>Reason for cancellation. (Unbounded since SIRI 2.0)</xsd:documentation>
 						</xsd:annotation>
 					</xsd:element>
 					<xsd:element ref="Extensions" minOccurs="0"/>
@@ -683,7 +683,7 @@ If false each subscription response will contain the full information as specifi
 					<xsd:element ref="SituationRef" minOccurs="0" maxOccurs="unbounded"/>
 					<xsd:element name="StopNote" type="NaturalLanguageStringStructure" minOccurs="0" maxOccurs="unbounded">
 						<xsd:annotation>
-							<xsd:documentation>Text associated with Stop Notice  ed since SIRI 2.0)</xsd:documentation>
+							<xsd:documentation>Text associated with Stop Notice ed since SIRI 2.0)</xsd:documentation>
 						</xsd:annotation>
 					</xsd:element>
 					<xsd:element ref="Extensions" minOccurs="0"/>
@@ -874,7 +874,7 @@ If false each subscription response will contain the full information as specifi
 								</xsd:element>
 								<xsd:element name="ByStartTime" type="xsd:boolean" default="true" minOccurs="0">
 									<xsd:annotation>
-										<xsd:documentation>Whether a start time other than now can be specified for preview interval. Default  is 'true'.</xsd:documentation>
+										<xsd:documentation>Whether a start time other than now can be specified for preview interval. Default is 'true'.</xsd:documentation>
 									</xsd:annotation>
 								</xsd:element>
 								<xsd:element ref="FilterByMonitoringRef"/>

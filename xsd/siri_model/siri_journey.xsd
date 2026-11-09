@@ -142,7 +142,7 @@ Rail transport, Roads and road transport
 		<xsd:sequence>
 			<xsd:element name="VehicleJourneyName" type="NaturalLanguageStringStructure" minOccurs="0" maxOccurs="unbounded">
 				<xsd:annotation>
-					<xsd:documentation>For train services with named journeys. Train name, e.g. “West Coast Express”. If omitted: No train name. Inherited property.  (Unbounded since SIRI 2.0)</xsd:documentation>
+					<xsd:documentation>For train services with named journeys. Train name, e.g. “West Coast Express”. If omitted: No train name. Inherited property. (Unbounded since SIRI 2.0)</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element ref="JourneyNote" minOccurs="0" maxOccurs="unbounded"/>
@@ -200,7 +200,7 @@ Rail transport, Roads and road transport
 			<xsd:element ref="OriginRef" minOccurs="0"/>
 			<xsd:element name="OriginName" type="NaturalLanguageStringStructure" minOccurs="0" maxOccurs="unbounded">
 				<xsd:annotation>
-					<xsd:documentation>Name of the origin of the journey.  (Unbounded since SIRI 2.0)</xsd:documentation>
+					<xsd:documentation>Name of the origin of the journey. (Unbounded since SIRI 2.0)</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element name="OriginShortName" type="NaturalLanguageStringStructure" minOccurs="0" maxOccurs="unbounded">
@@ -225,12 +225,12 @@ Rail transport, Roads and road transport
 			</xsd:element>
 			<xsd:element name="DestinationName" type="NaturalLanguageStringStructure" minOccurs="0" maxOccurs="unbounded">
 				<xsd:annotation>
-					<xsd:documentation>Description of the destination stop (vehicle signage), Can be overwritten for a journey, and then also section by section by the entry in an individual CALL.  (Unbounded since SIRI 2.0)</xsd:documentation>
+					<xsd:documentation>Description of the destination stop (vehicle signage), Can be overwritten for a journey, and then also section by section by the entry in an individual CALL. (Unbounded since SIRI 2.0)</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element name="DestinationShortName" type="NaturalLanguageStringStructure" minOccurs="0" maxOccurs="unbounded">
 				<xsd:annotation>
-					<xsd:documentation>Short name of the DESTINATION.of the journey; used to help identify the VEHICLE JOURNEY on arrival boards. If absent, same as DestinationName.  (Unbounded since SIRI 2.0)</xsd:documentation>
+					<xsd:documentation>Short name of the DESTINATION.of the journey; used to help identify the VEHICLE JOURNEY on arrival boards. If absent, same as DestinationName. (Unbounded since SIRI 2.0)</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element name="OriginDisplayAtDestination" type="NaturalLanguageStringStructure" minOccurs="0" maxOccurs="unbounded">
@@ -340,7 +340,7 @@ Rail transport, Roads and road transport
 			</xsd:element>
 			<xsd:element name="DirectionName" type="NaturalLanguageStringStructure" minOccurs="0" maxOccurs="unbounded">
 				<xsd:annotation>
-					<xsd:documentation>Description of DIRECTION.  (Unbounded since SIRI 2.0)</xsd:documentation>
+					<xsd:documentation>Description of DIRECTION. (Unbounded since SIRI 2.0)</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 		</xsd:sequence>
@@ -366,7 +366,7 @@ Rail transport, Roads and road transport
 			</xsd:element>
 			<xsd:element name="DriverName" type="xsd:normalizedString" minOccurs="0">
 				<xsd:annotation>
-					<xsd:documentation>The name oo the Driver or Crew   (since SIRI 2.0)</xsd:documentation>
+					<xsd:documentation>The name oo the Driver or Crew (since SIRI 2.0)</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 		</xsd:sequence>
@@ -652,7 +652,7 @@ To avoid this, the producer should transmit xxxPredictionUnknown instead of any 
 					</xsd:element>
 					<xsd:element name="EarliestExpectedDepartureTime" type="xsd:dateTime" minOccurs="0">
 						<xsd:annotation>
-							<xsd:documentation>Earliest time at which VEHICLE may leave the stop. Used to secure connections. Used for passenger announcements. Passengers must be at boarding point by this time to be sure of catching VEHICLE.  i.e. "Vehicle will not leave before this time" - may be revised from original aimed time. (since SIRI 2.0)</xsd:documentation>
+							<xsd:documentation>Earliest time at which VEHICLE may leave the stop. Used to secure connections. Used for passenger announcements. Passengers must be at boarding point by this time to be sure of catching VEHICLE. i.e. "Vehicle will not leave before this time" - may be revised from original aimed time. (since SIRI 2.0)</xsd:documentation>
 						</xsd:annotation>
 					</xsd:element>
 					<xsd:element name="ExpectedDeparturePredictionQuality" type="PredictionQualityStructure" minOccurs="0">

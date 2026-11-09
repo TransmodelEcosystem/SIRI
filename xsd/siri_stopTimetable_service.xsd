@@ -263,7 +263,7 @@ If false each subscription response will contain the full information as specifi
 				<xsd:sequence>
 					<xsd:element name="MonitoringRef" type="MonitoringRefStructure">
 						<xsd:annotation>
-							<xsd:documentation>Reference to a  stop monitoring point / LOGICAL DISPLAY to which Stop Visit applies.</xsd:documentation>
+							<xsd:documentation>Reference to a stop monitoring point / LOGICAL DISPLAY to which Stop Visit applies.</xsd:documentation>
 						</xsd:annotation>
 					</xsd:element>
 					<xsd:element ref="TargetedVehicleJourney"/>
@@ -289,7 +289,7 @@ If false each subscription response will contain the full information as specifi
 					<xsd:group ref="JourneyPatternInfoGroup"/>
 					<xsd:element name="Reason" type="NaturalLanguageStringStructure" minOccurs="0" maxOccurs="unbounded">
 						<xsd:annotation>
-							<xsd:documentation>Reason for cancellation.  (Unbounded since SIRI 2.0)</xsd:documentation>
+							<xsd:documentation>Reason for cancellation. (Unbounded since SIRI 2.0)</xsd:documentation>
 						</xsd:annotation>
 					</xsd:element>
 					<xsd:element ref="Extensions" minOccurs="0"/>

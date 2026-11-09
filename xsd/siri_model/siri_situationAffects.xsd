@@ -130,7 +130,7 @@ Rail transport, Roads and road transport
 			</xsd:element>
 			<xsd:element name="StopPointName" type="NaturalLanguageStringStructure" minOccurs="0" maxOccurs="unbounded">
 				<xsd:annotation>
-					<xsd:documentation>Name of SCHEDULED STOP POINT.  (Unbounded since SIRI 2.0)</xsd:documentation>
+					<xsd:documentation>Name of SCHEDULED STOP POINT. (Unbounded since SIRI 2.0)</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element name="StopPointType" type="StopPointTypeEnumeration" minOccurs="0">
@@ -150,7 +150,7 @@ Rail transport, Roads and road transport
 			</xsd:element>
 			<xsd:element name="StopPlaceName" type="NaturalLanguageStringStructure" minOccurs="0" maxOccurs="unbounded">
 				<xsd:annotation>
-					<xsd:documentation>Name of STOP PLACE related to this affected StopPoint.  (Unbounded to allow a text for every language)</xsd:documentation>
+					<xsd:documentation>Name of STOP PLACE related to this affected StopPoint. (Unbounded to allow a text for every language)</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element name="AffectedModes" type="AffectedModesStructure" minOccurs="0">
@@ -165,7 +165,7 @@ Rail transport, Roads and road transport
 			</xsd:element>
 			<xsd:element name="PlaceName" type="NaturalLanguageStringStructure" minOccurs="0" maxOccurs="unbounded">
 				<xsd:annotation>
-					<xsd:documentation>Name of locality in which stop is found. Derivable from LocalityRef.  (Unbounded since SIRI 2.0)</xsd:documentation>
+					<xsd:documentation>Name of locality in which stop is found. Derivable from LocalityRef. (Unbounded since SIRI 2.0)</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element name="AccessibilityAssessment" type="acsb:AccessibilityAssessmentStructure" minOccurs="0">
@@ -260,12 +260,12 @@ Rail transport, Roads and road transport
 		<xsd:sequence>
 			<xsd:element name="ConnectionLinkRef" type="ConnectionLinkRefStructure" minOccurs="0" maxOccurs="unbounded">
 				<xsd:annotation>
-					<xsd:documentation>Reference to a CONNECTION link affected by a  SITUATION.</xsd:documentation>
+					<xsd:documentation>Reference to a CONNECTION link affected by a SITUATION.</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element name="ConnectionName" type="NaturalLanguageStringStructure" minOccurs="0">
 				<xsd:annotation>
-					<xsd:documentation>Name of CONNECTION link affected by a  SITUATION.</xsd:documentation>
+					<xsd:documentation>Name of CONNECTION link affected by a SITUATION.</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:choice minOccurs="0">
@@ -274,13 +274,13 @@ Rail transport, Roads and road transport
 					<xsd:group ref="LineGroup" minOccurs="0"/>
 					<xsd:element name="ConnectingStopPointRef" type="StopPointRefStructure" minOccurs="0">
 						<xsd:annotation>
-							<xsd:documentation>Reference to  other connecting STOP POINT of a CONNECTION link. If blank, both feeder and distributor vehicles go to same stop.</xsd:documentation>
+							<xsd:documentation>Reference to other connecting STOP POINT of a CONNECTION link. If blank, both feeder and distributor vehicles go to same stop.</xsd:documentation>
 							<xsd:documentation>Reference to a STOP POINT.</xsd:documentation>
 						</xsd:annotation>
 					</xsd:element>
 					<xsd:element name="ConnectingStopPointName" type="NaturalLanguageStringStructure" minOccurs="0" maxOccurs="unbounded">
 						<xsd:annotation>
-							<xsd:documentation>Name of other connecting STOP POINT of a CONNECTION link. Derivable from StopRef.  (Unbounded since SIRI 2.0)</xsd:documentation>
+							<xsd:documentation>Name of other connecting STOP POINT of a CONNECTION link. Derivable from StopRef. (Unbounded since SIRI 2.0)</xsd:documentation>
 						</xsd:annotation>
 					</xsd:element>
 					<xsd:element name="ConnectingZoneRef" type="ZoneRefStructure" minOccurs="0">
@@ -326,7 +326,7 @@ Rail transport, Roads and road transport
 			</xsd:element>
 			<xsd:element name="LinkName" type="NaturalLanguageStringStructure" minOccurs="0" maxOccurs="unbounded">
 				<xsd:annotation>
-					<xsd:documentation>Description of Link.  (Unbounded since SIRI 2.0)</xsd:documentation>
+					<xsd:documentation>Description of Link. (Unbounded since SIRI 2.0)</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element name="AccessibilityFeature" type="AccessibilityFeatureEnumeration" minOccurs="0">
@@ -377,7 +377,7 @@ Rail transport, Roads and road transport
 			</xsd:element>
 			<xsd:element name="InterchangeStopPointName" type="NaturalLanguageStringStructure" minOccurs="0" maxOccurs="unbounded">
 				<xsd:annotation>
-					<xsd:documentation>Name of other Connecting STOP POINT of a connection. Derivable from InterchangeStopRef.  (Unbounded since SIRI 2.0)</xsd:documentation>
+					<xsd:documentation>Name of other Connecting STOP POINT of a connection. Derivable from InterchangeStopRef. (Unbounded since SIRI 2.0)</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element name="ConnectingVehicleJourneyRef" type="DatedVehicleJourneyRefStructure" minOccurs="0">
@@ -435,12 +435,12 @@ Rail transport, Roads and road transport
 			</xsd:element>
 			<xsd:element name="OperatorName" type="NaturalLanguageStringStructure" minOccurs="0" maxOccurs="unbounded">
 				<xsd:annotation>
-					<xsd:documentation>Public Name of OPERATOR. Can be derived from OperatorRef.  (Unbounded since SIRI 2.0)</xsd:documentation>
+					<xsd:documentation>Public Name of OPERATOR. Can be derived from OperatorRef. (Unbounded since SIRI 2.0)</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element name="OperatorShortName" type="NaturalLanguageStringStructure" minOccurs="0" maxOccurs="unbounded">
 				<xsd:annotation>
-					<xsd:documentation>Short Name for OPERATOR. Can be derived from OperatorRef.  (Unbounded since SIRI 2.0)</xsd:documentation>
+					<xsd:documentation>Short Name for OPERATOR. Can be derived from OperatorRef. (Unbounded since SIRI 2.0)</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element name="OperationalUnitRef" type="OperationalUnitRefStructure" minOccurs="0" maxOccurs="unbounded">
@@ -463,7 +463,7 @@ Rail transport, Roads and road transport
 			</xsd:element>
 			<xsd:element name="NetworkName" type="NaturalLanguageStringStructure" minOccurs="0" maxOccurs="unbounded">
 				<xsd:annotation>
-					<xsd:documentation>Name of NETWORK. Can be derived from NetworkRef.  (Unbounded since SIRI 2.0)</xsd:documentation>
+					<xsd:documentation>Name of NETWORK. Can be derived from NetworkRef. (Unbounded since SIRI 2.0)</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:group ref="AffectedModeGroup"/>
@@ -557,12 +557,12 @@ Rail transport, Roads and road transport
 			</xsd:element>
 			<xsd:element name="NetworkName" type="NaturalLanguageStringStructure" minOccurs="0" maxOccurs="unbounded">
 				<xsd:annotation>
-					<xsd:documentation>Name of Network.  (Unbounded since SIRI 2.0)</xsd:documentation>
+					<xsd:documentation>Name of Network. (Unbounded since SIRI 2.0)</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element name="RoutesAffected" type="NaturalLanguageStringStructure" minOccurs="0" maxOccurs="unbounded">
 				<xsd:annotation>
-					<xsd:documentation>Textual description of overall routes affected. Should correspond to any structured description in the AffectedLines element.  (Unbounded since SIRI 2.0)</xsd:documentation>
+					<xsd:documentation>Textual description of overall routes affected. Should correspond to any structured description in the AffectedLines element. (Unbounded since SIRI 2.0)</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:group ref="AffectedModeGroup"/>
@@ -574,7 +574,7 @@ Rail transport, Roads and road transport
 				</xsd:element>
 				<xsd:element name="SelectedRoutes" type="AffectedRouteStructure" maxOccurs="unbounded">
 					<xsd:annotation>
-						<xsd:documentation>Only some ROUTEs are affected,  LINE level information not available. See the RoutesAffected element for textual description.</xsd:documentation>
+						<xsd:documentation>Only some ROUTEs are affected, LINE level information not available. See the RoutesAffected element for textual description.</xsd:documentation>
 					</xsd:annotation>
 				</xsd:element>
 				<xsd:element name="AffectedSection" type="AffectedSectionStructure" maxOccurs="unbounded">
@@ -854,7 +854,7 @@ Rail transport, Roads and road transport
 			</xsd:element>
 			<xsd:element name="JourneyName" type="NaturalLanguageStringStructure" minOccurs="0" maxOccurs="unbounded">
 				<xsd:annotation>
-					<xsd:documentation>Name of journey affected by a SITUATION.  (Unbounded since SIRI 2.0)</xsd:documentation>
+					<xsd:documentation>Name of journey affected by a SITUATION. (Unbounded since SIRI 2.0)</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element name="Operator" type="AffectedOperatorStructure" minOccurs="0">
@@ -864,7 +864,7 @@ Rail transport, Roads and road transport
 			</xsd:element>
 			<xsd:element name="LineRef" type="LineRefStructure" minOccurs="0">
 				<xsd:annotation>
-					<xsd:documentation>Reference to the LINE of the journey  affected by an SITUATION.</xsd:documentation>
+					<xsd:documentation>Reference to the LINE of the journey affected by an SITUATION.</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element ref="PublishedLineName" minOccurs="0" maxOccurs="unbounded"/>
@@ -896,7 +896,7 @@ Rail transport, Roads and road transport
 					<xsd:sequence>
 						<xsd:element name="TrainNumberRef" type="TrainNumberRefStructure" maxOccurs="unbounded">
 							<xsd:annotation>
-								<xsd:documentation>TRAIN NUMBER  assigned to VEHICLE JOURNEY.  +SIRI  2.0</xsd:documentation>
+								<xsd:documentation>TRAIN NUMBER assigned to VEHICLE JOURNEY. +SIRI 2.0</xsd:documentation>
 							</xsd:annotation>
 						</xsd:element>
 					</xsd:sequence>
@@ -910,7 +910,7 @@ Rail transport, Roads and road transport
 					<xsd:sequence>
 						<xsd:element name="JourneyPartInfo" type="JourneyPartInfoStructure" maxOccurs="unbounded">
 							<xsd:annotation>
-								<xsd:documentation>Information about Parts of JOURNEY  (since SIRI 2.0)</xsd:documentation>
+								<xsd:documentation>Information about Parts of JOURNEY (since SIRI 2.0)</xsd:documentation>
 							</xsd:annotation>
 						</xsd:element>
 					</xsd:sequence>
@@ -933,7 +933,7 @@ Rail transport, Roads and road transport
 			</xsd:element>
 			<xsd:element name="OriginAimedDepartureTime" type="xsd:dateTime" minOccurs="0">
 				<xsd:annotation>
-					<xsd:documentation>Timetabled departure tme  of journey from Origin.</xsd:documentation>
+					<xsd:documentation>Timetabled departure tme of journey from Origin.</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element name="DestinationAimedArrivalTime" type="xsd:dateTime" minOccurs="0">
@@ -948,17 +948,17 @@ Rail transport, Roads and road transport
 			</xsd:element>
 			<xsd:element name="DestinationDisplayAtOrigin" type="NaturalLanguageStringStructure" minOccurs="0" maxOccurs="unbounded">
 				<xsd:annotation>
-					<xsd:documentation>DESTINATION name shown for journey at the origin.  Can be Used to identify journey for user. (since SIRI 2.0)</xsd:documentation>
+					<xsd:documentation>DESTINATION name shown for journey at the origin. Can be Used to identify journey for user. (since SIRI 2.0)</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element name="AccessibilityAssessment" type="acsb:AccessibilityAssessmentStructure" minOccurs="0">
 				<xsd:annotation>
-					<xsd:documentation>Accessibility Disruption status ofto  JOURNEY, as affected by Situation.</xsd:documentation>
+					<xsd:documentation>Accessibility Disruption status ofto JOURNEY, as affected by Situation.</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element name="JourneyCondition" type="ServiceConditionEnumeration" minOccurs="0" maxOccurs="unbounded">
 				<xsd:annotation>
-					<xsd:documentation>Status of service for this Vehicle Journey - TPEG value. Multiple Conditions can be valid at the same time.  (since SIRI 2.0)</xsd:documentation>
+					<xsd:documentation>Status of service for this Vehicle Journey - TPEG value. Multiple Conditions can be valid at the same time. (since SIRI 2.0)</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element name="Calls" minOccurs="0">
@@ -973,13 +973,13 @@ Rail transport, Roads and road transport
 			</xsd:element>
 			<xsd:element name="Facilities" minOccurs="0">
 				<xsd:annotation>
-					<xsd:documentation>Facilities available for VEHICLE JOURNEY   (since SIRI 2.0)</xsd:documentation>
+					<xsd:documentation>Facilities available for VEHICLE JOURNEY (since SIRI 2.0)</xsd:documentation>
 				</xsd:annotation>
 				<xsd:complexType>
 					<xsd:sequence>
 						<xsd:element name="AffectedFacility" type="AffectedFacilityStructure" maxOccurs="unbounded">
 							<xsd:annotation>
-								<xsd:documentation>Facililitiy available for VEHICLE JOURNEY   (since SIRI 2.0)</xsd:documentation>
+								<xsd:documentation>Facililitiy available for VEHICLE JOURNEY (since SIRI 2.0)</xsd:documentation>
 							</xsd:annotation>
 						</xsd:element>
 					</xsd:sequence>
@@ -990,7 +990,7 @@ Rail transport, Roads and road transport
 	</xsd:complexType>
 	<xsd:complexType name="AffectedVehicleStructure">
 		<xsd:annotation>
-			<xsd:documentation>Type for information about a VEHICLE  affected by an SITUATION.</xsd:documentation>
+			<xsd:documentation>Type for information about a VEHICLE affected by an SITUATION.</xsd:documentation>
 		</xsd:annotation>
 		<xsd:sequence>
 			<xsd:element name="VehicleRef" type="VehicleRefStructure">
@@ -1035,7 +1035,7 @@ Rail transport, Roads and road transport
 			</xsd:element>
 			<xsd:element name="AccessibilityAssessment" type="acsb:AccessibilityAssessmentStructure" minOccurs="0">
 				<xsd:annotation>
-					<xsd:documentation>Current Accessibility assessment  of vehicle.</xsd:documentation>
+					<xsd:documentation>Current Accessibility assessment of vehicle.</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:group ref="ServiceInfoGroup" minOccurs="0"/>
@@ -1172,7 +1172,7 @@ Rail transport, Roads and road transport
 			</xsd:element>
 			<xsd:element name="PlaceName" type="NaturalLanguageStringStructure" minOccurs="0" maxOccurs="unbounded">
 				<xsd:annotation>
-					<xsd:documentation>Name of SITE or TOPOGRAPHIC PLACE (locality) in which stop is found.  (Unbounded since SIRI 2.0)</xsd:documentation>
+					<xsd:documentation>Name of SITE or TOPOGRAPHIC PLACE (locality) in which stop is found. (Unbounded since SIRI 2.0)</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element name="Location" type="LocationStructure" minOccurs="0">
@@ -1262,13 +1262,13 @@ Rail transport, Roads and road transport
 					</xsd:element>
 					<xsd:element name="AffectedFacilities" minOccurs="0">
 						<xsd:annotation>
-							<xsd:documentation>Facilities available for VEHICLE JOURNEY   (since SIRI 2.0)</xsd:documentation>
+							<xsd:documentation>Facilities available for VEHICLE JOURNEY (since SIRI 2.0)</xsd:documentation>
 						</xsd:annotation>
 						<xsd:complexType>
 							<xsd:sequence>
 								<xsd:element name="AffectedFacility" type="AffectedFacilityStructure" maxOccurs="unbounded">
 									<xsd:annotation>
-										<xsd:documentation>Facililitiy available for VEHICLE JOURNEY   (since SIRI 2.0)</xsd:documentation>
+										<xsd:documentation>Facililitiy available for VEHICLE JOURNEY (since SIRI 2.0)</xsd:documentation>
 									</xsd:annotation>
 								</xsd:element>
 							</xsd:sequence>
@@ -1316,7 +1316,7 @@ Rail transport, Roads and road transport
 					</xsd:element>
 					<xsd:element name="ComponentName" type="NaturalLanguageStringStructure" minOccurs="0" maxOccurs="unbounded">
 						<xsd:annotation>
-							<xsd:documentation>Name of component.  (Unbounded since SIRI 2.0)</xsd:documentation>
+							<xsd:documentation>Name of component. (Unbounded since SIRI 2.0)</xsd:documentation>
 						</xsd:annotation>
 					</xsd:element>
 					<xsd:element name="ComponentType" type="ifopt:StopPlaceComponentTypeEnumeration" minOccurs="0">
@@ -1332,18 +1332,18 @@ Rail transport, Roads and road transport
 					</xsd:element>
 					<xsd:element name="AccessFeatureType" type="AccessibilityFeatureEnumeration" minOccurs="0">
 						<xsd:annotation>
-							<xsd:documentation>Type of AccessFeature  (+SIRI.20)</xsd:documentation>
+							<xsd:documentation>Type of AccessFeature (+SIRI.20)</xsd:documentation>
 						</xsd:annotation>
 					</xsd:element>
 					<xsd:element name="AffectedFacilities" minOccurs="0">
 						<xsd:annotation>
-							<xsd:documentation>Facilities available for component   (since SIRI 2.0)</xsd:documentation>
+							<xsd:documentation>Facilities available for component (since SIRI 2.0)</xsd:documentation>
 						</xsd:annotation>
 						<xsd:complexType>
 							<xsd:sequence>
 								<xsd:element name="AffectedFacility" type="AffectedFacilityStructure" maxOccurs="unbounded">
 									<xsd:annotation>
-										<xsd:documentation>Facility available for VEHICLE JOURNEY   (since SIRI 2.0)</xsd:documentation>
+										<xsd:documentation>Facility available for VEHICLE JOURNEY (since SIRI 2.0)</xsd:documentation>
 									</xsd:annotation>
 								</xsd:element>
 							</xsd:sequence>

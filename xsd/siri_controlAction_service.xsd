@@ -125,7 +125,7 @@ Rail transport, Roads and road transport
 			<xsd:choice>
 				<xsd:element ref="LineRef" minOccurs="0" maxOccurs="unbounded">
 					<xsd:annotation>
-						<xsd:documentation>Filter the results to include only  the given line.  </xsd:documentation>
+						<xsd:documentation>Filter the results to include only the given line.  </xsd:documentation>
 					</xsd:annotation>
 				</xsd:element>
 				<xsd:element name="Lines" minOccurs="0">
@@ -136,7 +136,7 @@ Rail transport, Roads and road transport
 						<xsd:sequence>
 							<xsd:element name="LineDirection" type="LineDirectionStructure" maxOccurs="unbounded">
 								<xsd:annotation>
-									<xsd:documentation>Filter the results to include only  the given line. and direction</xsd:documentation>
+									<xsd:documentation>Filter the results to include only the given line. and direction</xsd:documentation>
 								</xsd:annotation>
 							</xsd:element>
 						</xsd:sequence>
@@ -316,7 +316,7 @@ If false each subscription response will contain the full information as specifi
 					<xsd:group ref="ControlActionPayloadGroup"/>
 					<xsd:element name="Note" type="NaturalLanguageStringStructure" minOccurs="0" maxOccurs="unbounded">
 						<xsd:annotation>
-							<xsd:documentation>Text associated with whole delivery.  (Unbounded since SIRI 2.0)</xsd:documentation>
+							<xsd:documentation>Text associated with whole delivery. (Unbounded since SIRI 2.0)</xsd:documentation>
 						</xsd:annotation>
 					</xsd:element>
 					<xsd:element ref="Extensions" minOccurs="0"/>
@@ -554,7 +554,7 @@ If false each subscription response will contain the full information as specifi
 								</xsd:element>
 								<xsd:element name="ByStartTime" type="xsd:boolean" default="true" minOccurs="0">
 									<xsd:annotation>
-										<xsd:documentation>Whether a start time other than now can be specified for preview interval. Default  is 'true'.</xsd:documentation>
+										<xsd:documentation>Whether a start time other than now can be specified for preview interval. Default is 'true'.</xsd:documentation>
 									</xsd:annotation>
 								</xsd:element>
 								<xsd:element name="FilterByMode" type="xsd:boolean" default="true" minOccurs="0">
@@ -792,7 +792,7 @@ If false each subscription response will contain the full information as specifi
 					</xsd:element>
 					<xsd:element name="MessageToDriver" type="NaturalLanguageStringStructure" minOccurs="0">
 						<xsd:annotation>
-							<xsd:documentation>Contains additional information, specific for  the driver, that can not be expressed in data.</xsd:documentation>
+							<xsd:documentation>Contains additional information, specific for the driver, that can not be expressed in data.</xsd:documentation>
 						</xsd:annotation>
 					</xsd:element>
 					<xsd:choice>
@@ -857,7 +857,7 @@ If false each subscription response will contain the full information as specifi
 								<xsd:sequence>
 									<xsd:element name="MessageContent" type="NaturalLanguageStringStructure" maxOccurs="unbounded">
 										<xsd:annotation>
-											<xsd:documentation>Contains additional information, specific for  the driver, that can not be expressed in data. Multiplicity for multiple languages.</xsd:documentation>
+											<xsd:documentation>Contains additional information, specific for the driver, that can not be expressed in data. Multiplicity for multiple languages.</xsd:documentation>
 										</xsd:annotation>
 									</xsd:element>
 								</xsd:sequence>
@@ -876,7 +876,7 @@ If false each subscription response will contain the full information as specifi
 					</xsd:element>
 					<xsd:element name="CallForMeans" type="xsd:boolean" default="false" minOccurs="0">
 						<xsd:annotation>
-							<xsd:documentation>if TRUE means that it is a message sent to a PARKING POINT to ask for the disposal of  resources in stand-by.</xsd:documentation>
+							<xsd:documentation>if TRUE means that it is a message sent to a PARKING POINT to ask for the disposal of resources in stand-by.</xsd:documentation>
 						</xsd:annotation>
 					</xsd:element>
 					<xsd:element name="CallForRepairs" type="xsd:boolean" default="false" minOccurs="0">
@@ -1064,14 +1064,14 @@ Can be used for shortened journeys and when stops are bypassed by certain journe
 			</xsd:element>
 			<xsd:element name="FlexibleJourneyActivation" type="FlexibleJourneyActivation" minOccurs="0">
 				<xsd:annotation>
-					<xsd:documentation>CONTROL ACTION consisting in activating a DATED VEHICLE JOURNEY that has an activation (i.e.  booking) pre-condition.
+					<xsd:documentation>CONTROL ACTION consisting in activating a DATED VEHICLE JOURNEY that has an activation (i.e. booking) pre-condition.
 </xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element name="ChangeOfJourneyPattern" type="JourneyPatternModification" minOccurs="0">
 				<xsd:annotation>
 					<xsd:documentation>A CONTROL ACTION consisting in assigning a new JOURNEY PATTERN (and possibly the ROUTE supporting it) to a DATED VEHICLE JOURNEY.
-Can be used  when stops are replaced by other stops on certain journeys</xsd:documentation>
+Can be used when stops are replaced by other stops on certain journeys</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element name="ChangeOfJourneyTiming" type="ChangeOfJourneyTiming" minOccurs="0">
@@ -1106,7 +1106,7 @@ Can be used  when stops are replaced by other stops on certain journeys</xsd:doc
 			</xsd:element>
 			<xsd:element name="InterchangeModification" type="ModifiedConnection" minOccurs="0">
 				<xsd:annotation>
-					<xsd:documentation>CONTROL ACTION expressing that the duration a distributor DATED VEHICLE  JOURNEY needs to wait for a feeder DATED VEHICLE JOURNEY in a DATED VEHICLE JOURNEY INTERCHANGE is changed or that a different DATED VEHICLE JOURNEY is to wait for the feeder.</xsd:documentation>
+					<xsd:documentation>CONTROL ACTION expressing that the duration a distributor DATED VEHICLE JOURNEY needs to wait for a feeder DATED VEHICLE JOURNEY in a DATED VEHICLE JOURNEY INTERCHANGE is changed or that a different DATED VEHICLE JOURNEY is to wait for the feeder.</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 		</xsd:choice>
@@ -1306,7 +1306,7 @@ Can be used  when stops are replaced by other stops on certain journeys</xsd:doc
 				<xsd:sequence>
 					<xsd:element name="ClonedVehicleJourneyRef" type="FramedVehicleJourneyRefStructure">
 						<xsd:annotation>
-							<xsd:documentation>Reference to the VEHICLE JOURNEY used as model: timings are to be recalculated using the departure time provided in Start and using the run times of the referenced VEHICLE JOURNEY,  all other characteristics of the VEHICLE JOURNEY remains identical.</xsd:documentation>
+							<xsd:documentation>Reference to the VEHICLE JOURNEY used as model: timings are to be recalculated using the departure time provided in Start and using the run times of the referenced VEHICLE JOURNEY, all other characteristics of the VEHICLE JOURNEY remains identical.</xsd:documentation>
 						</xsd:annotation>
 					</xsd:element>
 					<!--NOPTIS-CHANGE: >>FramedVehicleJourneyRefStructure -->
@@ -1561,7 +1561,7 @@ Can be used  when stops are replaced by other stops on certain journeys</xsd:doc
 			</xsd:element>
 			<xsd:element name="SelectedCalls">
 				<xsd:annotation>
-					<xsd:documentation>List of  (non consecutive) Calls</xsd:documentation>
+					<xsd:documentation>List of (non consecutive) Calls</xsd:documentation>
 				</xsd:annotation>
 				<xsd:complexType>
 					<xsd:sequence>
@@ -1721,12 +1721,12 @@ Not expressed anymore as duration since the waiting may have already started.</x
 			</xsd:element>
 			<xsd:element name="MaxWaitForFeederDuration" type="xsd:duration" minOccurs="1">
 				<xsd:annotation>
-					<xsd:documentation>Maximum waiting time for the feeder at this new  INTERCHANGE</xsd:documentation>
+					<xsd:documentation>Maximum waiting time for the feeder at this new INTERCHANGE</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element name="MinChangeDuration" type="xsd:duration" minOccurs="0">
 				<xsd:annotation>
-					<xsd:documentation>Minimum duration needed for a passenger to use  the INTERCHANGE</xsd:documentation>
+					<xsd:documentation>Minimum duration needed for a passenger to use the INTERCHANGE</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element name="StaySeated" type="xsd:boolean" default="false" minOccurs="0">
