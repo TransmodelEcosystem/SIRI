@@ -661,19 +661,19 @@ If false or omitted, each subscription response will contain the full informatio
 								<xsd:element ref="FilterByVehicleRef" minOccurs="0"/>
 								<xsd:element name="FilterByMode" type="xsd:boolean" minOccurs="0">
 									<xsd:annotation>
-										<xsd:documentation>Whether results can be filtered by MODE. Default is true.. ((since SIRI 2.0))</xsd:documentation>
+										<xsd:documentation>Whether results can be filtered by MODE. Default is true.. (since SIRI 2.0)</xsd:documentation>
 									</xsd:annotation>
 								</xsd:element>
 								<xsd:element name="FilterByNetworkRef" type="xsd:boolean" minOccurs="0">
 									<xsd:annotation>
-										<xsd:documentation>Whether results can be filtered by NETWORKs. Default is 'true'. ((since SIRI 2.0))</xsd:documentation>
+										<xsd:documentation>Whether results can be filtered by NETWORKs. Default is 'true'. (since SIRI 2.0)</xsd:documentation>
 									</xsd:annotation>
 								</xsd:element>
 								<xsd:element ref="FilterByLineRef" minOccurs="0"/>
 								<xsd:element ref="FilterByStopPointRef" minOccurs="0"/>
 								<xsd:element name="FilterByStopPlaceRef" type="xsd:boolean" minOccurs="0">
 									<xsd:annotation>
-										<xsd:documentation>Whether results can be filtered by STOP PLACE identifvier.  Default is 'false'. ((since SIRI 2.0))</xsd:documentation>
+										<xsd:documentation>Whether results can be filtered by STOP PLACE identifvier.  Default is 'false'. (since SIRI 2.0)</xsd:documentation>
 									</xsd:annotation>
 								</xsd:element>
 								<xsd:element ref="FilterByVehicleJourneyRef" minOccurs="0"/>

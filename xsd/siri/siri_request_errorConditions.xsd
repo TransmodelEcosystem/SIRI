@@ -205,7 +205,7 @@ Rail transport, Roads and road transport
 			<xsd:group ref="ApplicationErrorGroup"/>
 		</xsd:choice>
 	</xsd:group>
-	<!-- ===  DISTRIBUTION ((since SIRI 2.0))================================================== -->
+	<!-- ===  DISTRIBUTION (since SIRI 2.0)================================================== -->
 	<xsd:group name="DistributionErrorGroup">
 		<xsd:annotation>
 			<xsd:documentation>Errors that may arise in the execution of a delegated distribution request. (since SIRI 2.0)</xsd:documentation>

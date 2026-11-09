@@ -356,7 +356,7 @@ Rail transport, Roads and road transport
 			<xsd:element ref="VehicleRef" minOccurs="0"/>
 			<xsd:element name="AdditionalVehicleJourneyRef" type="FramedVehicleJourneyRefStructure" minOccurs="0" maxOccurs="unbounded">
 				<xsd:annotation>
-					<xsd:documentation>Refercence to other VEHICLE Journeys ((since SIRI 2.0))</xsd:documentation>
+					<xsd:documentation>Refercence to other VEHICLE Journeys (since SIRI 2.0)</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element name="DriverRef" type="xsd:normalizedString" minOccurs="0">
