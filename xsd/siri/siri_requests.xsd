@@ -181,7 +181,7 @@ Roads and road transport</Category>
 					<xsd:group ref="RequestorEndpointGroup"/>
 					<xsd:group ref="DelegatorEndpointGroup">
 						<xsd:annotation>
-							<xsd:documentation>If request has been proxied by an intermediate aggregating system , tracking information relating to the original requestor. This allows the aggregation to be stateless. (since SIRI 2.0)</xsd:documentation>
+							<xsd:documentation>If request has been proxied by an intermediate aggregating system, tracking information relating to the original requestor. This allows the aggregation to be stateless. (since SIRI 2.0)</xsd:documentation>
 						</xsd:annotation>
 					</xsd:group>
 				</xsd:sequence>
@@ -208,7 +208,7 @@ Roads and road transport</Category>
 	</xsd:group>
 	<xsd:group name="DelegatorEndpointGroup">
 		<xsd:annotation>
-			<xsd:documentation>If request has been proxied by an intermediate aggregating system , tracking information relating to the original requestor. This allows the aggregation to be stateless.</xsd:documentation>
+			<xsd:documentation>If request has been proxied by an intermediate aggregating system, tracking information relating to the original requestor. This allows the aggregation to be stateless.</xsd:documentation>
 		</xsd:annotation>
 		<xsd:sequence>
 			<xsd:element name="DelegatorAddress" type="EndpointAddress" minOccurs="0">
@@ -401,7 +401,7 @@ If SubscriptionRenewal is set to 'false' or the flag is omitted (and the default
 					<xsd:group ref="ProducerResponseEndpointGroup"/>
 					<xsd:group ref="DelegatorEndpointGroup">
 						<xsd:annotation>
-							<xsd:documentation>If request has been proxied by an intermediate aggregating system , tracking information relating to the original requestor. This allows the aggregation to be stateless. (since SIRI 2.0)</xsd:documentation>
+							<xsd:documentation>If request has been proxied by an intermediate aggregating system, tracking information relating to the original requestor. This allows the aggregation to be stateless. (since SIRI 2.0)</xsd:documentation>
 						</xsd:annotation>
 					</xsd:group>
 				</xsd:sequence>
@@ -576,7 +576,7 @@ If SubscriptionRenewal is set to 'false' or the flag is omitted (and the default
 					<xsd:group ref="ConsumerRequestEndpointGroup"/>
 					<xsd:group ref="DelegatorEndpointGroup">
 						<xsd:annotation>
-							<xsd:documentation>If request has been proxied by an intermediate aggregating system , tracking information relating to the original requestor. This allows the aggregation to be stateless. (since SIRI 2.0)</xsd:documentation>
+							<xsd:documentation>If request has been proxied by an intermediate aggregating system, tracking information relating to the original requestor. This allows the aggregation to be stateless. (since SIRI 2.0)</xsd:documentation>
 						</xsd:annotation>
 					</xsd:group>
 				</xsd:sequence>
@@ -610,7 +610,7 @@ If SubscriptionRenewal is set to 'false' or the flag is omitted (and the default
 					<xsd:group ref="ConsumerResponseEndpointGroup"/>
 					<xsd:group ref="DelegatorEndpointGroup">
 						<xsd:annotation>
-							<xsd:documentation>If request has been proxied by an intermediate aggregating system , tracking information relating to the original requestor. This allows the aggregation to be stateless. (since SIRI 2.0)</xsd:documentation>
+							<xsd:documentation>If request has been proxied by an intermediate aggregating system, tracking information relating to the original requestor. This allows the aggregation to be stateless. (since SIRI 2.0)</xsd:documentation>
 						</xsd:annotation>
 					</xsd:group>
 				</xsd:sequence>
@@ -690,7 +690,7 @@ If SubscriptionRenewal is set to 'false' or the flag is omitted (and the default
 					<xsd:group ref="ResponseEndpointGroup"/>
 					<xsd:group ref="DelegatorEndpointGroup">
 						<xsd:annotation>
-							<xsd:documentation>If request has been proxied by an intermediate aggregating system , tracking information relating to the original requestor. This allows the aggregation to be stateless. (since SIRI 2.0)</xsd:documentation>
+							<xsd:documentation>If request has been proxied by an intermediate aggregating system, tracking information relating to the original requestor. This allows the aggregation to be stateless. (since SIRI 2.0)</xsd:documentation>
 						</xsd:annotation>
 					</xsd:group>
 				</xsd:sequence>
