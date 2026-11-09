@@ -4,7 +4,7 @@
 
 ## Overview 🔍
 
-SIRI is a European Norm (EN) and CEN Technical Specification (CEN/TS). It is published as a series referenced as EN 15531 and CEN/TS 15531. It is dedicated to the exchange of real-time data for public transportation between different computer systems and open data. It is based on Transmodel V6.2 (EN 12896 series) and relates to NeTEx (CEN/TS 16614 series).
+SIRI is a European Norm (EN) and CEN Technical Specification (CEN/TS). It is published as a series referenced as EN 15531 and CEN/TS 15531. It is dedicated to the exchange of real-time data for public transportation between different computer systems and open data. It is based on Transmodel v6.2 (EN 12896 series) and relates to NeTEx (CEN/TS 16614 series).
 
 SIRI services are:
 - Discovery, general services to retrieve references for other services (e.g., list of lines)
@@ -105,12 +105,14 @@ In your issue, make sure that:
 ### Making a change 🚀
 
 1. Identify which branch you need to target:
-   - v2.3-wip for all changes that will apply to SIRI v2.2 (e.g., bug fixes, typos, improvement of certain features without breaking changes, etc.)
+   - v2.2 for bug fixes only,
+   - v2.3 for all non-functional changes that will apply to SIRI v2.3 (e.g., bug fixes, typos)
+   - v2.4-wip for all changes that improve features of SIRI v2.3 (e.g., adding values to enumeration, improvement of certain features without breaking changes, etc.)
    - v3.0-wip for all changes that will apply when SIRI migrates to EN (e.g., deprecation of features, refactor of certain elements, breaking changes including new features, etc.) _Not yet published_
-2. Create a feature branch with a clear name that identifies the SIRI service when relevant (e.g., sx_addedconcept)
-3. Work on the changes and do the Pull Request
+3. Create a feature branch with a clear name that identifies the SIRI service when relevant (e.g., sx_addedconcept)
+4. Work on the changes and do the Pull Request
 
-For new features, the decision between targetting v2.3-wip or v3.0-wip will be made by the group.
+For new features, the decision between targeting v2.4-wip or v3.0-wip will be made by the group.
 
 ### The use of AI in this repo 🤖
 
