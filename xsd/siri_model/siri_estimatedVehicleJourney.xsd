@@ -310,7 +310,7 @@ In case of doubt, the interchange times are to be favoured because they are tran
 		<xsd:sequence>
 			<xsd:element name="RecordedAtTime" type="xsd:dateTime" minOccurs="0">
 				<xsd:annotation>
-					<xsd:documentation>Time at which data of individual journey was recorded if different from that of frame. ((since SIRI 2.0).)</xsd:documentation>
+					<xsd:documentation>Time at which data of individual journey was recorded if different from that of frame. (since SIRI 2.0)</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:group ref="LineIdentityGroup"/>
