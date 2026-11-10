@@ -45,7 +45,7 @@
 					<!-- (since SIRI 2.0)
 					  Factored out of estimatedTimetableService
 					  Add EstimatedServiceJourneyInterchange (i.e. Estimated Connection of VEHICLE) to EstimatedTimetableDelivery
-					  Corrected feed and distributor Journety refs and add InterchangeRef -->
+					  Corrected feed and distributor Journey refs and add InterchangeRef -->
 				</Date>
 				<Description>
 					<p>SIRI is a European CEN standard for the exchange of Public Transport real-time information.</p>
