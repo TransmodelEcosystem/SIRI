@@ -598,7 +598,7 @@ Has the following uses:
 			<xsd:element ref="ServiceFeatureRef" minOccurs="0" maxOccurs="unbounded">
 				<xsd:annotation>
 					<xsd:documentation>Classification of service into arbitrary Service categories, e.g. school bus. Recommended SIRI values based on TPEG are given in SIRI documentation and enumerated in the siri_facilities package. 
-Corresponds to NeTEX TYPE OF SERVICe.</xsd:documentation>
+Corresponds to NeTEX TYPE OF SERVICE.</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 		</xsd:sequence>

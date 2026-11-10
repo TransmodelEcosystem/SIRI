@@ -163,12 +163,12 @@ Rail transport, Roads and road transport
 	<!-- ======================================================================= -->
 	<xsd:element name="LocalService" type="LocalServiceStructure">
 		<xsd:annotation>
-			<xsd:documentation> LOCAL SERVICe.</xsd:documentation>
+			<xsd:documentation> LOCAL SERVICE.</xsd:documentation>
 		</xsd:annotation>
 	</xsd:element>
 	<xsd:group name="LocalServiceGroup">
 		<xsd:annotation>
-			<xsd:documentation>Element for LOCAL SERVICe.</xsd:documentation>
+			<xsd:documentation>Element for LOCAL SERVICE.</xsd:documentation>
 		</xsd:annotation>
 		<xsd:sequence>
 			<xsd:element name="ValidityConditions" type="ValidityConditionsStructure" minOccurs="0">
@@ -184,7 +184,7 @@ Rail transport, Roads and road transport
 					<xsd:sequence>
 						<xsd:element name="FeatureRef" type="siri:ServiceFeatureRefStructure" minOccurs="0" maxOccurs="unbounded">
 							<xsd:annotation>
-								<xsd:documentation>Features of LOCAL SERVICe.</xsd:documentation>
+								<xsd:documentation>Features of LOCAL SERVICE.</xsd:documentation>
 							</xsd:annotation>
 						</xsd:element>
 					</xsd:sequence>
