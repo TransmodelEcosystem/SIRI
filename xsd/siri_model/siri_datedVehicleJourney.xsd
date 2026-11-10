@@ -481,7 +481,7 @@ Rail transport, Roads and road transport
 			<xsd:group ref="AimedCallGroup"/>
 			<xsd:element name="TargetedInterchange" type="TargetedInterchangeStructure" minOccurs="0" maxOccurs="unbounded">
 				<xsd:annotation>
-					<xsd:documentation>Information on any planned distributor connections (deprecated from SIRI V2.0 .. see 2 next attributes)</xsd:documentation>
+					<xsd:documentation>Information on any planned distributor connections (deprecated from SIRI V2.0 ... see 2 next attributes)</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element name="FromServiceJourneyInterchange" type="FromServiceJourneyInterchangeStructure" minOccurs="0" maxOccurs="unbounded">
