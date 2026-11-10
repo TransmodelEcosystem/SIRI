@@ -193,7 +193,7 @@ Rail transport, Roads and road transport
 			</xsd:element>
 			<xsd:element name="AccessibilityNeedFilter" type="acsb:PassengerAccessibilityNeedsStructure" minOccurs="0" maxOccurs="unbounded">
 				<xsd:annotation>
-					<xsd:documentation>Parameters to filter Situation Exchange Service requests, based on specific needs .</xsd:documentation>
+					<xsd:documentation>Parameters to filter Situation Exchange Service requests, based on specific needs.</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 		</xsd:sequence>

@@ -262,7 +262,7 @@ Rail transport, Roads and road transport
 	</xsd:complexType>
 	<xsd:group name="InterchangeFeederIdentityGroup">
 		<xsd:annotation>
-			<xsd:documentation>Elements identifying CALL at CONNECTION link of SERVICE JOURNEY INTERCHANGE of Feeder Journey .</xsd:documentation>
+			<xsd:documentation>Elements identifying CALL at CONNECTION link of SERVICE JOURNEY INTERCHANGE of Feeder Journey.</xsd:documentation>
 		</xsd:annotation>
 		<xsd:sequence>
 			<xsd:element name="InterchangeRef" type="InterchangeRefStructure" minOccurs="0">
@@ -281,7 +281,7 @@ Rail transport, Roads and road transport
 	<!-- ======================================================================= -->
 	<xsd:element name="TimetabledFeederArrival" type="TimetabledFeederArrivalStructure" substitutionGroup="FeederItem">
 		<xsd:annotation>
-			<xsd:documentation>A feeder arrival at the arrival SCHEDUELD STOP POINT of the CONNECTION link .</xsd:documentation>
+			<xsd:documentation>A feeder arrival at the arrival SCHEDUELD STOP POINT of the CONNECTION link.</xsd:documentation>
 		</xsd:annotation>
 	</xsd:element>
 	<xsd:complexType name="TimetabledFeederArrivalStructure">

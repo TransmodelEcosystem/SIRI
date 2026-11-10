@@ -84,7 +84,7 @@
 				</Rights>
 				<Source>
 					<ul>
-						<li>Discovery services Derived from the NaPTAN standard .</li>
+						<li>Discovery services Derived from the NaPTAN standard.</li>
 					</ul>
 				</Source>
 				<Status>Version 2.1</Status>
@@ -816,7 +816,7 @@ Rail transport, Roads and road transport
 					</xsd:element>
 					<xsd:element name="PlaceRef" type="xsd:normalizedString" minOccurs="1">
 						<xsd:annotation>
-							<xsd:documentation>Filter the results to include only ConnectionLinks for stops associated with the place .</xsd:documentation>
+							<xsd:documentation>Filter the results to include only ConnectionLinks for stops associated with the place.</xsd:documentation>
 						</xsd:annotation>
 					</xsd:element>
 				</xsd:choice>

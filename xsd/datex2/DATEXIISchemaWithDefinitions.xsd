@@ -1505,7 +1505,7 @@
 		<xs:restriction base="xs:string">
 			<xs:enumeration value="advisory">
 				<xs:annotation>
-					<xs:documentation>Advisory compliance .</xs:documentation>
+					<xs:documentation>Advisory compliance.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="mandatory">

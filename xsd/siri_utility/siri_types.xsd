@@ -26,7 +26,7 @@
 		  Drop unused IP address type -->
 				</Date>
 				<Description>
-					<p>SIRI is a European CEN standard for the exchange of real-time information .</p>
+					<p>SIRI is a European CEN standard for the exchange of real-time information.</p>
 				</Description>
 				<Format>
 					<MediaType>text/xml</MediaType>

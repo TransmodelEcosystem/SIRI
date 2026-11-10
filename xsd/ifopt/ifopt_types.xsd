@@ -68,7 +68,7 @@ Rail transport, Roads and road transport
 	<!-- ======================================================================= -->
 	<xsd:element name="InfoLink" type="InfoLinkStructure">
 		<xsd:annotation>
-			<xsd:documentation>Info Link .</xsd:documentation>
+			<xsd:documentation>Info Link.</xsd:documentation>
 		</xsd:annotation>
 	</xsd:element>
 	<xsd:complexType name="InfoLinkStructure">

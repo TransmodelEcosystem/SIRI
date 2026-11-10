@@ -165,7 +165,7 @@ Rail transport, Roads and road transport
 	</xsd:complexType>
 	<xsd:group name="FacilityLocationGroup">
 		<xsd:annotation>
-			<xsd:documentation>Parameters to filter Facility Monitoring requests, based on the facility location .</xsd:documentation>
+			<xsd:documentation>Parameters to filter Facility Monitoring requests, based on the facility location.</xsd:documentation>
 		</xsd:annotation>
 		<xsd:sequence>
 			<xsd:element ref="FacilityRef" minOccurs="0" maxOccurs="unbounded"/>

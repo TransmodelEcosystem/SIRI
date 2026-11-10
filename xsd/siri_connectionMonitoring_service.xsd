@@ -480,7 +480,7 @@ Rail transport, Roads and road transport
 					</xsd:element>
 					<xsd:element name="FeederVehicleJourneyRef" type="FramedVehicleJourneyRefStructure" minOccurs="0" maxOccurs="unbounded">
 						<xsd:annotation>
-							<xsd:documentation>Reference to a feeder VEHICLE JOURNEY or journeys for which the Distributor (fetcher) will wait .</xsd:documentation>
+							<xsd:documentation>Reference to a feeder VEHICLE JOURNEY or journeys for which the Distributor (fetcher) will wait.</xsd:documentation>
 						</xsd:annotation>
 					</xsd:element>
 				</xsd:sequence>
