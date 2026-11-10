@@ -173,7 +173,7 @@ Rail transport, Roads and road transport
 		<xsd:sequence>
 			<xsd:element name="ValidityConditions" type="ValidityConditionsStructure" minOccurs="0">
 				<xsd:annotation>
-					<xsd:documentation>Conditison governing availability of serevice.</xsd:documentation>
+					<xsd:documentation>Condition governing availability of serevice.</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element name="FeatureRefs" minOccurs="0">
