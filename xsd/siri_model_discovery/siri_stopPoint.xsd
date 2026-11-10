@@ -30,7 +30,7 @@
 				</Date>
 				<Description>
 					<p>SIRI is a European CEN technical standard for the exchange of real-time information.</p>
-					<p>This subschema describes  soem code value  models used by different SIRI functional services
+					<p>This subschema describes some code value  models used by different SIRI functional services
      <ul><li>Service Feature discovery</li><li>TYPE OF PRODUCT CATEGORY Discovery</li></ul>
 					</p>
 				</Description>
@@ -52,7 +52,7 @@
 				</Rights>
 				<Source>
 					<ul>
-						<li>Discovery services Derived from the NaPTAN standard .</li>
+						<li>Discovery services Derived from the NaPTAN standard.</li>
 					</ul>
 				</Source>
 				<Status>Version 2.1</Status>
@@ -71,7 +71,7 @@ Rail transport, Roads and road transport
 				<Type>Standard</Type>
 			</Metadata>
 		</xsd:appinfo>
-		<xsd:documentation>SIRI  subschema with view of  SCHEDUELD STOP POINT for use in Stop Discovery service</xsd:documentation>
+		<xsd:documentation>SIRI subschema with view of SCHEDUELD STOP POINT for use in Stop Discovery service</xsd:documentation>
 	</xsd:annotation>
 	<!-- ======================================================================= -->
 	<xsd:include schemaLocation="siri_feature.xsd"/>
@@ -90,7 +90,7 @@ Rail transport, Roads and road transport
 		<xsd:sequence>
 			<xsd:element name="StopPointRef" type="StopPointRefStructure">
 				<xsd:annotation>
-					<xsd:documentation>Identifer of the stop.  </xsd:documentation>
+					<xsd:documentation>Identifier of the stop.  </xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element ref="TimingPoint" minOccurs="0"/>
@@ -101,12 +101,12 @@ Rail transport, Roads and road transport
 			</xsd:element>
 			<xsd:element name="StopName" type="NaturalLanguageStringStructure" minOccurs="0" maxOccurs="unbounded">
 				<xsd:annotation>
-					<xsd:documentation>Name of SCHEDULED STOP POINT. Detail level is 'normal'.  (Unbounded since SIRI 2.0)</xsd:documentation>
+					<xsd:documentation>Name of SCHEDULED STOP POINT. Detail level is 'normal'. (Unbounded since SIRI 2.0)</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element name="StopAreaRef" type="StopAreaRefStructure" minOccurs="0">
 				<xsd:annotation>
-					<xsd:documentation>Identifer of the sSTOP AREA to which SCHEDULED STOP POINT belongs. +SIRI.v2.0   </xsd:documentation>
+					<xsd:documentation>Identifier of the STOP AREA to which SCHEDULED STOP POINT belongs. +SIRI.v2.0</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element name="Features" minOccurs="0">
@@ -137,7 +137,7 @@ Rail transport, Roads and road transport
 						</xsd:element>
 						<xsd:element name="LineDirection" type="LineDirectionStructure">
 							<xsd:annotation>
-								<xsd:documentation>Reference to a LINE  that calls at stop. and its direction  (since SIRI 2.0)</xsd:documentation>
+								<xsd:documentation>Reference to a LINE that calls at stop. and its direction (since SIRI 2.0)</xsd:documentation>
 							</xsd:annotation>
 						</xsd:element>
 					</xsd:choice>
@@ -145,7 +145,7 @@ Rail transport, Roads and road transport
 			</xsd:element>
 			<xsd:element name="Location" type="LocationStructure" minOccurs="0">
 				<xsd:annotation>
-					<xsd:documentation>Coordinates to use to show stop as a poitn on map. Detail level is 'normal'.+SIRI.v2.0 </xsd:documentation>
+					<xsd:documentation>Coordinates to use to show stop as a point on map. Detail level is 'normal'.+SIRI.v2.0 </xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element name="Url" type="xsd:anyURI" minOccurs="0">

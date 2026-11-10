@@ -60,7 +60,7 @@
 				</Date>
 				<Date>
 					<Modified>2009-03-30</Modified>
-					<!-- Remove uneccessary groups -->
+					<!-- Remove unnecessary groups -->
 				</Date>
 				<Date>
 					<Modified>2011-04-18</Modified>
@@ -77,7 +77,7 @@
 					<p>SIRI is a European CEN technical standard for the exchange of real-time information.</p>
 					<p>SIRI is defined by XMLschemas and comprises a general protocol for communication, and a modular set of functional services.
 					
-						This version of the schema uses substitution groups to provide a loosley coupled encoding
+						This version of the schema uses substitution groups to provide a loosely coupled encoding
 						Additional functional services may be added just by an includes statement. 
 					  
 					</p>
@@ -123,19 +123,19 @@ Rail transport, Roads and road transport.
 				<Type>Standard</Type>
 			</Metadata>
 		</xsd:appinfo>
-		<xsd:documentation>SIRI Service Interface for Real-time  Information relating to Public Transport Operations. XML Schema with loosely coupled functional  services,</xsd:documentation>
+		<xsd:documentation>SIRI Service Interface for Real-time Information relating to Public Transport Operations. XML Schema with loosely coupled functional services,</xsd:documentation>
 	</xsd:annotation>
 	<!-- ======================================================================= -->
 	<xsd:include schemaLocation="siri/siri_base.xsd"/>
 	<!-- ======================================================================= -->
-	<!-- REPLACE THESE PACKAGES WITH OTHER FINCTIONAL SERVICES -->
+	<!-- REPLACE THESE PACKAGES WITH OTHER FUNCTIONAL SERVICES -->
 	<xsd:include schemaLocation="siri_all_functionalServices.xsd"/>
 	<!-- END OF FUNCTIONAL SERVICES -->
 	<!-- ======================================================================= -->
 	<!-- ======================================================================= -->
 	<xsd:element name="Siri">
 		<xsd:annotation>
-			<xsd:documentation>Service Interface for Real-time  Operation.</xsd:documentation>
+			<xsd:documentation>Service Interface for Real-time Operation.</xsd:documentation>
 		</xsd:annotation>
 		<xsd:complexType>
 			<xsd:choice>

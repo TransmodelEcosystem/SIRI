@@ -45,7 +45,7 @@
 					<!-- (since SIRI 2.0)
 					  Factored out of estimatedTimetableService
 					  Add EstimatedServiceJourneyInterchange (i.e. Estimated Connection of VEHICLE) to EstimatedTimetableDelivery
-					  Corrected feed and distributor Journety refs and add InterchangeRef -->
+					  Corrected feed and distributor Journey refs and add InterchangeRef -->
 				</Date>
 				<Description>
 					<p>SIRI is a European CEN standard for the exchange of Public Transport real-time information.</p>
@@ -109,7 +109,7 @@ Rail transport, Roads and road transport
 					<xsd:choice>
 						<xsd:element name="FramedVehicleJourneyRef" type="FramedVehicleJourneyRefStructure">
 							<xsd:annotation>
-								<xsd:documentation>Identifer of a VEHICLE JOURNEY within data Horizon of a service.</xsd:documentation>
+								<xsd:documentation>Identifier of a VEHICLE JOURNEY within data Horizon of a service.</xsd:documentation>
 							</xsd:annotation>
 						</xsd:element>
 						<xsd:element name="DatedVehicleJourneyRef" type="DatedVehicleJourneyRefStructure">
@@ -310,7 +310,7 @@ In case of doubt, the interchange times are to be favoured because they are tran
 		<xsd:sequence>
 			<xsd:element name="RecordedAtTime" type="xsd:dateTime" minOccurs="0">
 				<xsd:annotation>
-					<xsd:documentation>Time at which data of individual journey was recorded if differet from that of frame.  ((since SIRI 2.0).)</xsd:documentation>
+					<xsd:documentation>Time at which data of individual journey was recorded if different from that of frame. (since SIRI 2.0)</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:group ref="LineIdentityGroup"/>
@@ -418,7 +418,7 @@ the original journey and the nature of the difference.</xsd:documentation>
 	</xsd:element>
 	<xsd:complexType name="RecordedCallStructure">
 		<xsd:annotation>
-			<xsd:documentation>Type for  recroded Real-time info about a VEHICLE JOURNEY Stop.</xsd:documentation>
+			<xsd:documentation>Type for recorded Real-time info about a VEHICLE JOURNEY Stop.</xsd:documentation>
 		</xsd:annotation>
 		<xsd:sequence>
 			<xsd:group ref="StopPointInSequenceGroup"/>

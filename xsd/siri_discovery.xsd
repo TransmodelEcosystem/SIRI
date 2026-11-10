@@ -84,7 +84,7 @@
 				</Rights>
 				<Source>
 					<ul>
-						<li>Discovery services Derived from the NaPTAN standard .</li>
+						<li>Discovery services Derived from the NaPTAN standard.</li>
 					</ul>
 				</Source>
 				<Status>Version 2.1</Status>
@@ -139,7 +139,7 @@ Rail transport, Roads and road transport
 		</xsd:choice>
 	</xsd:group>
 	<!-- ======================================================================= -->
-	<!-- ====DISCOVERY SERVCIES =============================================== -->
+	<!-- ====DISCOVERY SERVICES =============================================== -->
 	<!-- ======================================================================= -->
 	<xsd:group name="SiriDiscoveryReferenceDeliveryGroup">
 		<xsd:annotation>
@@ -177,12 +177,12 @@ Rail transport, Roads and road transport
 				<xsd:sequence>
 					<xsd:group ref="StopPointsDiscoveryRequestTopicGroup">
 						<xsd:annotation>
-							<xsd:documentation>Parameters that specify the content to be returned. ((since SIRI 2.0))</xsd:documentation>
+							<xsd:documentation>Parameters that specify the content to be returned. (since SIRI 2.0)</xsd:documentation>
 						</xsd:annotation>
 					</xsd:group>
 					<xsd:group ref="StopPointsDiscoveryRequestPolicyGroup">
 						<xsd:annotation>
-							<xsd:documentation>Parameters that affect the request processing. Mostly act to reduce the number of stops returned. ((since SIRI 2.0))</xsd:documentation>
+							<xsd:documentation>Parameters that affect the request processing. Mostly act to reduce the number of stops returned. (since SIRI 2.0)</xsd:documentation>
 						</xsd:annotation>
 					</xsd:group>
 					<xsd:element ref="Extensions" minOccurs="0"/>
@@ -198,34 +198,34 @@ Rail transport, Roads and road transport
 	</xsd:complexType>
 	<xsd:group name="StopPointsDiscoveryRequestTopicGroup">
 		<xsd:annotation>
-			<xsd:documentation>Parameters that specify the  STOP POINTs  to be returned. (since SIRI 2.0)</xsd:documentation>
+			<xsd:documentation>Parameters that specify the STOP POINTs to be returned. (since SIRI 2.0)</xsd:documentation>
 		</xsd:annotation>
 		<xsd:sequence>
 			<xsd:choice>
 				<xsd:element name="BoundingBox" type="BoundingBoxStructure" minOccurs="0">
 					<xsd:annotation>
-						<xsd:documentation>Rectangle containing stops  be returned. ((since SIRI 2.0))</xsd:documentation>
+						<xsd:documentation>Rectangle containing stops be returned. (since SIRI 2.0)</xsd:documentation>
 					</xsd:annotation>
 				</xsd:element>
 				<xsd:element name="Circle" type="LocationStructure" minOccurs="0">
 					<xsd:annotation>
-						<xsd:documentation>Circle containing stops  be returned. Point indicates centre, precision indicates radius ((since SIRI 2.0))</xsd:documentation>
+						<xsd:documentation>Circle containing stops be returned. Point indicates centre, precision indicates radius (since SIRI 2.0)</xsd:documentation>
 					</xsd:annotation>
 				</xsd:element>
 				<xsd:element name="PlaceRef" type="xsd:normalizedString" minOccurs="0">
 					<xsd:annotation>
-						<xsd:documentation>Filter the results to include only stops associated with  the PLACE . ((since SIRI 2.0))</xsd:documentation>
+						<xsd:documentation>Filter the results to include only stops associated with the PLACE. (since SIRI 2.0)</xsd:documentation>
 					</xsd:annotation>
 				</xsd:element>
 			</xsd:choice>
 			<xsd:element name="OperatorRef" type="OperatorRefStructure" minOccurs="0">
 				<xsd:annotation>
-					<xsd:documentation>Filter the results to include only stops run by the specified OPERATOR.  ((since SIRI 2.0))</xsd:documentation>
+					<xsd:documentation>Filter the results to include only stops run by the specified OPERATOR. (since SIRI 2.0)</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element name="LineRef" type="LineRefStructure" minOccurs="0">
 				<xsd:annotation>
-					<xsd:documentation>Filter the results to include only stops for the given LINE. ((since SIRI 2.0))</xsd:documentation>
+					<xsd:documentation>Filter the results to include only stops for the given LINE. (since SIRI 2.0)</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 		</xsd:sequence>
@@ -272,7 +272,7 @@ Rail transport, Roads and road transport
 	<!-- ===== DS: STOP POINT Response =========================================== -->
 	<xsd:element name="StopPointsDelivery" type="StopPointsDeliveryStructure" substitutionGroup="AbstractDiscoveryDelivery">
 		<xsd:annotation>
-			<xsd:documentation>Returns basic details about the  STOP POINTs/places covered by a service. Answers a StopPointsRequest.</xsd:documentation>
+			<xsd:documentation>Returns basic details about the STOP POINTs/places covered by a service. Answers a StopPointsRequest.</xsd:documentation>
 		</xsd:annotation>
 	</xsd:element>
 	<xsd:complexType name="StopPointsDeliveryStructure">
@@ -330,17 +330,17 @@ Rail transport, Roads and road transport
 				<xsd:choice>
 					<xsd:element name="BoundingBox" type="BoundingBoxStructure" minOccurs="1">
 						<xsd:annotation>
-							<xsd:documentation>Rectangle containing stops of lines be returned. ((since SIRI 2.0))</xsd:documentation>
+							<xsd:documentation>Rectangle containing stops of lines be returned. (since SIRI 2.0)</xsd:documentation>
 						</xsd:annotation>
 					</xsd:element>
 					<xsd:element name="Circle" type="LocationStructure" minOccurs="1">
 						<xsd:annotation>
-							<xsd:documentation>Circle containing stops for lines  be returned. Point indicates centre, precision indicates radius ((since SIRI 2.0))</xsd:documentation>
+							<xsd:documentation>Circle containing stops for lines be returned. Point indicates centre, precision indicates radius (since SIRI 2.0)</xsd:documentation>
 						</xsd:annotation>
 					</xsd:element>
 					<xsd:element name="PlaceRef" type="xsd:normalizedString" minOccurs="1">
 						<xsd:annotation>
-							<xsd:documentation>Filter the results to include only lines for  stops assoicated with  the place . ((since SIRI 2.0))</xsd:documentation>
+							<xsd:documentation>Filter the results to include only lines for stops associated with the place. (since SIRI 2.0)</xsd:documentation>
 						</xsd:annotation>
 					</xsd:element>
 				</xsd:choice>
@@ -352,7 +352,7 @@ Rail transport, Roads and road transport
 			</xsd:choice>
 			<xsd:element name="OperatorRef" type="OperatorRefStructure" minOccurs="0">
 				<xsd:annotation>
-					<xsd:documentation>Filter the results to include only Stop d run by the specified OPERATOR.  ((since SIRI 2.0))</xsd:documentation>
+					<xsd:documentation>Filter the results to include only Stop d run by the specified OPERATOR. (since SIRI 2.0)</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 		</xsd:sequence>
@@ -459,7 +459,7 @@ Rail transport, Roads and road transport
 			</xsd:element>
 		</xsd:sequence>
 	</xsd:group>
-	<!-- ===== DS: RODUCT CATEGORY Response =========================================== -->
+	<!-- ===== DS: PRODUCT CATEGORY Response =========================================== -->
 	<xsd:element name="ProductCategoriesDelivery" type="ProductCategoriesDeliveryStructure" substitutionGroup="AbstractDiscoveryDelivery">
 		<xsd:annotation>
 			<xsd:documentation>Returns the Product Categories covered by a service. Answers a ProductCategoriesRequest.</xsd:documentation>
@@ -623,29 +623,29 @@ Rail transport, Roads and road transport
 	</xsd:complexType>
 	<xsd:group name="FacilityRequestTopicGroup">
 		<xsd:annotation>
-			<xsd:documentation>Parameters that specify the  Facilities to be returned. (since SIRI 2.0)</xsd:documentation>
+			<xsd:documentation>Parameters that specify the Facilities to be returned. (since SIRI 2.0)</xsd:documentation>
 		</xsd:annotation>
 		<xsd:sequence>
 			<xsd:choice>
 				<xsd:element name="BoundingBox" type="BoundingBoxStructure" minOccurs="0">
 					<xsd:annotation>
-						<xsd:documentation>Rectangle containing Facilities  be returned. ((since SIRI 2.0))</xsd:documentation>
+						<xsd:documentation>Rectangle containing Facilities be returned. (since SIRI 2.0)</xsd:documentation>
 					</xsd:annotation>
 				</xsd:element>
 				<xsd:element name="PlaceRef" type="xsd:normalizedString" minOccurs="0">
 					<xsd:annotation>
-						<xsd:documentation>Filter the results to include only Facilities associated with  the TOPOGRAPHIC PLACE . ((since SIRI 2.0))</xsd:documentation>
+						<xsd:documentation>Filter the results to include only Facilities associated with the TOPOGRAPHIC PLACE. (since SIRI 2.0)</xsd:documentation>
 					</xsd:annotation>
 				</xsd:element>
 			</xsd:choice>
 			<xsd:element name="OperatorRef" type="OperatorRefStructure" minOccurs="0">
 				<xsd:annotation>
-					<xsd:documentation>Filter the results to include only Facilities run by the specified OPERATOR.  ((since SIRI 2.0))</xsd:documentation>
+					<xsd:documentation>Filter the results to include only Facilities run by the specified OPERATOR. (since SIRI 2.0)</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element name="LineRef" type="LineRefStructure" minOccurs="0">
 				<xsd:annotation>
-					<xsd:documentation>Filter the results to include only Facilities for the given LINE. ((since SIRI 2.0))</xsd:documentation>
+					<xsd:documentation>Filter the results to include only Facilities for the given LINE. (since SIRI 2.0)</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 		</xsd:sequence>
@@ -732,7 +732,7 @@ Rail transport, Roads and road transport
 	</xsd:element>
 	<xsd:complexType name="ServiceFeaturesDiscoveryRequestStructure">
 		<xsd:annotation>
-			<xsd:documentation>Type for equests for TYPE OF PRODUCT CATEGORY reference data for use in service requests.</xsd:documentation>
+			<xsd:documentation>Type for requests for TYPE OF PRODUCT CATEGORY reference data for use in service requests.</xsd:documentation>
 		</xsd:annotation>
 		<xsd:complexContent>
 			<xsd:extension base="AbstractDiscoveryRequestStructure">
@@ -811,19 +811,19 @@ Rail transport, Roads and road transport
 					</xsd:element>
 					<xsd:element name="Circle" type="LocationStructure" minOccurs="1">
 						<xsd:annotation>
-							<xsd:documentation>Circle containing stops for ConnectionLinks  be returned. Point indicates centre, precision indicates radius</xsd:documentation>
+							<xsd:documentation>Circle containing stops for ConnectionLinks be returned. Point indicates centre, precision indicates radius</xsd:documentation>
 						</xsd:annotation>
 					</xsd:element>
 					<xsd:element name="PlaceRef" type="xsd:normalizedString" minOccurs="1">
 						<xsd:annotation>
-							<xsd:documentation>Filter the results to include only ConnectionLinks for stops assoicated with  the place .</xsd:documentation>
+							<xsd:documentation>Filter the results to include only ConnectionLinks for stops associated with the place.</xsd:documentation>
 						</xsd:annotation>
 					</xsd:element>
 				</xsd:choice>
 			</xsd:choice>
 			<xsd:element name="LineRef" type="LineRefStructure" minOccurs="0">
 				<xsd:annotation>
-					<xsd:documentation>Filter the results to include only ConnectionLinks for stops assoicated with the specified line.</xsd:documentation>
+					<xsd:documentation>Filter the results to include only ConnectionLinks for stops associated with the specified line.</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element name="OperatorRef" type="OperatorRefStructure" minOccurs="0">

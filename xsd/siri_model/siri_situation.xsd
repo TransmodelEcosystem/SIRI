@@ -3,7 +3,7 @@
 	<!--
 siri_model\siri_situation-v2.0.xsd:
 19.12.2017 D. Rubli, Siri_XML-2.0p_a0.2:
-- Concequence.Period changed to unbounded.
+- Consequence.Period changed to unbounded.
 12.01.2018 D. Rubli, Siri_XML-2.0p synchronisation of recommendation with xsd:
 - RelatedToEnumeration Enum value "correctionTo" added according to recommendation document.
 - WorkflowStatusEnumeration Enum value "pendingApproval" added according to recommendation document.
@@ -65,7 +65,7 @@ siri_model\siri_situation-v2.0.xsd:
        DelayCodeENum renamed to DelayBandEnum 
        InformationUsageOverride / D2LogicalModel:InformationUsage dropped for D2
        D2LogicalModel:SourceInformation renamed to D2LogicalModel:Source
-       D2LogicalModel:SourceInformation values wrapped in valuse tag
+       D2LogicalModel:SourceInformation values wrapped in values tag
        D2LogicalModel:Advice dropped. 
        D2LogicalModel:Imppact ImpactDetails wrapper tag dropped. 
        D2TrafficRestrictionType renamed to trafficConstrictionType
@@ -191,7 +191,7 @@ Rail transport, Roads and road transport
 		<xsd:sequence>
 			<xsd:element name="RelatedToRef" type="RelatedSituationStructure" maxOccurs="unbounded">
 				<xsd:annotation>
-					<xsd:documentation>A reference to another SITUATION with an indication of the nature of the association, e.g. a cause, a result, an update. Note that a Entry that is an update, i.e. has the same IdentifierNumber but a later version number as a previous Entry alway has a supercedes relationship and this does not need to be expliciitly coded.</xsd:documentation>
+					<xsd:documentation>A reference to another SITUATION with an indication of the nature of the association, e.g. a cause, a result, an update. Note that a Entry that is an update, i.e. has the same IdentifierNumber but a later version number as a previous Entry always has a supercedes relationship and this does not need to be expliciitly coded.</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 		</xsd:sequence>
@@ -203,7 +203,7 @@ Rail transport, Roads and road transport
 		<xsd:sequence>
 			<xsd:element name="CreationTime" type="xsd:dateTime">
 				<xsd:annotation>
-					<xsd:documentation>Time of creation of 'related to' assocation.</xsd:documentation>
+					<xsd:documentation>Time of creation of 'related to' association.</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:group ref="SituationSharedIdentityGroup">
@@ -218,7 +218,7 @@ Rail transport, Roads and road transport
 			</xsd:element>
 			<xsd:element name="RelatedAs" type="RelatedToEnumeration" minOccurs="0">
 				<xsd:annotation>
-					<xsd:documentation>Relationship of refercence to the referncing SITUATION e.</xsd:documentation>
+					<xsd:documentation>Relationship of refercence to the referencing SITUATION e.</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element ref="Extensions" minOccurs="0"/>
@@ -278,7 +278,7 @@ Rail transport, Roads and road transport
 		<xsd:sequence>
 			<xsd:element name="Affects" type="AffectsScopeStructure" minOccurs="0">
 				<xsd:annotation>
-					<xsd:documentation>Structured model identifiying parts of transport network affected by SITUATION. OPERATOR and NETWORK values will be defaulted to values in general Context unless explicitly overridden.</xsd:documentation>
+					<xsd:documentation>Structured model identifying parts of transport network affected by SITUATION. OPERATOR and NETWORK values will be defaulted to values in general Context unless explicitly overridden.</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element name="Consequences" type="PtConsequencesStructure" minOccurs="0">
@@ -333,7 +333,7 @@ Rail transport, Roads and road transport
 		<xsd:sequence>
 			<xsd:element name="Affects" type="AffectsScopeStructure" minOccurs="0">
 				<xsd:annotation>
-					<xsd:documentation>Structured model identifiying parts of transport network affected by SITUATION. OPERATOR and Network values will be defaulted to values in general Context unless explicitly overridden.</xsd:documentation>
+					<xsd:documentation>Structured model identifying parts of transport network affected by SITUATION. OPERATOR and Network values will be defaulted to values in general Context unless explicitly overridden.</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element name="Consequences" type="PtConsequencesStructure" minOccurs="0">
@@ -431,14 +431,14 @@ Rail transport, Roads and road transport
 			</xsd:element>
 			<xsd:element name="groupOfLocations" type="D2LogicalModel:GroupOfLocations" minOccurs="0">
 				<xsd:annotation>
-					<xsd:documentation>Datex 2 model of where event ois taking place on the road.</xsd:documentation>
+					<xsd:documentation>Datex 2 model of where event is taking place on the road.</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 		</xsd:sequence>
 	</xsd:group>
 	<xsd:group name="Datex2OtherGroup">
 		<xsd:annotation>
-			<xsd:documentation>Datex2 Tarffic element.</xsd:documentation>
+			<xsd:documentation>Datex2 Traffic element.</xsd:documentation>
 		</xsd:annotation>
 		<xsd:sequence>
 			<xsd:element name="management" type="D2LogicalModel:Management" minOccurs="0"/>
@@ -512,7 +512,7 @@ Rail transport, Roads and road transport
 			</xsd:element>
 			<xsd:group ref="SituationSourceDetailsGroup">
 				<xsd:annotation>
-					<xsd:documentation>Further contact details about source. May be used for udpoates or verifcation.</xsd:documentation>
+					<xsd:documentation>Further contact details about source. May be used for udpoates or verification.</xsd:documentation>
 				</xsd:annotation>
 			</xsd:group>
 			<xsd:element name="SourceMethod" type="D2LogicalModel:SourceTypeEnum" minOccurs="0">
@@ -760,14 +760,14 @@ Note: this means that ReasonName is NOT a complete message, but only a (few) wor
 			</xsd:element>
 			<xsd:element name="ReasonName" type="NaturalLanguageStringStructure" minOccurs="0" maxOccurs="unbounded">
 				<xsd:annotation>
-					<xsd:documentation>Textual classification of nature of SITUATION, from which a standardized message can be generated. Not normally needed, except when TpegReason and PublicEventReason are absent.  (Unbounded since SIRI 2.0)</xsd:documentation>
+					<xsd:documentation>Textual classification of nature of SITUATION, from which a standardized message can be generated. Not normally needed, except when TpegReason and PublicEventReason are absent. (Unbounded since SIRI 2.0)</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element name="ControlActionRef" type="ControlActionRefStructure" minOccurs="0">
 				<xsd:annotation>
 					<xsd:documentation>Reference to a ControlAction being a reason for the situation. It is place in the ReasonGroup to emphasise that the CONTROL ACTION is the reason for the SITUATION, and not the way around: in the opposite case (a SITUATION being the reason for the CONTROL ACTION, some weather condition, or an accident, for example) the CONTROL ACTION will refer the SITUATION.
 
-Note that if the ControlAction is the master ControlAction of a GroupOfControlActions it is assumed that the refence is valid for all the ControlActions of the group.</xsd:documentation>
+Note that if the ControlAction is the master ControlAction of a GroupOfControlActions it is assumed that the reference is valid for all the ControlActions of the group.</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 		</xsd:sequence>
@@ -1023,13 +1023,13 @@ Note that if the ControlAction is the master ControlAction of a GroupOfControlAc
 			</xsd:element>
 			<xsd:element name="Vehicles" minOccurs="0">
 				<xsd:annotation>
-					<xsd:documentation>Specific vehicles affected by SITUATION. ((since SIRI 2.0))</xsd:documentation>
+					<xsd:documentation>Specific vehicles affected by SITUATION. (since SIRI 2.0)</xsd:documentation>
 				</xsd:annotation>
 				<xsd:complexType>
 					<xsd:sequence>
 						<xsd:element name="AffectedVehicle" type="AffectedVehicleStructure" maxOccurs="unbounded">
 							<xsd:annotation>
-								<xsd:documentation>Vehicles affected by the SITUATION. ((since SIRI 2.0))</xsd:documentation>
+								<xsd:documentation>Vehicles affected by the SITUATION. (since SIRI 2.0)</xsd:documentation>
 							</xsd:annotation>
 						</xsd:element>
 					</xsd:sequence>
@@ -1087,7 +1087,7 @@ Note that if the ControlAction is the master ControlAction of a GroupOfControlAc
 	</xsd:complexType>
 	<xsd:group name="DescriptionGroup">
 		<xsd:annotation>
-			<xsd:documentation>Text description of SITUATION. Some or all of this may have been generated from the other structured content elements. Where text has been overriden this is indicated.</xsd:documentation>
+			<xsd:documentation>Text description of SITUATION. Some or all of this may have been generated from the other structured content elements. Where text has been overridden this is indicated.</xsd:documentation>
 		</xsd:annotation>
 		<xsd:sequence>
 			<xsd:element name="Language" type="xsd:language" default="en" minOccurs="0">
@@ -1097,22 +1097,22 @@ Note that if the ControlAction is the master ControlAction of a GroupOfControlAc
 			</xsd:element>
 			<xsd:element name="Summary" type="DefaultedTextStructure" minOccurs="0" maxOccurs="unbounded">
 				<xsd:annotation>
-					<xsd:documentation>Summary of SITUATION. If absent should be generated from structure elements, and/or by condensing Description.  (Unbounded since SIRI 2.0)</xsd:documentation>
+					<xsd:documentation>Summary of SITUATION. If absent should be generated from structure elements, and/or by condensing Description. (Unbounded since SIRI 2.0)</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element name="Description" type="DefaultedTextStructure" minOccurs="0" maxOccurs="unbounded">
 				<xsd:annotation>
-					<xsd:documentation>Description of SITUATION. Should not repeat any strap line included in Summary.  (Unbounded since SIRI 2.0)</xsd:documentation>
+					<xsd:documentation>Description of SITUATION. Should not repeat any strap line included in Summary. (Unbounded since SIRI 2.0)</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element name="Detail" type="DefaultedTextStructure" minOccurs="0" maxOccurs="unbounded">
 				<xsd:annotation>
-					<xsd:documentation>Additional descriptive details about the SITUATION  (Unbounded since SIRI 2.0).</xsd:documentation>
+					<xsd:documentation>Additional descriptive details about the SITUATION (Unbounded since SIRI 2.0).</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element name="Advice" type="DefaultedTextStructure" minOccurs="0" maxOccurs="unbounded">
 				<xsd:annotation>
-					<xsd:documentation>Further advice to passengers.  (Unbounded since SIRI 2.0)</xsd:documentation>
+					<xsd:documentation>Further advice to passengers. (Unbounded since SIRI 2.0)</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element name="Internal" type="DefaultedTextStructure" minOccurs="0">
@@ -1203,7 +1203,7 @@ Note that if the ControlAction is the master ControlAction of a GroupOfControlAc
 			</xsd:element>
 			<xsd:element name="Label" type="NaturalLanguageStringStructure" minOccurs="0" maxOccurs="unbounded">
 				<xsd:annotation>
-					<xsd:documentation>Label for Link.  (Unbounded since SIRI 2.0)</xsd:documentation>
+					<xsd:documentation>Label for Link. (Unbounded since SIRI 2.0)</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element name="Image" type="ImageStructure" minOccurs="0">
@@ -1373,7 +1373,7 @@ Alternatively, AdviceRef can be used to reference a (complete) standardised advi
 			</xsd:element>
 			<xsd:element name="Details" type="NaturalLanguageStringStructure" minOccurs="0" maxOccurs="unbounded">
 				<xsd:annotation>
-					<xsd:documentation>Further textual advice to passengers.  (Unbounded since SIRI 2.0)</xsd:documentation>
+					<xsd:documentation>Further textual advice to passengers. (Unbounded since SIRI 2.0)</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 		</xsd:sequence>
@@ -1510,12 +1510,12 @@ Alternatively, AdviceRef can be used to reference a (complete) standardised advi
 			</xsd:element>
 			<xsd:element name="Easement" type="NaturalLanguageStringStructure" minOccurs="0" maxOccurs="unbounded">
 				<xsd:annotation>
-					<xsd:documentation>Description of fare exceptions allowed because of disruption.  (Unbounded since SIRI 2.0)</xsd:documentation>
+					<xsd:documentation>Description of fare exceptions allowed because of disruption. (Unbounded since SIRI 2.0)</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element name="EasementRef" type="xsd:normalizedString" minOccurs="0">
 				<xsd:annotation>
-					<xsd:documentation>Refernce to a fare exceptions code that is allowed because of the disruption. An easement may relax a fare condition, for example "You may use your metro ticket on the bus', or 'You may use your bus ticket in teh metro between these two stops'.</xsd:documentation>
+					<xsd:documentation>Reference to a fare exceptions code that is allowed because of the disruption. An easement may relax a fare condition, for example "You may use your metro ticket on the bus', or 'You may use your bus ticket in the metro between these two stops'.</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 		</xsd:sequence>

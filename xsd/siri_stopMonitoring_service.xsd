@@ -33,7 +33,7 @@
 					 (a) Correct missing type on FeatureRef 
 					 (b) Add optional MonitoringRef on response so that can return the identfiier even if there are no stop visits.
 						 This allows client to be stateless - 
-					 (a) Add a StopMonitoringMultipleRequest and othe elements top support multiple stops on single request 
+					 (a) Add a StopMonitoringMultipleRequest and other elements top support multiple stops on single request 
 				</Date>
 				<Date><Modified>2008-10-06</Modified>
 					 Drop redundant groups 
@@ -48,8 +48,8 @@
 					 (since SIRI 2.0)  
 					  [VDV] Add Minimum-StopVisits�PerVia to STopMonitoringRequestPolicy
 					  [VDV] Add HasMinimum-StopVisits�Via to STopMonitoringCapabilities
-					  [VDV]  Revise MonitoredVehicleJourney to include additioanl result files
-					  [FR] Add Servcie Exception element
+					  [VDV]  Revise MonitoredVehicleJourney to include additional result files
+					  [FR] Add Service Exception element
 					  [VDV] Add delivery variant to LineNote
 					  [SIRI-LITE] Allow a monitoring name in results. 
 					   [SIRI-LITE] Whether any related Situations  should be included in the ServiceDelivery. Default is 'false'. (since SIRI 2.0)
@@ -246,7 +246,7 @@ Rail transport, Roads and road transport
 						</xsd:element>
 						<xsd:element name="Onwards" type="xsd:nonNegativeInteger" minOccurs="0">
 							<xsd:annotation>
-								<xsd:documentation>Maximum number of ONWARDS CALLs  to include in results. Zero for none. Only applies if StopMonitoringDetailLevel of 'calls'specified. Zero for none. If StopMonitoringDetailLevel of 'calls' specified but MaximumNumberOfCalls.Onwards absent, include all ONWARDS CALLs.</xsd:documentation>
+								<xsd:documentation>Maximum number of ONWARDS CALLs to include in results. Zero for none. Only applies if StopMonitoringDetailLevel of 'calls'specified. Zero for none. If StopMonitoringDetailLevel of 'calls' specified but MaximumNumberOfCalls.Onwards absent, include all ONWARDS CALLs.</xsd:documentation>
 							</xsd:annotation>
 						</xsd:element>
 					</xsd:sequence>
@@ -403,7 +403,7 @@ If false each subscription response will contain the full information as specifi
 					<xsd:group ref="StopMonitoringPayloadGroup"/>
 					<xsd:element name="Note" type="NaturalLanguageStringStructure" minOccurs="0" maxOccurs="unbounded">
 						<xsd:annotation>
-							<xsd:documentation>Text associated with whole delivery.  (Unbounded since SIRI 2.0)</xsd:documentation>
+							<xsd:documentation>Text associated with whole delivery. (Unbounded since SIRI 2.0)</xsd:documentation>
 						</xsd:annotation>
 					</xsd:element>
 					<xsd:element ref="Extensions" minOccurs="0"/>
@@ -424,12 +424,12 @@ If false each subscription response will contain the full information as specifi
 		<xsd:sequence>
 			<xsd:element name="MonitoringRef" type="MonitoringRefStructure" minOccurs="0" maxOccurs="unbounded">
 				<xsd:annotation>
-					<xsd:documentation>Reference to a stop monitoring point (LOGICAL DISPLAY that was requested. This can a be used to return the reference to the requested Monitoring Point  if there are no stop visits for the stop. Normally tere will only be one. SIRI v1.3</xsd:documentation>
+					<xsd:documentation>Reference to a stop monitoring point (LOGICAL DISPLAY that was requested. This can be used to return the reference to the requested Monitoring Point if there are no stop visits for the stop. Normally there will only be one. SIRI v1.3</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element name="MonitoringName" type="NaturalLanguageStringStructure" minOccurs="0" maxOccurs="unbounded">
 				<xsd:annotation>
-					<xsd:documentation>Name to use to describe monitoring point (Stop or display). Normally Consumer will already have access to this in its reference data but may be included to increase utility of delivery data i to devices that do not hold reference data, e.g. for SIRI LITE services((since SIRI 2.0)).</xsd:documentation>
+					<xsd:documentation>Name to use to describe monitoring point (Stop or display). Normally Consumer will already have access to this in its reference data but may be included to increase utility of delivery data i to devices that do not hold reference data, e.g. for SIRI LITE services (since SIRI 2.0).</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element ref="MonitoredStopVisit" minOccurs="0" maxOccurs="unbounded"/>
@@ -443,12 +443,12 @@ If false each subscription response will contain the full information as specifi
 			</xsd:element>
 			<xsd:element ref="StopNoticeCancellation" minOccurs="0" maxOccurs="unbounded">
 				<xsd:annotation>
-					<xsd:documentation>Reference to an previously communicated Notice which should now be removed from the arrival/departure board for the stop.  (SIRI 2.0++)</xsd:documentation>
+					<xsd:documentation>Reference to an previously communicated Notice which should now be removed from the arrival/departure board for the stop. (SIRI 2.0++)</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element ref="ServiceException" minOccurs="0" maxOccurs="unbounded">
 				<xsd:annotation>
-					<xsd:documentation>Information about unavailablilty of some or all services at the  SIRI 2.0</xsd:documentation>
+					<xsd:documentation>Information about unavailablilty of some or all services at the SIRI 2.0</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 		</xsd:sequence>
@@ -501,7 +501,7 @@ If false each subscription response will contain the full information as specifi
 					</xsd:element>
 					<xsd:element name="StopFacility" type="FacilityRefStructure" minOccurs="0">
 						<xsd:annotation>
-							<xsd:documentation>Facility associated with  stop visit</xsd:documentation>
+							<xsd:documentation>Facility associated with stop visit</xsd:documentation>
 						</xsd:annotation>
 					</xsd:element>
 					<xsd:element ref="Extensions" minOccurs="0"/>
@@ -553,7 +553,7 @@ If false each subscription response will contain the full information as specifi
 					<xsd:group ref="JourneyPatternInfoGroup"/>
 					<xsd:element name="Reason" type="NaturalLanguageStringStructure" minOccurs="0" maxOccurs="unbounded">
 						<xsd:annotation>
-							<xsd:documentation>Reason for cancellation.  (Unbounded since SIRI 2.0)</xsd:documentation>
+							<xsd:documentation>Reason for cancellation. (Unbounded since SIRI 2.0)</xsd:documentation>
 						</xsd:annotation>
 					</xsd:element>
 					<xsd:element ref="Extensions" minOccurs="0"/>
@@ -683,7 +683,7 @@ If false each subscription response will contain the full information as specifi
 					<xsd:element ref="SituationRef" minOccurs="0" maxOccurs="unbounded"/>
 					<xsd:element name="StopNote" type="NaturalLanguageStringStructure" minOccurs="0" maxOccurs="unbounded">
 						<xsd:annotation>
-							<xsd:documentation>Text associated with Stop Notice  ed since SIRI 2.0)</xsd:documentation>
+							<xsd:documentation>Text associated with Stop (since SIRI 2.0)</xsd:documentation>
 						</xsd:annotation>
 					</xsd:element>
 					<xsd:element ref="Extensions" minOccurs="0"/>
@@ -874,7 +874,7 @@ If false each subscription response will contain the full information as specifi
 								</xsd:element>
 								<xsd:element name="ByStartTime" type="xsd:boolean" default="true" minOccurs="0">
 									<xsd:annotation>
-										<xsd:documentation>Whether a start time other than now can be specified for preview interval. Default  is 'true'.</xsd:documentation>
+										<xsd:documentation>Whether a start time other than now can be specified for preview interval. Default is 'true'.</xsd:documentation>
 									</xsd:annotation>
 								</xsd:element>
 								<xsd:element ref="FilterByMonitoringRef"/>

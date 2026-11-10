@@ -28,13 +28,13 @@
 		  
 		  UnknownParticipant	Recipient for a message to be distributed is unknown. (since SIRI 2.0)
 		  UnknownEndpoint	Endpoint to which a message is to be distributed is unknown. (since SIRI 2.0)
-		  EndpointDeniedAccess	Distribution message could not be delivered because not authorised.. (since SIRI 2.0)
+		  EndpointDeniedAccess	Distribution message could not be delivered because not authorised. (since SIRI 2.0)
 		  EndpointNotAvailable	Recipient of a message to be distributed is not available. (since SIRI 2.0)
 		  UnapprovedKey	User authorisation Key is not  enabled. (since SIRI 2.0)
 		  
 		  InvalidDataReferences	Request contains references to  identifiers that are not known.  (since SIRI 2.0)
 		  ParametersIgnored	Request contained parameters that were not supported by the producer. A response has been provided but some parameters have been ignored. (since SIRI 2.0)
-		  UnknownExtensions	Request contained extensions that were not supported bu the producer. A response has been provided but some or all extensions have been ignored.. (since SIRI 2.0) -->
+		  UnknownExtensions	Request contained extensions that were not supported by the producer. A response has been provided but some or all extensions have been ignored. (since SIRI 2.0) -->
 				</Date>
 				<Date>
 					<Modified>2012-03-23</Modified>
@@ -125,7 +125,7 @@ Rail transport, Roads and road transport
 	<!-- ======================================================================= -->
 	<xsd:element name="ErrorConditionElement" type="ErrorConditionElementStructure" abstract="false">
 		<xsd:annotation>
-			<xsd:documentation>Element fror an error condition  (for use in WSDL.)</xsd:documentation>
+			<xsd:documentation>Element fror an error condition (for use in WSDL.)</xsd:documentation>
 		</xsd:annotation>
 	</xsd:element>
 	<xsd:complexType name="ErrorConditionElementStructure">
@@ -205,7 +205,7 @@ Rail transport, Roads and road transport
 			<xsd:group ref="ApplicationErrorGroup"/>
 		</xsd:choice>
 	</xsd:group>
-	<!-- ===  DISTRIBUTION ((since SIRI 2.0))================================================== -->
+	<!-- ===  DISTRIBUTION (since SIRI 2.0)================================================== -->
 	<xsd:group name="DistributionErrorGroup">
 		<xsd:annotation>
 			<xsd:documentation>Errors that may arise in the execution of a delegated distribution request. (since SIRI 2.0)</xsd:documentation>
@@ -259,7 +259,7 @@ Rail transport, Roads and road transport
 				<xsd:sequence>
 					<xsd:element name="ParticipantRef" type="ParticipantRefStructure" minOccurs="0">
 						<xsd:annotation>
-							<xsd:documentation>Reference to  Participant who is unknown. (since SIRI v2.0)</xsd:documentation>
+							<xsd:documentation>Reference to Participant who is unknown. (since SIRI v2.0)</xsd:documentation>
 						</xsd:annotation>
 					</xsd:element>
 				</xsd:sequence>
@@ -345,14 +345,14 @@ Rail transport, Roads and road transport
 			<xsd:element ref="InvalidDataReferencesError"/>
 			<xsd:element ref="BeyondDataHorizon">
 				<xsd:annotation>
-					<xsd:documentation>Error: Data period or subscription period is outside of period covered by service.   (since SIRI 2.0).</xsd:documentation>
+					<xsd:documentation>Error: Data period or subscription period is outside of period covered by service. (since SIRI 2.0).</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element ref="NoInfoForTopicError"/>
 			<xsd:element ref="ParametersIgnoredError"/>
 			<xsd:element ref="UnknownExtensionsError">
 				<xsd:annotation>
-					<xsd:documentation>Error: Request contained extensions that were not supported by the producer. A response has been provided but some or all extensions have been ignored.  (since SIRI 2.0).</xsd:documentation>
+					<xsd:documentation>Error: Request contained extensions that were not supported by the producer. A response has been provided but some or all extensions have been ignored. (since SIRI 2.0).</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element ref="AllowedResourceUsageExceededError"/>
@@ -374,7 +374,7 @@ Rail transport, Roads and road transport
 				<xsd:sequence>
 					<xsd:element name="ExpectedRestartTime" type="xsd:dateTime" minOccurs="0">
 						<xsd:annotation>
-							<xsd:documentation>Expected time fro reavailability of service. (since SIRI 2.0)</xsd:documentation>
+							<xsd:documentation>Expected time for reavailability of service. (since SIRI 2.0)</xsd:documentation>
 						</xsd:annotation>
 					</xsd:element>
 				</xsd:sequence>
@@ -449,7 +449,7 @@ Rail transport, Roads and road transport
 	<!-- ===Error: Invalid Data References ======================================= -->
 	<xsd:element name="InvalidDataReferencesError" type="InvalidDataReferencesErrorStructure" substitutionGroup="ErrorCode">
 		<xsd:annotation>
-			<xsd:documentation>Error: Request contains references to  identifiers that are not known.  (since SIRI 2.0).</xsd:documentation>
+			<xsd:documentation>Error: Request contains references to identifiers that are not known. (since SIRI 2.0).</xsd:documentation>
 		</xsd:annotation>
 	</xsd:element>
 	<xsd:complexType name="InvalidDataReferencesErrorStructure">

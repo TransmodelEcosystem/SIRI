@@ -34,7 +34,7 @@
 				</Date>
 				<Description>
 					<p>SIRI is a European CEN technical standard for the exchange of real-time information.</p>
-					<p>This subschema describes  soem code value  models used by different SIRI functional services
+					<p>This subschema describes some code value  models used by different SIRI functional services
      <ul><li>Service Feature discovery</li><li>TYPE OF PRODUCT CATEGORY Discovery</li></ul>
 					</p>
 				</Description>
@@ -56,7 +56,7 @@
 				</Rights>
 				<Source>
 					<ul>
-						<li>Discovery services Derived from the NaPTAN standard .</li>
+						<li>Discovery services Derived from the NaPTAN standard.</li>
 					</ul>
 				</Source>
 				<Status>Version 2.1</Status>
@@ -75,7 +75,7 @@ Rail transport, Roads and road transport
 				<Type>Standard</Type>
 			</Metadata>
 		</xsd:appinfo>
-		<xsd:documentation>SIRI subschema with view of  LINE for use in Discovery service</xsd:documentation>
+		<xsd:documentation>SIRI subschema with view of LINE for use in Discovery service</xsd:documentation>
 	</xsd:annotation>
 	<!-- ======================================================================= -->
 	<!-- Global import of all IFOPT namespace elements used in SIRI needed to work around JAXB/XERCES/xmllint limitations -->
@@ -140,14 +140,14 @@ Rail transport, Roads and road transport
 	<!-- ======================================================================= -->
 	<xsd:complexType name="RouteDirectionStructure">
 		<xsd:annotation>
-			<xsd:documentation>Summary information about a  Direction of a Line</xsd:documentation>
+			<xsd:documentation>Summary information about a Direction of a Line</xsd:documentation>
 		</xsd:annotation>
 		<xsd:complexContent>
 			<xsd:extension base="DirectionStructure">
 				<xsd:sequence>
 					<xsd:element name="JourneyPatterns" minOccurs="0">
 						<xsd:annotation>
-							<xsd:documentation>JourneyPatterns in  Direction of route (since SIRI 2.0)</xsd:documentation>
+							<xsd:documentation>JourneyPatterns in Direction of route (since SIRI 2.0)</xsd:documentation>
 						</xsd:annotation>
 						<xsd:complexType>
 							<xsd:sequence>
@@ -160,12 +160,12 @@ Rail transport, Roads and road transport
 											<xsd:element ref="JourneyPatternRef" minOccurs="0"/>
 											<xsd:element name="Name" type="NaturalLanguageStringStructure" minOccurs="0" maxOccurs="unbounded">
 												<xsd:annotation>
-													<xsd:documentation>Name Of Journety Pattern (SIRI 2.0)</xsd:documentation>
+													<xsd:documentation>Name Of Journey Pattern (SIRI 2.0)</xsd:documentation>
 												</xsd:annotation>
 											</xsd:element>
 											<xsd:element name="StopsInPattern" minOccurs="0">
 												<xsd:annotation>
-													<xsd:documentation>Ordered collection of STOP POINTs the LINE and direction . Detail level is  'stops'. (since SIRI 2.0) </xsd:documentation>
+													<xsd:documentation>Ordered collection of STOP POINTs the LINE and direction. Detail level is 'stops'. (since SIRI 2.0) </xsd:documentation>
 												</xsd:annotation>
 												<xsd:complexType>
 													<xsd:sequence>
@@ -202,7 +202,7 @@ Rail transport, Roads and road transport
 					</xsd:element>
 					<xsd:element name="OnwardLinkShape" type="LineShapeStructure" minOccurs="0">
 						<xsd:annotation>
-							<xsd:documentation>Plot of points from this stop to next Stop.  Detail level is 'full'. (since SIRI 2.0) </xsd:documentation>
+							<xsd:documentation>Plot of points from this stop to next Stop. Detail level is 'full'. (since SIRI 2.0) </xsd:documentation>
 						</xsd:annotation>
 					</xsd:element>
 					<xsd:element name="LinkProjectionToNextStopPoint" type="ifopt:LinkProjectionStructure" minOccurs="0">
@@ -229,7 +229,7 @@ Rail transport, Roads and road transport
 			<xsd:element name="DestinationRef" type="DestinationRefStructure"/>
 			<xsd:element name="PlaceName" type="NaturalLanguageStringStructure" maxOccurs="unbounded">
 				<xsd:annotation>
-					<xsd:documentation>Name of destination TOPOGRAPHIC PLACE.  (Unbounded since SIRI 2.0)</xsd:documentation>
+					<xsd:documentation>Name of destination TOPOGRAPHIC PLACE. (Unbounded since SIRI 2.0)</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element name="DirectionRef" type="DirectionRefStructure" minOccurs="0">

@@ -29,7 +29,7 @@
 				</Date>
 				<Date>
 					<Modified>2011-04-18</Modified>
-					<!-- siri_journey.xsd (l.1015). FramedVehicleJourneyRef isn't mandatory in MonitoredCall SIRI-SM answer accourding to CEN TS (prCEN/TS 15531-3:2006 (E) p.56). Make optional. RV ixxx.com -->
+					<!-- siri_journey.xsd (l.1015). FramedVehicleJourneyRef isn't mandatory in MonitoredCall SIRI-SM answer according to CEN TS (prCEN/TS 15531-3:2006 (E) p.56). Make optional. RV ixxx.com -->
 				</Date>
 				<Date>
 					<Modified>2012-03-22</Modified>
@@ -43,11 +43,11 @@
 					<Modified>2013-02-11</Modified>
 					<!-- SIRI 2.0
 	      Add notExpected state to ProgressStatusEnum
-		  Corrected enumeration value cancellled in VehicleStatusEnum -->
+		  Corrected enumeration value cancelled in VehicleStatusEnum -->
 				</Date>
 				<Description>
-					<p>SIRI is a European CEN technical standard for the exchange of real-time information .</p>
-					<p>This subschema defines identifer definitions for common journey elements.</p>
+					<p>SIRI is a European CEN technical standard for the exchange of real-time information.</p>
+					<p>This subschema defines identifier definitions for common journey elements.</p>
 				</Description>
 				<Format>
 					<MediaType>text/xml</MediaType>
@@ -81,7 +81,7 @@ Rail transport, Roads and road transport
 					</Category>
 					<Project>CEN TC278 WG3 SG7</Project>
 				</Subject>
-				<Title>SIRI XML schema. Service Interface for Real-time  Information relating to Public Transport Operations. Subschema of identifers common journey elements</Title>
+				<Title>SIRI XML schema. Service Interface for Real-time  Information relating to Public Transport Operations. Subschema of identifiers common journey elements</Title>
 				<Type>Standard</Type>
 			</Metadata>
 		</xsd:appinfo>
@@ -135,7 +135,7 @@ Rail transport, Roads and road transport
 			</xsd:element>
 		</xsd:sequence>
 	</xsd:group>
-	<!-- =====VEHICLE JOURNEY identfiers=============================================================== -->
+	<!-- =====VEHICLE JOURNEY identifiers=============================================================== -->
 	<xsd:simpleType name="VehicleJourneyCodeType">
 		<xsd:annotation>
 			<xsd:documentation>Type for identifier of a VEHICLE JOURNEY.</xsd:documentation>
@@ -207,7 +207,7 @@ Rail transport, Roads and road transport
 			</xsd:element>
 		</xsd:sequence>
 	</xsd:complexType>
-	<!-- =====VEHICLE JOURNEY identfiers=============================================================== -->
+	<!-- =====VEHICLE JOURNEY identifiers=============================================================== -->
 	<xsd:complexType name="ConnectingJourneyRefStructure">
 		<xsd:annotation>
 			<xsd:documentation>Type for a reference to a connecting journey.</xsd:documentation>
@@ -245,10 +245,10 @@ Rail transport, Roads and road transport
 			</xsd:element>
 		</xsd:sequence>
 	</xsd:complexType>
-	<!-- ===== INTERCHANGE identfiers=============================================================== -->
+	<!-- ===== INTERCHANGE identifiers=============================================================== -->
 	<xsd:simpleType name="InterchangeCodeType">
 		<xsd:annotation>
-			<xsd:documentation>Type for identifer of a SERVICE JOURNEY INTERCHANGE.</xsd:documentation>
+			<xsd:documentation>Type for identifier of a SERVICE JOURNEY INTERCHANGE.</xsd:documentation>
 		</xsd:annotation>
 		<xsd:restriction base="xsd:NMTOKEN"/>
 	</xsd:simpleType>
@@ -262,13 +262,13 @@ Rail transport, Roads and road transport
 	</xsd:complexType>
 	<xsd:element name="InterchangeRef" type="InterchangeRefStructure">
 		<xsd:annotation>
-			<xsd:documentation>Reference to a SERVICE JOURNEY  INTERCHANGE.</xsd:documentation>
+			<xsd:documentation>Reference to a SERVICE JOURNEY INTERCHANGE.</xsd:documentation>
 		</xsd:annotation>
 	</xsd:element>
 	<!-- ======================================================================= -->
 	<xsd:complexType name="FramedVehicleJourneyRefStructure">
 		<xsd:annotation>
-			<xsd:documentation>Type for identifer of a VEHICLE JOURNEY within data Horizon of a service.</xsd:documentation>
+			<xsd:documentation>Type for identifier of a VEHICLE JOURNEY within data Horizon of a service.</xsd:documentation>
 		</xsd:annotation>
 		<xsd:sequence>
 			<xsd:element name="DataFrameRef" type="DataFrameRefStructure">
@@ -587,25 +587,25 @@ Has the following uses:
 		<xsd:sequence>
 			<xsd:element name="OperatorRef" type="OperatorRefStructure" minOccurs="0">
 				<xsd:annotation>
-					<xsd:documentation>OPERATOR of a VEHICLE JOURNEY.   Note that the operator may change over the course of a journey.  This shoudl show teh operator for the curent point in the journey.  Use Journey Parts tp record all the operators in the whole journeyh.</xsd:documentation>
+					<xsd:documentation>OPERATOR of a VEHICLE JOURNEY. Note that the operator may change over the course of a journey. This should show the operator for the current point in the journey. Use Journey Parts tp record all the operators in the whole journeyh.</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element name="ProductCategoryRef" type="ProductCategoryRefStructure" minOccurs="0">
 				<xsd:annotation>
-					<xsd:documentation>Product Classification of VEHICLE JOURNEY- subdivides a transport mode. e.g. express, loacl.</xsd:documentation>
+					<xsd:documentation>Product Classification of VEHICLE JOURNEY- subdivides a transport mode. e.g. express, local.</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element ref="ServiceFeatureRef" minOccurs="0" maxOccurs="unbounded">
 				<xsd:annotation>
 					<xsd:documentation>Classification of service into arbitrary Service categories, e.g. school bus. Recommended SIRI values based on TPEG are given in SIRI documentation and enumerated in the siri_facilities package. 
-Corresponds to NeTEX TYPE OF SERVICe.</xsd:documentation>
+Corresponds to NeTEX TYPE OF SERVICE.</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 		</xsd:sequence>
 	</xsd:group>
 	<xsd:group name="ServiceInfoGroup">
 		<xsd:annotation>
-			<xsd:documentation>Elements classifying the Service or journey. Values for these elements can be specified on a timetabled schedule and will be inherited, unless overriden, onto the production timetable and then onto the individul dated VEHICLE JOURNEYs of the timetable. Each monitored journey takes its values from the dated VEHICLE JOURNEY that it follows. The absence of a value on an entity at a given level indicates that the value should be inherited (i) from any recent preceding update message for the same entity, or if there is no previous override, (ii) from its immediate parent entity.</xsd:documentation>
+			<xsd:documentation>Elements classifying the Service or journey. Values for these elements can be specified on a timetabled schedule and will be inherited, unless overridden, onto the production timetable and then onto the individual dated VEHICLE JOURNEYs of the timetable. Each monitored journey takes its values from the dated VEHICLE JOURNEY that it follows. The absence of a value on an entity at a given level indicates that the value should be inherited (i) from any recent preceding update message for the same entity, or if there is no previous override, (ii) from its immediate parent entity.</xsd:documentation>
 		</xsd:annotation>
 		<xsd:sequence>
 			<xsd:group ref="BasicServiceInfoGroup"/>

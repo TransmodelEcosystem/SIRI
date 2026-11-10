@@ -75,7 +75,7 @@ Rail transport, Roads and road transport
 	</xsd:group>
 	<xsd:group name="CommonFacilityGroup">
 		<xsd:annotation>
-			<xsd:documentation>tructured Classification Elements. Corresponds to TPEG 18 Event Reason.</xsd:documentation>
+			<xsd:documentation>Structured Classification Elements. Corresponds to TPEG 18 Event Reason.</xsd:documentation>
 		</xsd:annotation>
 		<xsd:sequence>
 			<xsd:element ref="FareClassFacility" minOccurs="0" maxOccurs="unbounded"/>
@@ -160,15 +160,15 @@ Rail transport, Roads and road transport
 			<xsd:enumeration value="validator"/>
 		</xsd:restriction>
 	</xsd:simpleType>
-	<!-- ===Accomodation FACILITY====================================== -->
+	<!-- ===Accommodation FACILITY====================================== -->
 	<xsd:element name="AccommodationFacility" type="AccommodationFacilityEnumeration" default="unknown">
 		<xsd:annotation>
-			<xsd:documentation>Classification of Accomodation Facility type - Tpeg pti23.</xsd:documentation>
+			<xsd:documentation>Classification of Accommodation Facility type - Tpeg pti23.</xsd:documentation>
 		</xsd:annotation>
 	</xsd:element>
 	<xsd:simpleType name="AccommodationFacilityEnumeration">
 		<xsd:annotation>
-			<xsd:documentation>Values for Accomodation Facility: TPEG pti_table 23.</xsd:documentation>
+			<xsd:documentation>Values for Accommodation Facility: TPEG pti_table 23.</xsd:documentation>
 		</xsd:annotation>
 		<xsd:restriction base="xsd:NMTOKEN">
 			<xsd:enumeration value="unknown"/>

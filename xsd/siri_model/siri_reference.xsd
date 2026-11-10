@@ -62,7 +62,7 @@
 				</Date>
 				<Description>
 					<p>SIRI is a European CEN standard for the exchange of real-time information.</p>
-					<p>This package defines common basic domain model identifier elements that are used in one or more SIRI fucntional service.</p>
+					<p>This package defines common basic domain model identifier elements that are used in one or more SIRI functional service.</p>
 				</Description>
 				<Format>
 					<MediaType>text/xml</MediaType>
@@ -166,7 +166,7 @@ Rail transport, Roads and road transport
 			</xsd:element>
 			<xsd:element name="StopPointName" type="NaturalLanguageStringStructure" minOccurs="0" maxOccurs="unbounded">
 				<xsd:annotation>
-					<xsd:documentation>Name of SCHEDULED STOP POINT.  (Unbounded since SIRI 2.0)</xsd:documentation>
+					<xsd:documentation>Name of SCHEDULED STOP POINT. (Unbounded since SIRI 2.0)</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 		</xsd:sequence>
@@ -192,7 +192,7 @@ Rail transport, Roads and road transport
 			<xsd:element ref="Order" minOccurs="0"/>
 			<xsd:element ref="StopPointName" minOccurs="0" maxOccurs="unbounded">
 				<xsd:annotation>
-					<xsd:documentation>Name of SCHEDULED STOP POINT.  (Unbounded since SIRI 2.0)</xsd:documentation>
+					<xsd:documentation>Name of SCHEDULED STOP POINT. (Unbounded since SIRI 2.0)</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 		</xsd:sequence>
@@ -207,7 +207,7 @@ Rail transport, Roads and road transport
 			<xsd:element ref="Order" minOccurs="0"/>
 			<xsd:element ref="StopPointName" minOccurs="0" maxOccurs="unbounded">
 				<xsd:annotation>
-					<xsd:documentation>Name of SCHEDULED STOP POINT.  (Unbounded since SIRI 2.0)</xsd:documentation>
+					<xsd:documentation>Name of SCHEDULED STOP POINT. (Unbounded since SIRI 2.0)</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 		</xsd:sequence>
@@ -241,7 +241,7 @@ Rail transport, Roads and road transport
 	</xsd:simpleType>
 	<xsd:complexType name="StopAreaRefStructure">
 		<xsd:annotation>
-			<xsd:documentation>Reference to a  STOP AREA.</xsd:documentation>
+			<xsd:documentation>Reference to a STOP AREA.</xsd:documentation>
 		</xsd:annotation>
 		<xsd:simpleContent>
 			<xsd:extension base="StopAreaCodeType"/>
@@ -315,7 +315,7 @@ Rail transport, Roads and road transport
 	</xsd:element>
 	<xsd:element name="VehicleAtStop" type="xsd:boolean" default="false">
 		<xsd:annotation>
-			<xsd:documentation>Whether VEHICLE is currently at stop.  Default is false (xml  default added from SIRI 2.0) </xsd:documentation>
+			<xsd:documentation>Whether VEHICLE is currently at stop. Default is false (xml default added from SIRI 2.0) </xsd:documentation>
 		</xsd:annotation>
 	</xsd:element>
 	<!-- === CONNECTION link ====================================================== -->
@@ -404,7 +404,7 @@ Rail transport, Roads and road transport
 			</xsd:annotation>
 		</xsd:attribute>
 	</xsd:complexType>
-	<!-- =====JOURNEY PATTERN identfiers=============================================================== -->
+	<!-- =====JOURNEY PATTERN identifiers=============================================================== -->
 	<xsd:simpleType name="JourneyPatternCodeType">
 		<xsd:annotation>
 			<xsd:documentation>Type for identifier of a JOURNEY PATTERN.</xsd:documentation>
@@ -413,7 +413,7 @@ Rail transport, Roads and road transport
 	</xsd:simpleType>
 	<xsd:complexType name="JourneyPatternRefStructure">
 		<xsd:annotation>
-			<xsd:documentation>Type for refrence to a JOURNEY PATTERN.</xsd:documentation>
+			<xsd:documentation>Type for reference to a JOURNEY PATTERN.</xsd:documentation>
 		</xsd:annotation>
 		<xsd:simpleContent>
 			<xsd:extension base="JourneyPatternCodeType"/>
@@ -426,7 +426,7 @@ Rail transport, Roads and road transport
 	</xsd:element>
 	<xsd:group name="JourneyPatternRefGroup">
 		<xsd:annotation>
-			<xsd:documentation>Elements describing the ROUTE and JOURNEY PATTERN Identfiers associated with a journey.</xsd:documentation>
+			<xsd:documentation>Elements describing the ROUTE and JOURNEY PATTERN Identifiers associated with a journey.</xsd:documentation>
 		</xsd:annotation>
 		<xsd:sequence/>
 	</xsd:group>
@@ -434,7 +434,7 @@ Rail transport, Roads and road transport
 	<xsd:group name="JourneyPatternInfoGroup">
 		<xsd:annotation>
 			<xsd:documentation>Elements describing the LINE, ROUTE and DIRECTION of a VEHICLE JOURNEYwhich are derived from the JOURNEY PATTERN associated with the journey. 
-Values for these elements can be specified on an annual schedule and will be inherited, unless overriden, onto the production timetable and then onto the individul dated VEHICLE JOURNEYs of the timetable. Each monitored journey takes its values from the dated VEHICLE JOURNEY that it follows. The absence of a value on an entity at a given level indicates that the value should be inherited (i) from any recent preceding update message for the same entity, or if there is no previous override, (ii) from its immediate parent entity.</xsd:documentation>
+Values for these elements can be specified on an annual schedule and will be inherited, unless overridden, onto the production timetable and then onto the individual dated VEHICLE JOURNEYs of the timetable. Each monitored journey takes its values from the dated VEHICLE JOURNEY that it follows. The absence of a value on an entity at a given level indicates that the value should be inherited (i) from any recent preceding update message for the same entity, or if there is no previous override, (ii) from its immediate parent entity.</xsd:documentation>
 		</xsd:annotation>
 		<xsd:sequence>
 			<xsd:element name="JourneyPatternRef" type="JourneyPatternRefStructure" minOccurs="0">
@@ -444,7 +444,7 @@ Values for these elements can be specified on an annual schedule and will be inh
 			</xsd:element>
 			<xsd:element name="JourneyPatternName" type="NaturalLanguageStringStructure" minOccurs="0">
 				<xsd:annotation>
-					<xsd:documentation>Name of Joruney Pattern</xsd:documentation>
+					<xsd:documentation>Name of Journey Pattern</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element name="VehicleMode" type="VehicleModesOfTransportEnumeration" minOccurs="0" maxOccurs="unbounded">
@@ -459,7 +459,7 @@ Values for these elements can be specified on an annual schedule and will be inh
 			</xsd:element>
 			<xsd:element ref="PublishedLineName" minOccurs="0" maxOccurs="unbounded">
 				<xsd:annotation>
-					<xsd:documentation>Name or Number by which the LINE is known to the public.  (Unbounded since SIRI 2.0)</xsd:documentation>
+					<xsd:documentation>Name or Number by which the LINE is known to the public. (Unbounded since SIRI 2.0)</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element name="GroupOfLinesRef" type="GroupOfLinesRefStructure" minOccurs="0">
@@ -469,7 +469,7 @@ Values for these elements can be specified on an annual schedule and will be inh
 			</xsd:element>
 			<xsd:element name="DirectionName" type="NaturalLanguageStringStructure" minOccurs="0" maxOccurs="unbounded">
 				<xsd:annotation>
-					<xsd:documentation>Description of the DIRECTION. May correspond to a DESTINATION DISPLAY.  (Unbounded since SIRI 2.0)</xsd:documentation>
+					<xsd:documentation>Description of the DIRECTION. May correspond to a DESTINATION DISPLAY. (Unbounded since SIRI 2.0)</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element name="ExternalLineRef" type="LineRefStructure" minOccurs="0">
@@ -552,13 +552,13 @@ Values for these elements can be specified on an annual schedule and will be inh
 	</xsd:complexType>
 	<xsd:group name="PublishedLineGroup">
 		<xsd:annotation>
-			<xsd:documentation>Elements describing the LINEand DESTINATION of a journey. Values for these elements can be specified on an annual schedule and will be inherited, unless overriden, onto the production timetable and then onto the individul dated VEHICLE JOURNEYs of the timetable. Each real-time journey takes its values from the dated VEHICLE JOURNEY that it follows. The absence of a value on an entity at a given level indicates that the value should be inherited (i) from any recent preceding update message for the same entity, or if there is no previous override, (ii) from its immediate parent entity.</xsd:documentation>
+			<xsd:documentation>Elements describing the LINEand DESTINATION of a journey. Values for these elements can be specified on an annual schedule and will be inherited, unless overridden, onto the production timetable and then onto the individual dated VEHICLE JOURNEYs of the timetable. Each real-time journey takes its values from the dated VEHICLE JOURNEY that it follows. The absence of a value on an entity at a given level indicates that the value should be inherited (i) from any recent preceding update message for the same entity, or if there is no previous override, (ii) from its immediate parent entity.</xsd:documentation>
 		</xsd:annotation>
 		<xsd:sequence>
 			<xsd:element ref="PublishedLineName" minOccurs="0" maxOccurs="unbounded"/>
 			<xsd:element name="DestinationName" type="NaturalLanguageStringStructure" minOccurs="0" maxOccurs="unbounded">
 				<xsd:annotation>
-					<xsd:documentation>Description of the destination stop (vehicle signage), if different from the that in  timetable - the DESTINATION DISPLAY. Can be overwritten section by section by the entry in an individual CALL.</xsd:documentation>
+					<xsd:documentation>Description of the destination stop (vehicle signage), if different from the that in timetable - the DESTINATION DISPLAY. Can be overwritten section by section by the entry in an individual CALL.</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 		</xsd:sequence>

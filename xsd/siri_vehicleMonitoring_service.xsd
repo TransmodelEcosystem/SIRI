@@ -166,7 +166,7 @@ Rail transport, Roads and road transport
 			</xsd:enumeration>
 			<xsd:enumeration value="calls">
 				<xsd:annotation>
-					<xsd:documentation>Return all available data for each stop event, including previous and onward  CALLs with  passing times for JOURNEY PATTERN.</xsd:documentation>
+					<xsd:documentation>Return all available data for each stop event, including previous and onward CALLs with passing times for JOURNEY PATTERN.</xsd:documentation>
 				</xsd:annotation>
 			</xsd:enumeration>
 		</xsd:restriction>
@@ -223,13 +223,13 @@ Rail transport, Roads and road transport
 			</xsd:element>
 			<xsd:element name="MaximumNumberOfCalls" minOccurs="0">
 				<xsd:annotation>
-					<xsd:documentation>If calls are to be returned, maximum number of calls to include in response. If absent, exclude all calls.  (since SIRI 2.0).</xsd:documentation>
+					<xsd:documentation>If calls are to be returned, maximum number of calls to include in response. If absent, exclude all calls. (since SIRI 2.0).</xsd:documentation>
 				</xsd:annotation>
 				<xsd:complexType>
 					<xsd:sequence>
 						<xsd:element name="Previous" type="xsd:nonNegativeInteger" minOccurs="0">
 							<xsd:annotation>
-								<xsd:documentation>Maximum number of previous calls to include. Only applies if VehicleMonitoringDetailLevel of Calls specified. Zero for none. If VehicleMonitoringDetailLevel of Calls specified  but MaximumNumberOfCalls.Previous absent, include all previous calls. (since SIRI 2.0).</xsd:documentation>
+								<xsd:documentation>Maximum number of previous calls to include. Only applies if VehicleMonitoringDetailLevel of Calls specified. Zero for none. If VehicleMonitoringDetailLevel of Calls specified but MaximumNumberOfCalls.Previous absent, include all previous calls. (since SIRI 2.0).</xsd:documentation>
 							</xsd:annotation>
 						</xsd:element>
 						<xsd:element name="Onwards" type="xsd:nonNegativeInteger" minOccurs="0">
@@ -242,7 +242,7 @@ Rail transport, Roads and road transport
 			</xsd:element>
 			<xsd:element name="IncludeSituations" type="xsd:boolean" minOccurs="0">
 				<xsd:annotation>
-					<xsd:documentation>Whether any related Situations  should be included in the ServiceDelivery. Default is 'false'. (since SIRI 2.0)</xsd:documentation>
+					<xsd:documentation>Whether any related Situations should be included in the ServiceDelivery. Default is 'false'. (since SIRI 2.0)</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 		</xsd:sequence>
@@ -260,7 +260,7 @@ Rail transport, Roads and road transport
 		<xsd:sequence>
 			<xsd:element name="IncrementalUpdates" type="xsd:boolean" default="false" minOccurs="0">
 				<xsd:annotation>
-					<xsd:documentation>Whether the producer will return the complete set of current data, or only  provide updates to this data, i.e. additions, modifications and deletions.
+					<xsd:documentation>Whether the producer will return the complete set of current data, or only provide updates to this data, i.e. additions, modifications and deletions.
 If false or omitted, each subscription response will contain the full information as specified in this request.</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
@@ -360,7 +360,7 @@ If false or omitted, each subscription response will contain the full informatio
 					</xsd:element>
 					<xsd:element name="MonitoringName" type="NaturalLanguageStringStructure" minOccurs="0" maxOccurs="unbounded">
 						<xsd:annotation>
-							<xsd:documentation>Name associated with Monitoring Reference. Supports SIRI LITE servcies  ((since SIRI 2.0)).</xsd:documentation>
+							<xsd:documentation>Name associated with Monitoring Reference. Supports SIRI LITE services. (since SIRI 2.0).</xsd:documentation>
 						</xsd:annotation>
 					</xsd:element>
 					<xsd:element name="ProgressBetweenStops" type="ProgressBetweenStopsStructure" minOccurs="0">
@@ -414,7 +414,7 @@ If false or omitted, each subscription response will contain the full informatio
 					<xsd:group ref="JourneyPatternInfoGroup"/>
 					<xsd:element name="Reason" type="NaturalLanguageStringStructure" minOccurs="0" maxOccurs="unbounded">
 						<xsd:annotation>
-							<xsd:documentation>Reason for cancellation.  (Unbounded since SIRI 2.0)</xsd:documentation>
+							<xsd:documentation>Reason for cancellation. (Unbounded since SIRI 2.0)</xsd:documentation>
 						</xsd:annotation>
 					</xsd:element>
 					<xsd:element ref="Extensions" minOccurs="0"/>
@@ -527,7 +527,7 @@ If false or omitted, each subscription response will contain the full informatio
 								</xsd:element>
 								<xsd:element name="FilterByVehicleMonitoringRef" type="xsd:boolean" fixed="true">
 									<xsd:annotation>
-										<xsd:documentation>Whether results can be filtered by Vehicle Monitoring  Fixed as 'true'.</xsd:documentation>
+										<xsd:documentation>Whether results can be filtered by Vehicle Monitoring Fixed as 'true'.</xsd:documentation>
 									</xsd:annotation>
 								</xsd:element>
 								<xsd:element ref="FilterByVehicleRef" minOccurs="0"/>
@@ -621,7 +621,7 @@ If false or omitted, each subscription response will contain the full informatio
 			</xsd:element>
 			<xsd:element name="HasMaximumNumberOfCalls" type="xsd:boolean" default="false" minOccurs="0">
 				<xsd:annotation>
-					<xsd:documentation>If system can return detailed calling pattern, whether a number of  calls to include can be specified. Default is 'false'. (since SIRI 2.0)</xsd:documentation>
+					<xsd:documentation>If system can return detailed calling pattern, whether a number of calls to include can be specified. Default is 'false'. (since SIRI 2.0)</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element name="HasNumberOfOnwardsCalls" type="xsd:boolean" default="false" minOccurs="0">

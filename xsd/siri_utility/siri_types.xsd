@@ -26,7 +26,7 @@
 		  Drop unused IP address type -->
 				</Date>
 				<Description>
-					<p>SIRI is a European CEN standard for the exchange of real-time information .</p>
+					<p>SIRI is a European CEN standard for the exchange of real-time information.</p>
 				</Description>
 				<Format>
 					<MediaType>text/xml</MediaType>
@@ -80,7 +80,7 @@
 	</xsd:simpleType>
 	<xsd:complexType name="NaturalLanguageStringStructure">
 		<xsd:annotation>
-			<xsd:documentation>Tyoe for a string in a specified language.</xsd:documentation>
+			<xsd:documentation>Type for a string in a specified language.</xsd:documentation>
 		</xsd:annotation>
 		<xsd:simpleContent>
 			<xsd:extension base="PopulatedStringType">
@@ -168,7 +168,7 @@ The value range is normally 0-100, but could in some circumstances go beyond 100
 	</xsd:simpleType>
 	<xsd:complexType name="PromptType">
 		<xsd:annotation>
-			<xsd:documentation>Allow the addition of attributes in a Prompt to add further details about its content. There must be only one instanciation of a any given combination between contentType and lang (i.e., only one content for a plain text in English, one content for plain text in French, one for plain text in German, etc.)</xsd:documentation>
+			<xsd:documentation>Allow the addition of attributes in a Prompt to add further details about its content. There must be only one instantiation of a any given combination between contentType and lang (i.e., only one content for a plain text in English, one content for plain text in French, one for plain text in German, etc.)</xsd:documentation>
 		</xsd:annotation>
 		<xsd:simpleContent>
 			<xsd:extension base="NaturalLanguageStringStructure">
@@ -194,7 +194,7 @@ The value range is normally 0-100, but could in some circumstances go beyond 100
 				<xsd:attribute ref="xml:lang" use="optional">
 					<xsd:annotation>
 						<xsd:documentation>If the content of the resource is in a single language, specifies which one.
-						There should be only one instanciation of a any given combination between contentType and lang 
+						There should be only one instantiation of a any given combination between contentType and lang 
 						(i.e., only one content for a plain text in English, one content for plain text in French, one for plain text in German, etc.) </xsd:documentation>
 					</xsd:annotation>
 				</xsd:attribute>

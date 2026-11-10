@@ -24,7 +24,7 @@
 				</Date>
 				<Description>
 					<p>SIRI is a European CEN technical standard for the exchange of real-time information.</p>
-					<p>This subschema describes  soem code value  models used by different SIRI functional services
+					<p>This subschema describes some code value  models used by different SIRI functional services
      <ul><li>SERVICE FEATURE discovery</li><li>TYPE OF PRODUCT CATEGORY Discovery</li></ul>
 					</p>
 				</Description>
@@ -46,7 +46,7 @@
 				</Rights>
 				<Source>
 					<ul>
-						<li>Discovery services Derived from the NaPTAN standard .</li>
+						<li>Discovery services Derived from the NaPTAN standard.</li>
 					</ul>
 				</Source>
 				<Status>Version 2.1</Status>
@@ -65,7 +65,7 @@ Rail transport, Roads and road transport
 				<Type>Standard</Type>
 			</Metadata>
 		</xsd:appinfo>
-		<xsd:documentation>SIRI  subschema with view of  classifiers for use in Discovery service</xsd:documentation>
+		<xsd:documentation>SIRI subschema with view of classifiers for use in Discovery service</xsd:documentation>
 	</xsd:annotation>
 	<!-- ======================================================================= -->
 	<xsd:include schemaLocation="../siri_model/siri_feature_support.xsd"/>
@@ -90,7 +90,7 @@ Rail transport, Roads and road transport
 			</xsd:element>
 			<xsd:element name="Name" type="NaturalLanguageStringStructure" maxOccurs="unbounded">
 				<xsd:annotation>
-					<xsd:documentation>Name of classification  (Unbounded since SIRI 2.0)</xsd:documentation>
+					<xsd:documentation>Name of classification (Unbounded since SIRI 2.0)</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element name="Icon" type="xsd:anyURI" minOccurs="0">
@@ -118,7 +118,7 @@ Rail transport, Roads and road transport
 			</xsd:element>
 			<xsd:element name="Name" type="NaturalLanguageStringStructure" maxOccurs="unbounded">
 				<xsd:annotation>
-					<xsd:documentation>Name of classification.  (Unbounded since SIRI 2.0)</xsd:documentation>
+					<xsd:documentation>Name of classification. (Unbounded since SIRI 2.0)</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element name="Icon" type="xsd:anyURI">
@@ -146,7 +146,7 @@ Rail transport, Roads and road transport
 			</xsd:element>
 			<xsd:element name="Name" type="NaturalLanguageStringStructure" maxOccurs="unbounded">
 				<xsd:annotation>
-					<xsd:documentation>Name of feature of VEHICLE.  (Unbounded since SIRI 2.0)</xsd:documentation>
+					<xsd:documentation>Name of feature of VEHICLE. (Unbounded since SIRI 2.0)</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element name="Icon" type="xsd:anyURI">

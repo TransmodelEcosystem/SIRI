@@ -136,7 +136,7 @@ It is recommended that the symbol be an identifier for a unit of measure as spec
 	</simpleType>
 	<simpleType name="UomURI">
 		<annotation>
-			<documentation>This type specifies a URI, restricted such that it must start with one of the following sequences: "#", "./", "../", or a string of characters followed by a ":". These patterns ensure that the most common URI forms are supported, including absolute and relative URIs and URIs that are simple fragment identifiers, but prohibits certain forms of relative URI that could be mistaken for unit of measure symbol . 
+			<documentation>This type specifies a URI, restricted such that it must start with one of the following sequences: "#", "./", "../", or a string of characters followed by a ":". These patterns ensure that the most common URI forms are supported, including absolute and relative URIs and URIs that are simple fragment identifiers, but prohibits certain forms of relative URI that could be mistaken for unit of measure symbol.
 NOTE	It is possible to re-write such a relative URI to conform to the restriction (e.g. "./m/s").
 In an instance document, on elements of type gml:MeasureType the mandatory uom attribute shall carry a value corresponding to either 
 -	a conventional unit of measure symbol,

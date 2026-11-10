@@ -240,7 +240,7 @@ Rail transport, Roads and road transport
 	<!-- ======================================================================= -->
 	<xsd:element name="FeederItem" type="AbstractFeederItemStructure" abstract="true">
 		<xsd:annotation>
-			<xsd:documentation>Fedder/Fetcher SERVICE JOURNEY INTERCHANGE  Activity.</xsd:documentation>
+			<xsd:documentation>Fedder/Fetcher SERVICE JOURNEY INTERCHANGE Activity.</xsd:documentation>
 		</xsd:annotation>
 	</xsd:element>
 	<xsd:complexType name="AbstractFeederItemStructure" abstract="true">
@@ -262,17 +262,17 @@ Rail transport, Roads and road transport
 	</xsd:complexType>
 	<xsd:group name="InterchangeFeederIdentityGroup">
 		<xsd:annotation>
-			<xsd:documentation>Elements identifying CALL at CONNECTION link of SERVICE JORUNEY  INTERCHANGE of Feeder Journey .</xsd:documentation>
+			<xsd:documentation>Elements identifying CALL at CONNECTION link of SERVICE JOURNEY INTERCHANGE of Feeder Journey.</xsd:documentation>
 		</xsd:annotation>
 		<xsd:sequence>
 			<xsd:element name="InterchangeRef" type="InterchangeRefStructure" minOccurs="0">
 				<xsd:annotation>
-					<xsd:documentation>Reference to the the SERVICE JOURNEY  INTERCHANGE between two journeys for which data is being returned.</xsd:documentation>
+					<xsd:documentation>Reference to the the SERVICE JOURNEY INTERCHANGE between two journeys for which data is being returned.</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element name="ConnectionLinkRef" type="ConnectionLinkRefStructure">
 				<xsd:annotation>
-					<xsd:documentation>Reference to the CONNECTION link or ACCESS  ZONE for which data is to be returned. i.e. associated with known feeder arrival and distributor departure STOP POINTs.</xsd:documentation>
+					<xsd:documentation>Reference to the CONNECTION link or ACCESS ZONE for which data is to be returned. i.e. associated with known feeder arrival and distributor departure STOP POINTs.</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:group ref="ContextualisedStopPointInSequenceGroup"/>
@@ -281,7 +281,7 @@ Rail transport, Roads and road transport
 	<!-- ======================================================================= -->
 	<xsd:element name="TimetabledFeederArrival" type="TimetabledFeederArrivalStructure" substitutionGroup="FeederItem">
 		<xsd:annotation>
-			<xsd:documentation>A feeder arrival at the arrival SCHEDUELD STOP POINT of the CONNECTION link .</xsd:documentation>
+			<xsd:documentation>A feeder arrival at the arrival SCHEDUELD STOP POINT of the CONNECTION link.</xsd:documentation>
 		</xsd:annotation>
 	</xsd:element>
 	<xsd:complexType name="TimetabledFeederArrivalStructure">
@@ -337,7 +337,7 @@ Rail transport, Roads and road transport
 					<xsd:group ref="JourneyPatternInfoGroup" minOccurs="0"/>
 					<xsd:element name="Reason" type="NaturalLanguageStringStructure" minOccurs="0" maxOccurs="unbounded">
 						<xsd:annotation>
-							<xsd:documentation>Reason for deletion.  (Unbounded since SIRI 2.0)</xsd:documentation>
+							<xsd:documentation>Reason for deletion. (Unbounded since SIRI 2.0)</xsd:documentation>
 						</xsd:annotation>
 					</xsd:element>
 					<xsd:element ref="Extensions" minOccurs="0"/>

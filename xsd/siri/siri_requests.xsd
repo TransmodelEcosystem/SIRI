@@ -160,7 +160,7 @@ Roads and road transport</Category>
 		<xsd:sequence>
 			<xsd:element name="AccountId" type="xsd:NMTOKEN" minOccurs="0">
 				<xsd:annotation>
-					<xsd:documentation>Account Identifier. May be used to attribute requests to a particular application provider and authentication key. The account may be common to all users of an application, or to an individual user. Note that to identify an individual user the RequestorRef can be used with an anonymised token. . (since SIRI 2.0)</xsd:documentation>
+					<xsd:documentation>Account Identifier. May be used to attribute requests to a particular application provider and authentication key. The account may be common to all users of an application, or to an individual user. Note that to identify an individual user the RequestorRef can be used with an anonymised token. (since SIRI 2.0)</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element name="AccountKey" type="xsd:normalizedString" minOccurs="0">
@@ -181,7 +181,7 @@ Roads and road transport</Category>
 					<xsd:group ref="RequestorEndpointGroup"/>
 					<xsd:group ref="DelegatorEndpointGroup">
 						<xsd:annotation>
-							<xsd:documentation>If request has been proxied by an intermediate aggregating system , tracking information relating to the original requestor. This allows the aggregation to be stateless. (since SIRI 2.0)</xsd:documentation>
+							<xsd:documentation>If request has been proxied by an intermediate aggregating system, tracking information relating to the original requestor. This allows the aggregation to be stateless. (since SIRI 2.0)</xsd:documentation>
 						</xsd:annotation>
 					</xsd:group>
 				</xsd:sequence>
@@ -208,7 +208,7 @@ Roads and road transport</Category>
 	</xsd:group>
 	<xsd:group name="DelegatorEndpointGroup">
 		<xsd:annotation>
-			<xsd:documentation>If request has been proxied by an intermediate aggregating system , tracking information relating to the original requestor. This allows the aggregation to be stateless.</xsd:documentation>
+			<xsd:documentation>If request has been proxied by an intermediate aggregating system, tracking information relating to the original requestor. This allows the aggregation to be stateless.</xsd:documentation>
 		</xsd:annotation>
 		<xsd:sequence>
 			<xsd:element name="DelegatorAddress" type="EndpointAddress" minOccurs="0">
@@ -401,7 +401,7 @@ If SubscriptionRenewal is set to 'false' or the flag is omitted (and the default
 					<xsd:group ref="ProducerResponseEndpointGroup"/>
 					<xsd:group ref="DelegatorEndpointGroup">
 						<xsd:annotation>
-							<xsd:documentation>If request has been proxied by an intermediate aggregating system , tracking information relating to the original requestor. This allows the aggregation to be stateless. (since SIRI 2.0)</xsd:documentation>
+							<xsd:documentation>If request has been proxied by an intermediate aggregating system, tracking information relating to the original requestor. This allows the aggregation to be stateless. (since SIRI 2.0)</xsd:documentation>
 						</xsd:annotation>
 					</xsd:group>
 				</xsd:sequence>
@@ -576,7 +576,7 @@ If SubscriptionRenewal is set to 'false' or the flag is omitted (and the default
 					<xsd:group ref="ConsumerRequestEndpointGroup"/>
 					<xsd:group ref="DelegatorEndpointGroup">
 						<xsd:annotation>
-							<xsd:documentation>If request has been proxied by an intermediate aggregating system , tracking information relating to the original requestor. This allows the aggregation to be stateless. (since SIRI 2.0)</xsd:documentation>
+							<xsd:documentation>If request has been proxied by an intermediate aggregating system, tracking information relating to the original requestor. This allows the aggregation to be stateless. (since SIRI 2.0)</xsd:documentation>
 						</xsd:annotation>
 					</xsd:group>
 				</xsd:sequence>
@@ -610,7 +610,7 @@ If SubscriptionRenewal is set to 'false' or the flag is omitted (and the default
 					<xsd:group ref="ConsumerResponseEndpointGroup"/>
 					<xsd:group ref="DelegatorEndpointGroup">
 						<xsd:annotation>
-							<xsd:documentation>If request has been proxied by an intermediate aggregating system , tracking information relating to the original requestor. This allows the aggregation to be stateless. (since SIRI 2.0)</xsd:documentation>
+							<xsd:documentation>If request has been proxied by an intermediate aggregating system, tracking information relating to the original requestor. This allows the aggregation to be stateless. (since SIRI 2.0)</xsd:documentation>
 						</xsd:annotation>
 					</xsd:group>
 				</xsd:sequence>
@@ -682,7 +682,7 @@ If SubscriptionRenewal is set to 'false' or the flag is omitted (and the default
 	</xsd:group>
 	<xsd:complexType name="ResponseEndpointStructure">
 		<xsd:annotation>
-			<xsd:documentation>Type for Unique reference to reponse. May be used to reference request in subsequent interactions. Used for WSDL.</xsd:documentation>
+			<xsd:documentation>Type for Unique reference to response. May be used to reference request in subsequent interactions. Used for WSDL.</xsd:documentation>
 		</xsd:annotation>
 		<xsd:complexContent>
 			<xsd:extension base="ResponseStructure">
@@ -690,7 +690,7 @@ If SubscriptionRenewal is set to 'false' or the flag is omitted (and the default
 					<xsd:group ref="ResponseEndpointGroup"/>
 					<xsd:group ref="DelegatorEndpointGroup">
 						<xsd:annotation>
-							<xsd:documentation>If request has been proxied by an intermediate aggregating system , tracking information relating to the original requestor. This allows the aggregation to be stateless. (since SIRI 2.0)</xsd:documentation>
+							<xsd:documentation>If request has been proxied by an intermediate aggregating system, tracking information relating to the original requestor. This allows the aggregation to be stateless. (since SIRI 2.0)</xsd:documentation>
 						</xsd:annotation>
 					</xsd:group>
 				</xsd:sequence>
@@ -699,7 +699,7 @@ If SubscriptionRenewal is set to 'false' or the flag is omitted (and the default
 	</xsd:complexType>
 	<xsd:group name="ProducerResponseEndpointGroup">
 		<xsd:annotation>
-			<xsd:documentation>Unique reference to reponse from producer. May be used to reference request in subsequent interactions.</xsd:documentation>
+			<xsd:documentation>Unique reference to response from producer. May be used to reference request in subsequent interactions.</xsd:documentation>
 		</xsd:annotation>
 		<xsd:sequence>
 			<xsd:element name="ProducerRef" type="ParticipantRefStructure" minOccurs="0">
@@ -726,7 +726,7 @@ If SubscriptionRenewal is set to 'false' or the flag is omitted (and the default
 	</xsd:group>
 	<xsd:complexType name="ProducerResponseEndpointStructure">
 		<xsd:annotation>
-			<xsd:documentation>Type for Unique reference to reponse from producer. May be used to reference request in subsequent interactions. Used for WSDL.</xsd:documentation>
+			<xsd:documentation>Type for Unique reference to response from producer. May be used to reference request in subsequent interactions. Used for WSDL.</xsd:documentation>
 		</xsd:annotation>
 		<xsd:complexContent>
 			<xsd:extension base="ResponseStructure">
@@ -1060,7 +1060,7 @@ If SubscriptionRenewal is set to 'false' or the flag is omitted (and the default
 	</xsd:element>
 	<xsd:complexType name="AbstractDiscoveryDeliveryStructure">
 		<xsd:annotation>
-			<xsd:documentation>Abstract supertype fro discovery responses.</xsd:documentation>
+			<xsd:documentation>Abstract supertype for discovery responses.</xsd:documentation>
 		</xsd:annotation>
 		<xsd:complexContent>
 			<xsd:extension base="ResponseStructure">
