@@ -49,11 +49,11 @@ The `xsd` folder is sub-divided as follow:
 
 |**Branch**|**Description**|**Maintenance status**|**Link**|
 |----------|---------------|--------|--------|
-|v2.3|The latest version of the XML Schema with improvements on v2.2 |Functional improvement|[Direct link](https://github.com/TransmodelEcosystem/SIRI/tree/v2.3)|
-|v2.2|The latest version of the XML Schema that matches the CEN documentation|Bug fixes only|[Direct link](https://github.com/TransmodelEcosystem/SIRI)|
-|v2.1|The previous version of the XML Schema that matches the CEN documentation (without the Control Actions)|Not maintained|[Direct link](https://github.com/TransmodelEcosystem/SIRI/tree/v2.1)|
-|v2.4-wip|All the upcoming work improving v2.3 |Not yet published|[Direct link](https://github.com/TransmodelEcosystem/SIRI/tree/v2.4-wip)|
-|v3.0-wip|All the upcoming work preparing the migration from CEN/TS to CEN/EN for the entire SIRI series|Not yet published|[Direct link](https://github.com/TransmodelEcosystem/SIRI/tree/v3.0-wip)|
+|v2.1|The previous version of the XML Schema that matches the CEN documentation (without the Control Actions)|Published, Not maintained|[Direct link](https://github.com/TransmodelEcosystem/SIRI/tree/v2.1)|
+|v2.2|The latest version of the XML Schema that matches the CEN documentation|Published, Bug fixes only|[Direct link](https://github.com/TransmodelEcosystem/SIRI)|
+|v2.3|The latest version of the XML Schema with improvements on v2.2 |Published, Bug fixes only|[Direct link](https://github.com/TransmodelEcosystem/SIRI/tree/v2.3)|
+|v2.4-wip|All the upcoming work improving v2.3 |Not yet published, Functional improvement|[Direct link](https://github.com/TransmodelEcosystem/SIRI/tree/v2.4-wip)|
+|v3.0-wip|All the upcoming work preparing the migration from CEN/TS to CEN/EN for the entire SIRI series|Not yet published, Functional improvement|[Direct link](https://github.com/TransmodelEcosystem/SIRI/tree/v3.0-wip)|
 
 All other branches are considered as feature branches, meaning that they are used for development only and are to be deleted once a Pull Request is merged. See below for more details on contributions.
 
