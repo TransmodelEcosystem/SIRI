@@ -683,7 +683,7 @@ If false each subscription response will contain the full information as specifi
 					<xsd:element ref="SituationRef" minOccurs="0" maxOccurs="unbounded"/>
 					<xsd:element name="StopNote" type="NaturalLanguageStringStructure" minOccurs="0" maxOccurs="unbounded">
 						<xsd:annotation>
-							<xsd:documentation>Text associated with Stop Notice ed since SIRI 2.0)</xsd:documentation>
+							<xsd:documentation>Text associated with Stop (since SIRI 2.0)</xsd:documentation>
 						</xsd:annotation>
 					</xsd:element>
 					<xsd:element ref="Extensions" minOccurs="0"/>
