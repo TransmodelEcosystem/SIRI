@@ -418,7 +418,7 @@ the original journey and the nature of the difference.</xsd:documentation>
 	</xsd:element>
 	<xsd:complexType name="RecordedCallStructure">
 		<xsd:annotation>
-			<xsd:documentation>Type for recroded Real-time info about a VEHICLE JOURNEY Stop.</xsd:documentation>
+			<xsd:documentation>Type for recorded Real-time info about a VEHICLE JOURNEY Stop.</xsd:documentation>
 		</xsd:annotation>
 		<xsd:sequence>
 			<xsd:group ref="StopPointInSequenceGroup"/>
