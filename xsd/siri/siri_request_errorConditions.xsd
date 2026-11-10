@@ -28,13 +28,13 @@
 		  
 		  UnknownParticipant	Recipient for a message to be distributed is unknown. (since SIRI 2.0)
 		  UnknownEndpoint	Endpoint to which a message is to be distributed is unknown. (since SIRI 2.0)
-		  EndpointDeniedAccess	Distribution message could not be delivered because not authorised.. (since SIRI 2.0)
+		  EndpointDeniedAccess	Distribution message could not be delivered because not authorised. (since SIRI 2.0)
 		  EndpointNotAvailable	Recipient of a message to be distributed is not available. (since SIRI 2.0)
 		  UnapprovedKey	User authorisation Key is not  enabled. (since SIRI 2.0)
 		  
 		  InvalidDataReferences	Request contains references to  identifiers that are not known.  (since SIRI 2.0)
 		  ParametersIgnored	Request contained parameters that were not supported by the producer. A response has been provided but some parameters have been ignored. (since SIRI 2.0)
-		  UnknownExtensions	Request contained extensions that were not supported by the producer. A response has been provided but some or all extensions have been ignored.. (since SIRI 2.0) -->
+		  UnknownExtensions	Request contained extensions that were not supported by the producer. A response has been provided but some or all extensions have been ignored. (since SIRI 2.0) -->
 				</Date>
 				<Date>
 					<Modified>2012-03-23</Modified>

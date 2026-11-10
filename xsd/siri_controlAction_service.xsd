@@ -1340,7 +1340,7 @@ Can be used when stops are replaced by other stops on certain journeys</xsd:docu
 				</xsd:annotation>
 			</xsd:element>
 			<!--NOPTIS-CHANGE: attribute>>element + NewJourneyGid>>NewJourneyCode -->
-			<!--		<xsd:attribute name="InformPassengersCondition" type="InformPassengersCondition" use="optional" default="ALWAYS"/>  NOPTIS-CHANGE: InformPassengersCondition>>SituationRef : CA service does not do PI... this is for SX ! -->
+			<!--		<xsd:attribute name="InformPassengersCondition" type="InformPassengersCondition" use="optional" default="ALWAYS"/>  NOPTIS-CHANGE: InformPassengersCondition>>SituationRef : CA service does not do PI.. this is for SX ! -->
 			<xsd:element name="OperatingDayDate" type="xsd:date" minOccurs="0">
 				<xsd:annotation>
 					<xsd:documentation>Defaults to current date</xsd:documentation>

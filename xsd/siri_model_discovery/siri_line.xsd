@@ -165,7 +165,7 @@ Rail transport, Roads and road transport
 											</xsd:element>
 											<xsd:element name="StopsInPattern" minOccurs="0">
 												<xsd:annotation>
-													<xsd:documentation>Ordered collection of STOP POINTs the LINE and direction . Detail level is 'stops'. (since SIRI 2.0) </xsd:documentation>
+													<xsd:documentation>Ordered collection of STOP POINTs the LINE and direction. Detail level is 'stops'. (since SIRI 2.0) </xsd:documentation>
 												</xsd:annotation>
 												<xsd:complexType>
 													<xsd:sequence>
