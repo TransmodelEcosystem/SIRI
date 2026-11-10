@@ -4,7 +4,7 @@
 
 ## Overview 🔍
 
-SIRI is a European Norm (EN) and CEN Technical Specification (CEN/TS). It is published as a series referenced as EN 15531 and CEN/TS 15531. It is dedicated to the exchange of real-time data for public transportation between different computer systems and open data. It is based on Transmodel V6.2 (EN 12896 series) and relates to NeTEx (CEN/TS 16614 series).
+SIRI is a European Norm (EN) and CEN Technical Specification (CEN/TS). It is published as a series referenced as EN 15531 and CEN/TS 15531. It is dedicated to the exchange of real-time data for public transportation between different computer systems and open data. It is based on Transmodel v6.2 (EN 12896 series) and relates to NeTEx (CEN/TS 16614 series).
 
 SIRI services are:
 - Discovery, general services to retrieve references for other services (e.g., list of lines)
@@ -49,11 +49,11 @@ The `xsd` folder is sub-divided as follow:
 
 |**Branch**|**Description**|**Maintenance status**|**Link**|
 |----------|---------------|--------|--------|
-|v2.3|The latest version of the XML Schema with improvements on v2.2 |Functional improvement|[Direct link](https://github.com/TransmodelEcosystem/SIRI/tree/v2.3)|
-|v2.2|The latest version of the XML Schema that matches the CEN documentation|Bug fixes only|[Direct link](https://github.com/TransmodelEcosystem/SIRI)|
-|v2.1|The previous version of the XML Schema that matches the CEN documentation (without the Control Actions)|Not maintained|[Direct link](https://github.com/TransmodelEcosystem/SIRI/tree/v2.1)|
-|v2.4-wip|All the upcoming work improving v2.3 |Not yet published|[Direct link](https://github.com/TransmodelEcosystem/SIRI/tree/v2.4-wip)|
-|v3.0-wip|All the upcoming work preparing the migration from CEN/TS to CEN/EN for the entire SIRI series|Not yet published|[Direct link](https://github.com/TransmodelEcosystem/SIRI/tree/v3.0-wip)|
+|v2.1|The previous version of the XML Schema that matches the CEN documentation (without the Control Actions)|Published, Not maintained|[Direct link](https://github.com/TransmodelEcosystem/SIRI/tree/v2.1)|
+|v2.2|The latest version of the XML Schema that matches the CEN documentation|Published, Bug fixes only|[Direct link](https://github.com/TransmodelEcosystem/SIRI)|
+|v2.3|The latest version of the XML Schema with improvements on v2.2 |Published, Bug fixes only|[Direct link](https://github.com/TransmodelEcosystem/SIRI/tree/v2.3)|
+|v2.4-wip|All the upcoming work improving v2.3 |Not yet published, Functional improvement|[Direct link](https://github.com/TransmodelEcosystem/SIRI/tree/v2.4-wip)|
+|v3.0-wip|All the upcoming work preparing the migration from CEN/TS to CEN/EN for the entire SIRI series|Not yet published, Functional improvement|[Direct link](https://github.com/TransmodelEcosystem/SIRI/tree/v3.0-wip)|
 
 All other branches are considered as feature branches, meaning that they are used for development only and are to be deleted once a Pull Request is merged. See below for more details on contributions.
 
@@ -105,12 +105,14 @@ In your issue, make sure that:
 ### Making a change 🚀
 
 1. Identify which branch you need to target:
-   - v2.3-wip for all changes that will apply to SIRI v2.2 (e.g., bug fixes, typos, improvement of certain features without breaking changes, etc.)
+   - v2.2 for bug fixes only,
+   - v2.3 for all non-functional changes that will apply to SIRI v2.3 (e.g., bug fixes, typos)
+   - v2.4-wip for all changes that improve features of SIRI v2.3 (e.g., adding values to enumeration, improvement of certain features without breaking changes, etc.)
    - v3.0-wip for all changes that will apply when SIRI migrates to EN (e.g., deprecation of features, refactor of certain elements, breaking changes including new features, etc.) _Not yet published_
-2. Create a feature branch with a clear name that identifies the SIRI service when relevant (e.g., sx_addedconcept)
-3. Work on the changes and do the Pull Request
+3. Create a feature branch with a clear name that identifies the SIRI service when relevant (e.g., sx_addedconcept)
+4. Work on the changes and do the Pull Request
 
-For new features, the decision between targetting v2.3-wip or v3.0-wip will be made by the group.
+For new features, the decision between targeting v2.4-wip or v3.0-wip will be made by the group.
 
 ### The use of AI in this repo 🤖
 
