@@ -9,7 +9,7 @@ Functional changes except for SIRI-SX are:
 - Addition of service link in both SIRI-CA, with passenger information propagated through SIRI-ET and SIRI-SX ([PR #194](https://github.com/TransmodelEcosystem/SIRI/pull/194))
 - Removal of deprecation note for DatedVehicleJourney in SIRI-ET ([PR #195](https://github.com/TransmodelEcosystem/SIRI/pull/195))
 - Addition of restriction for JourneyRelation in SIRI-ET, SIRI-PT and SIRI-VM ([PR #202](https://github.com/TransmodelEcosystem/SIRI/pull/202))
-- Harmonisation of VehicleMode and how to use them as filter in SIRI-PT, SIRI-ET, SIRI-VM, SIRI-ST and SIRI-SM ([PR #207](https://github.com/TransmodelEcosystem/SIRI/pull/207), [PR #227](https://github.com/TransmodelEcosystem/SIRI/pull/227))
+- Harmonisation of VehicleMode and how to use them as filter in SIRI-PT, SIRI-ET, SIRI-VM, SIRI-SX and SIRI-SM ([PR #207](https://github.com/TransmodelEcosystem/SIRI/pull/207), [PR #227](https://github.com/TransmodelEcosystem/SIRI/pull/227))
 - Addition of missing default value in SubscriptionRenewal ([PR #223](https://github.com/TransmodelEcosystem/SIRI/pull/223))
 - Addition of IsDeadRun in Journey to be used in SIRI-VM and SIRI-ET ([PR #238](https://github.com/TransmodelEcosystem/SIRI/pull/238))
 
